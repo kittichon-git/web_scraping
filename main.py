@@ -1,6 +1,6 @@
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from scrapers.doh_scraper import DOHScraper
 from scrapers.gprocurement_scraper import GProcurementScraper
 from scrapers.oncb_scraper import ONCBScraper
@@ -90,6 +90,10 @@ def generate_report(new_items, history):
     # แปลงข้อมูลเป็น JSON string เพื่อฝังลงใน HTML
     data_json = json.dumps(all_data, ensure_ascii=False)
 
+    # Calculate Thailand Time (UTC+7) for the report
+    th_time = datetime.utcnow() + timedelta(hours=7)
+    update_time = th_time.strftime('%d/%m/%Y %H:%M')
+    
     # 2. สร้างหน้า index.html (ฝังข้อมูลลงไปเลยเพื่อให้รันแบบ offline ได้)
     html_template = f"""
     <!DOCTYPE html>
@@ -98,7 +102,7 @@ def generate_report(new_items, history):
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, nofollow">
-        <title>Auction Dashboard - อัพเดทล่าสุด {all_data['updated_at']}</title>
+        <title>Auction Dashboard - อัพเดทล่าสุด {update_time} (เวลาไทย)</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
         <style>
