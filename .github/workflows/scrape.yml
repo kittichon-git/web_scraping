@@ -1,9 +1,9 @@
 name: Daily Auction Scraper
 
 on:
-  workflow_dispatch: # สำหรับรันมือเองบน GitHub
-  repository_dispatch: # สำหรับรันผ่าน API (cron-job.org)
-    types: [run_scraper]
+  workflow_dispatch:
+  repository_dispatch:
+
 
 
 permissions:
