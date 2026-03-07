@@ -2748,5 +2748,35 @@
     "url": "https://www.doh.go.th/project_detail/detail/410372",
     "source": "Department of Highways",
     "scraped_at": "06/03/2026"
+  },
+  {
+    "agency": "กรมบัญชีกลาง (e-GP)",
+    "unit": "ที่ สท 75602/233",
+    "title": "ประกาศองค์การบริหารส่วนตำบลไกรกลาง เรื่อง ประมูลขายทอดตลาดพัสดุที่ชำรุด เสื่อมสภาพ ที่ไม่สามารถใช้ในราชการได้ ประจำปีงบประมาณ พ.ศ. 2568 จำนวน 140 รายการ ประกาศวันที่ 5 มีนาคม 2569",
+    "date": "ไม่ระบุวันที่",
+    "sort_date": "0000-00-00",
+    "url": "https://www.gprocurement.go.th/wps/wcm/connect/3d808869-47c8-4a65-9eed-74d9911addd9/Announce_Kraiklang+Subdistrict+Administrative+Organization_233_06032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3d808869-47c8-4a65-9eed-74d9911addd9-pP2oRrj",
+    "source": "G-Procurement",
+    "scraped_at": "07/03/2026"
+  },
+  {
+    "agency": "กรมบัญชีกลาง (e-GP)",
+    "unit": "ที่ อย 62002/ว.263",
+    "title": "ประกาศเทศบาลเมืองลำตาเสา เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ชำรุด เสื่อมสภาพ ประจำปี 2568 ประกาศวันที่ 4 มีนาคม 2569",
+    "date": "ไม่ระบุวันที่",
+    "sort_date": "0000-00-00",
+    "url": "https://www.gprocurement.go.th/wps/wcm/connect/49847f57-5d91-402e-83bb-15cba81a8c41/Announce_Lamtasao+Town+Municipality_c263_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-49847f57-5d91-402e-83bb-15cba81a8c41-pP2uVUM",
+    "source": "G-Procurement",
+    "scraped_at": "07/03/2026"
+  },
+  {
+    "agency": "กรมบัญชีกลาง (e-GP)",
+    "unit": "ที่ ตง 53802/ว 012",
+    "title": "ประกาศเทศบาลตำบลควนโพธิ์ เรื่อง ขายทอดตลาด ครุภัณฑ์กล้องวงจรปิด จำนวน 33 รายการ (ครั้งที่ 3) ประกาศวันที่ 4 มีนาคม 2569",
+    "date": "ไม่ระบุวันที่",
+    "sort_date": "0000-00-00",
+    "url": "https://www.gprocurement.go.th/wps/wcm/connect/8f973be9-429b-45e7-a334-c2f1253c4f90/Announce_+Khuanpoa+Subdistrict+Municipality_c012_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8f973be9-429b-45e7-a334-c2f1253c4f90-pP2sWr2",
+    "source": "G-Procurement",
+    "scraped_at": "07/03/2026"
   }
 ]
