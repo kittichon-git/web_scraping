@@ -62,7 +62,7 @@ def generate_report(new_items, history):
     now = datetime.now()
     date_str = now.strftime('%d/%m/%Y %H:%M')
     
-    # Sort items by sort_date descending
+    # Sort items by scraped_at descending, then sort_date descending
     all_combined = new_items + history
     # Remove duplicates based on URL
     seen_urls = set()
@@ -72,13 +72,22 @@ def generate_report(new_items, history):
             unique_items.append(item)
             seen_urls.add(item['url'])
     
-    unique_items.sort(key=lambda x: x.get('sort_date', '0000-00-00'), reverse=True)
+    def sort_key(x):
+        scraped = x.get('scraped_at', '00/00/0000')
+        parts = scraped.split('/')
+        if len(parts) == 3:
+            scraped_sortable = f"{parts[2]}{parts[1].zfill(2)}{parts[0].zfill(2)}"
+        else:
+            scraped_sortable = "00000000"
+        return (scraped_sortable, x.get('sort_date', '0000-00-00'))
+
+    unique_items.sort(key=sort_key, reverse=True)
 
     new_urls = [n['url'] for n in new_items]
     historical_items = [item for item in unique_items if item['url'] not in new_urls]
     
     all_data = {
-        "new": new_items,
+        "new": [item for item in unique_items if item['url'] in new_urls], # Keep new_items sorted correctly
         "historical": historical_items,
         "updated_at": date_str
     }
@@ -192,6 +201,19 @@ def generate_report(new_items, history):
                 margin-bottom: 20px;
                 font-size: 0.9rem;
             }}
+            tr.new-row {{
+                background-color: #fffde7;
+            }}
+            .new-badge {{
+                font-size: 0.75rem;
+                padding: 2px 6px;
+                border-radius: 4px;
+                background: #ff5722;
+                color: white;
+                font-weight: bold;
+                margin-right: 8px;
+                vertical-align: middle;
+            }}
         </style>
     </head>
     <body>
@@ -278,22 +300,27 @@ def generate_report(new_items, history):
                 currentHistoryPage = page;
                 const container = document.getElementById('items-container');
                 
-                // รวมข้อมูลทั้งหมด
-                let allItems = [...data.new, ...data.historical];
+                // เครื่องหมายสำหรับข่าวที่เพิ่งค้นพบในรอบรันล่าสุด
+                const newItemsMod = data.new.map(item => ({{...item, isNewToday: true}}));
+                const histItemsMod = data.historical.map(item => ({{...item, isNewToday: false}}));
+                
+                // โครงสร้างใหม่: นำข่าวใหม่ล่าสุดจริงๆ ไว้บนสุดเสมอ ตามด้วยประวัติ
+                // (Python หลังบ้านเรียงลำดับถูกจัดมาให้สมบูรณ์แล้ว ไม่ต้อง sort ด้วย JS อีก)
+                let allItems = [...newItemsMod, ...histItemsMod];
                 
                 // ตัวกรอง (Filter)
                 const filtered = filterItems(allItems);
                 
-                // เรียงลำดับใหม่: เอาวันที่พบข่าว (scraped_at) ล่าสุดขึ้นก่อน
-                // รูปแบบวันที่คือ dd/mm/yyyy เราต้องแปลงเป็น yyyymmdd เพื่อเปรียบเทียบ
+                // เรียงลำดับเพิ่มเติม: ให้ข่าวที่ "ยังไม่ได้อ่าน" อยู่ด้านบนเสมอ
+                const readUrls = getReadItems();
                 filtered.sort((a, b) => {{
-                    const dateA = (a.scraped_at || '00/00/0000').split('/').reverse().join('');
-                    const dateB = (b.scraped_at || '00/00/0000').split('/').reverse().join('');
-                    if (dateA !== dateB) return dateB.localeCompare(dateA);
-                    // ถ้าวันที่พบข่าวเท่ากัน ให้เรียงตาม sort_date (วันที่ประกาศในเว็บ)
-                    return (b.sort_date || '').localeCompare(a.sort_date || '');
+                    const aIsRead = readUrls.includes(a.url);
+                    const bIsRead = readUrls.includes(b.url);
+                    if (aIsRead && !bIsRead) return 1;   // a อ่านแล้ว ให้ลงไปข้างล่าง
+                        if (!aIsRead && bIsRead) return -1;  // a ยังไม่อ่าน ให้อยู่ข้างบน
+                        return 0; // ถ้าอ่านแล้วหรือยังไม่อ่านทั้งคู่ ให้คงลำดับเดิมไว้ (ตามที่ Python จัดมา)
                 }});
-
+                
                 document.getElementById('total-count').innerText = filtered.length + " รายการ";
                 
                 const start = (page - 1) * itemsPerPage;
@@ -314,16 +341,20 @@ def generate_report(new_items, history):
                 const isRead = getReadItems().includes(item.url);
                 const scrapeDate = item.scraped_at ? `<span class="fetch-date-badge">${{item.scraped_at}}</span>` : '-';
                 
+                // Highlight for new items from latest run
+                const rowClass = isRead ? 'read' : (item.isNewToday ? 'new-row' : '');
+                const newBadge = item.isNewToday ? `<span class="new-badge">⭐ ข่าวใหม่ (ล่าสุด)</span>` : '';
                 
                 return `
-                    <tr class="${{isRead ? 'read' : ''}}" data-url="${{item.url}}">
+                    <tr class="${{rowClass}}" data-url="${{item.url}}">
                         <td>${{scrapeDate}}</td>
                         <td><span class="agency-badge">${{item.agency}}</span></td>
                         <td>
-                            <a href="${{item.url}}" class="title" title="${{item.title}}" target="_blank" onclick="markAsRead(event, '${{item.url}}')">
+                            ${{newBadge}}
+                            <a href="${{item.url}}" class="title" style="display:inline-block; vertical-align:middle; width: calc(100% - 100px);" title="${{item.title}}" target="_blank" onclick="markAsRead(event, '${{item.url}}')">
                                 ${{item.title}}
                             </a>
-                            <small style="color: #888;">🏢 ${{item.unit || 'N/A'}}</small>
+                            <small style="color: #888; display:block; margin-top:4px;">🏢 ${{item.unit || 'N/A'}}</small>
                         </td>
                         <td><span style="font-size: 0.9rem;">${{item.date}}</span></td>
                     </tr>
@@ -339,9 +370,38 @@ def generate_report(new_items, history):
                 }}
 
                 let buttons = '';
-                for (let i = 1; i <= totalPages; i++) {{
+                
+                // ปุ่ม "« ก่อนหน้า"
+                if (currentHistoryPage > 1) {{
+                    buttons += `<button class="page-btn" onclick="renderItems(${{currentHistoryPage - 1}})">« ก่อนหน้า</button>`;
+                }}
+
+                // แสดงปุ่มหน้า 1 เสมอ
+                buttons += `<button class="page-btn ${{1 === currentHistoryPage ? 'active' : ''}}" onclick="renderItems(1)">1</button>`;
+
+                // จุดไข่ปลาฝั่งซ้าย (ถ้าระยะห่างจากหน้าปัจจุบันกับหน้า 1 มากเกินไป)
+                if (currentHistoryPage > 3) {{
+                    buttons += `<span style="padding: 5px 10px; color: #888;">...</span>`;
+                }}
+
+                // แสดงเลขหน้าตรงกลาง (ลบหน้าปัจจุบัน 1, บิดบวกหน้าปัจจุบัน 1) แต่ไม่เกิน Total และไม่น้อยกว่า 2
+                for (let i = Math.max(2, currentHistoryPage - 1); i <= Math.min(totalPages - 1, currentHistoryPage + 1); i++) {{
                     buttons += `<button class="page-btn ${{i === currentHistoryPage ? 'active' : ''}}" onclick="renderItems(${{i}})">${{i}}</button>`;
                 }}
+
+                // จุดไข่ปลาฝั่งขวา (ถ้าระยะห่างตอนท้ายมากเกินไป)
+                if (currentHistoryPage < totalPages - 2) {{
+                    buttons += `<span style="padding: 5px 10px; color: #888;">...</span>`;
+                }}
+
+                // แสดงปุ่มหน้าสุดท้ายเสมอ
+                buttons += `<button class="page-btn ${{totalPages === currentHistoryPage ? 'active' : ''}}" onclick="renderItems(${{totalPages}})">${{totalPages}}</button>`;
+
+                // ปุ่ม "ถัดไป »"
+                if (currentHistoryPage < totalPages) {{
+                    buttons += `<button class="page-btn" onclick="renderItems(${{currentHistoryPage + 1}})">ถัดไป »</button>`;
+                }}
+
                 pagination.innerHTML = buttons;
             }}
 
@@ -410,8 +470,8 @@ def main():
     # แก้ไขข้อมูลเก่าในประวัติ (Backfill/Correction)
     for item in history:
         # 1. แก้ไขสถานะวันที่พบข่าว
-        if 'scraped_at' not in item or item.get('scraped_at') == item.get('date'):
-            item['scraped_at'] = "05/03/2569"
+        if 'scraped_at' not in item or item.get('scraped_at') == item.get('date') or item.get('scraped_at', '').endswith('2569'):
+            item['scraped_at'] = "05/03/2026"
             
         # 2. ซ่อมแซมลิงก์สรรพากรที่ขาด /TPW/
         if item.get('agency') == "กรมสรรพากร" and "interapp4.rd.go.th/upload/" in item.get('url', ''):
