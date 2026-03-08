@@ -57,9 +57,27 @@ class PEAScraper(BaseScraper):
                 })
         return results
 
+    def fetch_with_curl(self, url):
+        import subprocess
+        try:
+            cmd = [
+                'curl', '-s', '-L',
+                '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+                '-H', 'Accept-Language: th,en-US;q=0.9,en;q=0.8',
+                url
+            ]
+            result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8')
+            if result.returncode == 0:
+                return result.stdout
+            return None
+        except Exception as e:
+            print(f"Curl failed: {e}")
+            return None
+
     def scrape(self, max_pages=1):
         print(f"Scraping {self.name}...")
-        html = self.fetch(self.search_url)
+        html = self.fetch_with_curl(self.search_url)
         if not html:
             return []
         return self.parse(html)
