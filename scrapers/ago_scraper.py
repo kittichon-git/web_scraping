@@ -13,18 +13,24 @@ class AGOScraper(BaseScraper):
     def parse(self, html):
         soup = BeautifulSoup(html, 'html.parser')
         
-        # Find the table that contains "วันที่ลงประกาศ" and "หัวข้อ"
-        # The data is managed by Kadence Blocks and DataTables, but content is in HTML
-        table = None
-        all_tables = soup.find_all('table')
-        for t in all_tables:
-            # Check headers or identifying text
-            text_content = t.text
-            if "วันที่ลงประกาศ" in text_content and "หัวข้อ" in text_content:
-                # Target the tab "ประกาศขายพัสดุชำรุดเสื่อมสภาพ"
-                # We can check the previous heading or just ensure "สำนักงานอัยการ" is in the rows
-                table = t
-                break
+        # We need the table under the "ประกาศขายพัสดุชำรุดเสื่อมสภาพ" heading
+        # Find the h6 that contains "ประกาศขายพัสดุ"
+        target_section = None
+        for h6 in soup.find_all('h6'):
+            if "ประกาศขายพัสดุ" in h6.text:
+                # Found the right heading - the table is nearby
+                # Walk up to the tab container, then find the table in it
+                container = h6.find_parent('div')
+                while container:
+                    table = container.find('table')
+                    if table and "วันที่ลงประกาศ" in table.text:
+                        target_section = table
+                        break
+                    container = container.find_parent('div')
+                if target_section:
+                    break
+        
+        table = target_section
         
         if not table:
             return []
