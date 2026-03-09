@@ -254,6 +254,8 @@ def generate_report(new_items, history):
                         <option value="กรมศุลกากร">กรมศุลกากร</option>
                         <option value="องค์การอุตสาหกรรมป่าไม้ (ออป.)">องค์การอุตสาหกรรมป่าไม้ (ออป.)</option>
                         <option value="กรมสรรพากร">กรมสรรพากร</option>
+                        <option value="ไปรษณีย์ไทย">บริษัท ไปรษณีย์ไทย จำกัด</option>
+                        <option value="สำนักงานอัยการสูงสุด">สำนักงานอัยการสูงสุด</option>
                     </select>
                 </div>
             </div>
