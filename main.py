@@ -10,6 +10,7 @@ from scrapers.customs_scraper import CustomsScraper
 from scrapers.fio_scraper import FIOScraper
 from scrapers.revenue_scraper import RevenueScraper
 from scrapers.thailandpost_scraper import ThailandPostScraper
+from scrapers.ago_scraper import AGOScraper
 
 # --- Settings ---
 DATA_DIR = 'data'
@@ -464,7 +465,8 @@ def main():
         CustomsScraper(),
         FIOScraper(),
         RevenueScraper(),
-        ThailandPostScraper()
+        ThailandPostScraper(),
+        AGOScraper()
     ]
     
     all_results = []
