@@ -494,9 +494,23 @@ def main():
     history = unique_history
     history_urls = seen_urls # ใช้ชุด URL ที่อัปเดตแล้ว
 
+    retention_days = 60
     new_items = []
     for item in all_results:
         if item['url'] not in history_urls:
+            # เพิ่มการตรวจสอบความเก่า: ถ้าข่าวเก่าเกินกว่าเกณฑ์ประวัติ (60 วัน) ไม่ต้องถือว่าเป็นข่าวใหม่
+            # เพื่อป้องกันการวนลูปแจ้งเตือนซ้ำสำหรับข่าวเก่าที่ถูกลบออกจากประวัติไปแล้ว
+            sort_date_str = item.get('sort_date')
+            if sort_date_str:
+                try:
+                    item_date = datetime.strptime(sort_date_str, '%Y-%m-%d')
+                    delta = th_now - item_date
+                    if delta.days > retention_days:
+                        # ข้ามรายการนี้ไปเลย ไม่ต้องแจ้งเตือน และไม่ต้องเก็บลงประวัติ (เพราะจะถูกลบอยู่ดี)
+                        continue
+                except:
+                    pass
+
             # เพิ่มฟิลด์ระบุวันที่พบข่าว (คือวันที่เราทำการ Scraping จริงๆ)
             item['scraped_at'] = now_date_str
             new_items.append(item)
