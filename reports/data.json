@@ -1,5 +1,196 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "สำนักงาน ปปส.ภาค 6 ขายทอดตลาดทรัพย์สินคดียาเสพติด ครั้งที่ 2/2569 นัดที่ 1 ในวันพุธที่ 18 มีนาคม 2569",
+      "date": "18 มีนาคม 2569",
+      "sort_date": "2026-03-18",
+      "url": "https://www.oncb.go.th/auction/2396",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "สำนักงาน ปปส.ภาค 6 ขายทอดตลาดทรัพย์สินคดียาเสพติด ครั้งที่ 3/2569 นัดที่ 1 ในวันศุกร์ที่ 13 มีนาคม 2569",
+      "date": "13 มีนาคม 2569",
+      "sort_date": "2026-03-13",
+      "url": "https://www.oncb.go.th/auction/2395",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กค 0724.03/1911",
+      "title": "ประกาศกรมสรรพากร เรื่อง ขายทอดตลาดบ้านพักสรรพากรอำเภอสำนักงาสรรพากรพื้นที่สาขาพนมทวน รั้วและห้องเก็บของ พร้อมรื้อถอน จำนวน 1 หลัง ประกาศวันที่ 6 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/403e9abd-d003-4be9-90e3-f253f6730e54/Announce_Kanchanaburi+Area+Revenue+Office_1911_06032569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-403e9abd-d003-4be9-90e3-f253f6730e54-pPgHZkz",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.0732/ศป.ผอ. 254",
+      "title": "ประกาศ โรงพยาบาลศิริราช ปิยมหาราชการุณย์ เรื่อง ขายทอดตลาดพัสดุชำรุดเสื่อมสภาพ และหมดความจำเป็นในการใช้งาน จำนวน 828 รายการ ประกาศวันที่ 6 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/5893f90c-eda1-46c9-99f8-a70362659735/Announce_Faculty+of+Medicine+%28Siriraj+Piyamaharajkarun+Hospital%29_254_06032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-5893f90c-eda1-46c9-99f8-a70362659735-pPgIqFv",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นฐ 51021/697",
+      "title": "ประกาศองค์การบริหารส่วนจังหวัดนครปฐม เรื่อง ขายทอดตลาดรถยนต์ ที่ชำรุด เสื่อมสภาพ ขององค์การบริหารส่วนจังหวัดนครปฐม ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cd308b43-a2c5-4548-8eb3-35547914829a/Announce_Nakhonpathom+Provincial+Administrative+Organization_697_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cd308b43-a2c5-4548-8eb3-35547914829a-pPgHA.2",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นฐ 51021/705",
+      "title": "ประกาศองค์การบริหารส่วนจังหวัดนครปฐม เรื่อง ขายทอดตลาดพัสดุที่ชำรุด เสื่อมสภาพ ขององค์การบริหารส่วนจังหวัดนครปฐม ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/c86ccfa7-b4aa-4e1a-b791-0a4e01545a6c/Announce_Nakhonpathom+Provincial+Administrative+Organization_705_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-c86ccfa7-b4aa-4e1a-b791-0a4e01545a6c-pPgHhXR",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "สำนักงานป้องกันและปราบปรามยาเสพติด ภาค 2 มีความประสงค์จะขายทอดตลาดทรัพย์สินที่ไม่เหมาะสมจะเก็บรักษาไว้ ประเภทยานพาหนะ เครื่องใช้ไฟฟ้า เครื่องมือสื่อสาร และอื่นๆ จำนวน 70 รายการ",
+      "date": "9 มี.ค. 2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.oncb.go.th/auction/2394",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "ศูนย์เทคโนโลยีสารสนเทศ",
+      "title": "ขายทอดตลาด จำนวน 173 รายการ",
+      "date": "09/03/2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.doh.go.th/project_detail/detail/410553",
+      "source": "Department of Highways",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ตง 53102/ว 235",
+      "title": "ประกาศเทศบาลตำบลลำภูรา เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นต้องใช้ในหน่วยงานของรัฐ ประกาศวันที่ 6 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/dbf1f570-b269-493f-be0a-bda2c07b357a/Announce_Municipality+of+Lampura_c235_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-dbf1f570-b269-493f-be0a-bda2c07b357a-pPhK6DC",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กห 0448/495",
+      "title": "ประกาศ กองทัพบก โดย กรมการสัตว์ทหารบก เรื่อง การขายทอดตลาดโคเนื้อ (ปลด) จำนวน 41 ตัว ประกาศวันที่ 5 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b/Announce_Department+of+Animal+Army_495_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b-pPhJN5d",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ คค 06027/372",
+      "title": "ประกาศกรมทางหลวง เรื่อง ขายทอดตลาดพัสดุชำรุด จำนวน 28 รายการ ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/9c22d8bc-4ae9-4668-9281-04fa527eeaff/Announce_Kwang+Highway+in+Tak+2+%28Maesot%29_372_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-9c22d8bc-4ae9-4668-9281-04fa527eeaff-pPhKw8g",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "แขวงทางหลวงพังงา",
+      "title": "ประกาศขายทอดตลาดรถวิทยุตรวจการณ์ หมายเลข 7110 จำนวน 1 คัน (ครั้งที่ 2)",
+      "date": "09/03/2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.doh.go.th/project_detail/detail/410652",
+      "source": "Department of Highways",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34629ปณท จห.(ข) 04/2569",
+      "title": "เรื่อง ขายทอดตลาดพัสดุชำรุด จำนวน 813 หน่วย",
+      "date": "09 มี.ค. 2569",
+      "sort_date": "2026-03-09",
+      "url": "https://file.thailandpost.com/upload/content/.()04-2569 .  813_69ae754602493.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34618ปข.8",
+      "title": "เรื่อง ประกาศขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ (เครื่องนำจ่ายแบบพกพาฯ จำนวน 49 เครื่อง) ของไปรษณีย์จังหวัดกระบี่",
+      "date": "05 มี.ค. 2569",
+      "sort_date": "2026-03-05",
+      "url": "https://file.thailandpost.com/upload/content/._69aa38e23dc29.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34615ปข.8",
+      "title": "เรื่อง ประกาศขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ (เครื่องนำจ่ายแบบพกพาฯ จำนวน 38 เครื่อง) ของที่ทำการไปรษณีย์ราไวย์",
+      "date": "05 มี.ค. 2569",
+      "sort_date": "2026-03-05",
+      "url": "https://file.thailandpost.com/upload/content/._69a94ca6c8be8.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34625ปณท ปน.2 (ทพ.2)/0091",
+      "title": "เรื่อง การขายทอดตลาดพัสดุที่หมดความจำเป็นใช้งาน ประเภทรถยนต์ ยี่ห้อ TOYOTA รุ่น FORTUNER ครั้งที่ 5",
+      "date": "05 มี.ค. 2569",
+      "sort_date": "2026-03-05",
+      "url": "https://file.thailandpost.com/upload/content/MX-M464N_20260309_075227_69ae1c008b1cc.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34619ปณท ปน.2 (ทพ.1)/0081",
+      "title": "เรื่อง การขายทอดตลาด อาคารพาณิชย์/ตึกแถว พร้อมที่ดิน (ครั้งที่ 6)",
+      "date": "04 มี.ค. 2569",
+      "sort_date": "2026-03-04",
+      "url": "https://file.thailandpost.com/upload/content/MX-M464N_20260306_093313_69aa3fccc7dfd.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34617ปณท ปน.2 (ทพ.2)/0079",
+      "title": "เรื่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นใช้งาน (ครั้งที่ 4)",
+      "date": "04 มี.ค. 2569",
+      "sort_date": "2026-03-04",
+      "url": "https://file.thailandpost.com/upload/content/MX-M464N_20260306_092252_69aa3d0ed397f.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34605ปณท ปน.4(ทพ.2)/352",
+      "title": "เรื่อง ประกาศขายทอดตลาดพัสดุชำรุด เสื่อมสภาพฯ (รถยนต์ไปรษณีย์ จำนวน 1 รายการ) ของที่ทำการไปรษณีย์อ่อนนุช",
+      "date": "20 ก.พ. 2569",
+      "sort_date": "2026-02-20",
+      "url": "https://file.thailandpost.com/upload/content/_69a7d1c87c5e3.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "09/03/2026"
+    },
     {
       "agency": "สำนักงาน ป.ป.ส.",
       "unit": "ปปส.",
@@ -8,7 +199,7 @@
       "sort_date": "2026-01-06",
       "url": "https://www.oncb.go.th/auction/2363",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
@@ -18,7 +209,7 @@
       "sort_date": "2026-01-06",
       "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmO0Azx4rQVWewEb3Q@M2y0LJybrSDWewEb3Q@Mmy0BTxkrQVWewEb3Q",
       "source": "Forest Industry Organization (ออป.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -28,7 +219,7 @@
       "sort_date": "2026-01-01",
       "url": "https://www.oncb.go.th/auction/2364",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -38,7 +229,7 @@
       "sort_date": "2025-12-29",
       "url": "https://www.oncb.go.th/auction/2357",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
@@ -48,7 +239,7 @@
       "sort_date": "2025-12-29",
       "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@Mmy0ZJx4rQVWewEb3Q@M2y0LJybrSDWewEb3Q@MmE0ZzxkrQVWewEb3Q",
       "source": "Forest Industry Organization (ออป.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
@@ -58,7 +249,7 @@
       "sort_date": "2025-12-29",
       "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@Mmu0ZJx4rQVWewEb3Q@M2y0LJybrSDWewEb3Q@MmA0ZzxkrQVWewEb3Q",
       "source": "Forest Industry Organization (ออป.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -68,7 +259,7 @@
       "sort_date": "2025-12-25",
       "url": "https://www.oncb.go.th/auction/2362",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -78,7 +269,7 @@
       "sort_date": "2025-12-25",
       "url": "https://www.oncb.go.th/auction/2361",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -88,7 +279,7 @@
       "sort_date": "2025-12-23",
       "url": "https://www.oncb.go.th/auction/2360",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -98,7 +289,7 @@
       "sort_date": "2025-12-23",
       "url": "https://www.oncb.go.th/auction/2351",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -108,7 +299,7 @@
       "sort_date": "2025-12-22",
       "url": "https://www.oncb.go.th/auction/2356",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -118,7 +309,7 @@
       "sort_date": "2025-12-21",
       "url": "https://www.oncb.go.th/auction/2342",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -128,7 +319,7 @@
       "sort_date": "2025-12-20",
       "url": "https://www.oncb.go.th/auction/2343",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -138,7 +329,7 @@
       "sort_date": "2025-12-19",
       "url": "https://www.oncb.go.th/auction/2354",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -148,7 +339,7 @@
       "sort_date": "2025-12-17",
       "url": "https://www.oncb.go.th/auction/2358",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -158,7 +349,7 @@
       "sort_date": "2025-12-16",
       "url": "https://www.oncb.go.th/auction/2352",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -168,7 +359,7 @@
       "sort_date": "2025-12-15",
       "url": "https://www.oncb.go.th/auction/2353",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
@@ -178,7 +369,7 @@
       "sort_date": "2025-12-15",
       "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@Mmu0Azx2rQVWewEb3Q@M2y0LJybrSDWewEb3Q@MmM0BTx5rQRWewEb3Q",
       "source": "Forest Industry Organization (ออป.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -188,7 +379,7 @@
       "sort_date": "2025-12-12",
       "url": "https://www.oncb.go.th/auction/2338",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -198,7 +389,7 @@
       "sort_date": "2025-12-11",
       "url": "https://www.oncb.go.th/auction/2350",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -208,7 +399,7 @@
       "sort_date": "2025-12-09",
       "url": "https://www.oncb.go.th/auction/2349",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -218,7 +409,7 @@
       "sort_date": "2025-12-08",
       "url": "https://www.oncb.go.th/auction/2348",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -228,7 +419,7 @@
       "sort_date": "2025-12-04",
       "url": "https://www.oncb.go.th/auction/2347",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -238,7 +429,7 @@
       "sort_date": "2025-12-04",
       "url": "https://www.oncb.go.th/auction/2345",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -248,7 +439,7 @@
       "sort_date": "2025-12-03",
       "url": "https://www.oncb.go.th/auction/2344",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -258,7 +449,7 @@
       "sort_date": "2025-12-01",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505f48464b4c464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -268,7 +459,7 @@
       "sort_date": "2025-11-28",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505f48464b4a464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -278,7 +469,7 @@
       "sort_date": "2025-11-28",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505f48464b4b464a4f",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -288,7 +479,7 @@
       "sort_date": "2025-11-27",
       "url": "https://www.oncb.go.th/auction/2341",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -298,7 +489,7 @@
       "sort_date": "2025-11-26",
       "url": "https://www.oncb.go.th/auction/2340",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -308,7 +499,7 @@
       "sort_date": "2025-11-25",
       "url": "https://www.oncb.go.th/auction/2339",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -318,7 +509,7 @@
       "sort_date": "2025-11-18",
       "url": "https://www.oncb.go.th/auction/2337",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -328,7 +519,7 @@
       "sort_date": "2025-11-18",
       "url": "https://www.oncb.go.th/auction/2336",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -338,7 +529,7 @@
       "sort_date": "2025-11-14",
       "url": "https://www.oncb.go.th/auction/2335",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -348,7 +539,7 @@
       "sort_date": "2025-11-14",
       "url": "https://www.oncb.go.th/auction/2334",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -358,7 +549,7 @@
       "sort_date": "2025-11-11",
       "url": "https://www.oncb.go.th/auction/2333",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -368,7 +559,7 @@
       "sort_date": "2025-11-10",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505f46464b4b464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -378,7 +569,7 @@
       "sort_date": "2025-11-07",
       "url": "https://www.oncb.go.th/auction/2328",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -388,7 +579,7 @@
       "sort_date": "2025-11-07",
       "url": "https://www.oncb.go.th/auction/2327",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -398,7 +589,7 @@
       "sort_date": "2025-11-06",
       "url": "https://www.oncb.go.th/auction/2332",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -408,7 +599,7 @@
       "sort_date": "2025-11-06",
       "url": "https://www.oncb.go.th/auction/2331",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -418,7 +609,7 @@
       "sort_date": "2025-11-06",
       "url": "https://www.oncb.go.th/auction/2330",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -428,7 +619,7 @@
       "sort_date": "2025-11-06",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505f46464a4e464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -438,7 +629,7 @@
       "sort_date": "2025-11-05",
       "url": "https://www.oncb.go.th/auction/2329",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -448,7 +639,7 @@
       "sort_date": "2025-11-04",
       "url": "https://www.oncb.go.th/auction/2326",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -458,7 +649,7 @@
       "sort_date": "2025-11-04",
       "url": "https://www.oncb.go.th/auction/2325",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -468,7 +659,7 @@
       "sort_date": "2025-10-28",
       "url": "https://www.oncb.go.th/auction/2324",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -478,7 +669,7 @@
       "sort_date": "2025-10-28",
       "url": "https://www.oncb.go.th/auction/2321",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -488,7 +679,7 @@
       "sort_date": "2025-10-22",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505e4e464b48464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -498,7 +689,7 @@
       "sort_date": "2025-10-21",
       "url": "https://www.oncb.go.th/auction/374",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -508,7 +699,7 @@
       "sort_date": "2025-10-21",
       "url": "https://www.oncb.go.th/auction/2322",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -518,7 +709,7 @@
       "sort_date": "2025-10-20",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414d505e4e464a4f464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -528,7 +719,7 @@
       "sort_date": "2025-10-16",
       "url": "https://www.oncb.go.th/auction/2323",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -538,7 +729,7 @@
       "sort_date": "2025-10-01",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f4b464b4c464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -548,7 +739,7 @@
       "sort_date": "2025-09-26",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f4b464a4e464a4f",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -558,7 +749,7 @@
       "sort_date": "2025-09-22",
       "url": "https://www.oncb.go.th/auction/2319",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -568,7 +759,7 @@
       "sort_date": "2025-09-19",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f4a464b48464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -578,7 +769,7 @@
       "sort_date": "2025-09-19",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f4a464b47464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -588,7 +779,7 @@
       "sort_date": "2025-09-18",
       "url": "https://www.oncb.go.th/auction/2320",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -598,7 +789,7 @@
       "sort_date": "2025-09-17",
       "url": "https://www.oncb.go.th/auction/2318",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -608,7 +799,7 @@
       "sort_date": "2025-09-16",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f49464b4c464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -618,7 +809,7 @@
       "sort_date": "2025-09-12",
       "url": "https://www.oncb.go.th/auction/2312",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -628,7 +819,7 @@
       "sort_date": "2025-09-11",
       "url": "https://www.oncb.go.th/auction/2317",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -638,7 +829,7 @@
       "sort_date": "2025-09-11",
       "url": "https://www.oncb.go.th/auction/2310",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -648,7 +839,7 @@
       "sort_date": "2025-09-10",
       "url": "https://www.oncb.go.th/auction/2316",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -658,7 +849,7 @@
       "sort_date": "2025-09-09",
       "url": "https://www.oncb.go.th/auction/2315",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -668,7 +859,7 @@
       "sort_date": "2025-09-09",
       "url": "https://www.oncb.go.th/auction/2314",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -678,7 +869,7 @@
       "sort_date": "2025-09-09",
       "url": "https://www.oncb.go.th/auction/2301",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -688,7 +879,7 @@
       "sort_date": "2025-09-08",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f49464a4e464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -698,7 +889,7 @@
       "sort_date": "2025-09-05",
       "url": "https://www.oncb.go.th/auction/2313",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -708,7 +899,7 @@
       "sort_date": "2025-09-05",
       "url": "https://www.oncb.go.th/auction/2304",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -718,7 +909,7 @@
       "sort_date": "2025-09-04",
       "url": "https://www.oncb.go.th/auction/2303",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -728,7 +919,7 @@
       "sort_date": "2025-09-03",
       "url": "https://www.oncb.go.th/auction/2309",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -738,7 +929,7 @@
       "sort_date": "2025-09-03",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f48464b48464a4f",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -748,7 +939,7 @@
       "sort_date": "2025-09-02",
       "url": "https://www.oncb.go.th/auction/2308",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -758,7 +949,7 @@
       "sort_date": "2025-09-02",
       "url": "https://www.oncb.go.th/auction/2307",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -768,7 +959,7 @@
       "sort_date": "2025-09-01",
       "url": "https://www.oncb.go.th/auction/2305",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -778,7 +969,7 @@
       "sort_date": "2025-08-28",
       "url": "https://www.oncb.go.th/auction/2302",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -788,7 +979,7 @@
       "sort_date": "2025-08-28",
       "url": "https://www.oncb.go.th/auction/2299",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -798,7 +989,7 @@
       "sort_date": "2025-08-26",
       "url": "https://www.oncb.go.th/auction/2298",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -808,7 +999,7 @@
       "sort_date": "2025-08-22",
       "url": "https://www.oncb.go.th/auction/2300",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -818,7 +1009,7 @@
       "sort_date": "2025-08-22",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f46464b49464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -828,7 +1019,7 @@
       "sort_date": "2025-08-21",
       "url": "https://www.oncb.go.th/auction/2297",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -838,7 +1029,7 @@
       "sort_date": "2025-08-21",
       "url": "https://www.oncb.go.th/auction/2296",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -848,7 +1039,7 @@
       "sort_date": "2025-08-20",
       "url": "https://www.oncb.go.th/auction/2295",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -858,7 +1049,7 @@
       "sort_date": "2025-08-20",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f46464b47464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -868,7 +1059,7 @@
       "sort_date": "2025-08-19",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f46464a4f464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -878,7 +1069,7 @@
       "sort_date": "2025-08-18",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f46464a4f464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -888,7 +1079,7 @@
       "sort_date": "2025-08-18",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f46464a4f464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -898,17 +1089,7 @@
       "sort_date": "2025-08-15",
       "url": "https://www.oncb.go.th/auction/1902",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
-    },
-    {
-      "agency": "สำนักงาน ป.ป.ส.",
-      "unit": "ปปส.",
-      "title": "ปปส.กทม. ขายทอดตลาดทรัพย์สินที่ไม่เหมาะสมจะก็บรักษาไว้ ครั้งที่ 5/2568 (นัดที่ 2) ประเภทรถยนต์ และยานพาหนะ",
-      "date": "15 ส.ค. 2568",
-      "sort_date": "2025-08-15",
-      "url": "https://www.oncb.go.th/auction/1882",
-      "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -918,27 +1099,7 @@
       "sort_date": "2025-08-15",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414c505f46464a4e464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
-    },
-    {
-      "agency": "สำนักงาน ป.ป.ส.",
-      "unit": "ปปส.",
-      "title": "ปปส.ภาค 3 มีความประสงค์จะขายทอดตลาดทรัพย์สินประเภททองรูปพรรณ เครื่องประดับ วัตถุมงคล ยานพาหนะ ที่ดินและสิ่งปลูกสร้าง จำนวน 100 รายการ",
-      "date": "14 ส.ค. 2568",
-      "sort_date": "2025-08-14",
-      "url": "https://www.oncb.go.th/auction/1768",
-      "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
-    },
-    {
-      "agency": "สำนักงาน ป.ป.ส.",
-      "unit": "ปปส.",
-      "title": "สำนักงาน ป.ป.ส. จะดำเนินการจำหน่ายพัสดุชำรุด เสื่อมสภาพ และมีอายุการใช้งานครบตามเกณฑ์ขั้นต่ำ โดยวิธีการขายทอดตลาดด้วยวิธีประมูลด้วยวาจา จำนวน 1,010 รายการ",
-      "date": "14 ส.ค. 2568",
-      "sort_date": "2025-08-14",
-      "url": "https://www.oncb.go.th/auction/1769",
-      "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -948,7 +1109,7 @@
       "sort_date": "2025-08-01",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505f4d464b48464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -958,7 +1119,7 @@
       "sort_date": "2025-07-21",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505f4c464a4f464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -968,7 +1129,7 @@
       "sort_date": "2025-07-14",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505f4b464b46464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -978,7 +1139,7 @@
       "sort_date": "2025-07-02",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505f49464b4a464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -988,7 +1149,7 @@
       "sort_date": "2025-07-02",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505f49464b4a464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -998,7 +1159,7 @@
       "sort_date": "2025-06-20",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505f48464b49464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1008,7 +1169,7 @@
       "sort_date": "2025-06-10",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414b505e4f464b4c464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1018,7 +1179,7 @@
       "sort_date": "2025-05-28",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f4d464b49464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1028,7 +1189,7 @@
       "sort_date": "2025-05-16",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f4c464b4b464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1038,7 +1199,7 @@
       "sort_date": "2025-05-14",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f4c464b49464b49",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1048,7 +1209,7 @@
       "sort_date": "2025-05-13",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f4c464b47464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1058,7 +1219,7 @@
       "sort_date": "2025-05-08",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f4c464a4f464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1068,7 +1229,7 @@
       "sort_date": "2025-04-03",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f48464a4f464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1078,7 +1239,7 @@
       "sort_date": "2025-03-27",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f46464b4c464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1088,7 +1249,7 @@
       "sort_date": "2025-03-21",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f46464b46464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1098,7 +1259,7 @@
       "sort_date": "2025-03-21",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505f46464b46464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1108,7 +1269,7 @@
       "sort_date": "2025-03-13",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505e4f464b48464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1118,7 +1279,7 @@
       "sort_date": "2025-03-11",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505e4f464a4f464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1128,7 +1289,7 @@
       "sort_date": "2025-03-07",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a32414a505e4e464b4c464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1138,7 +1299,7 @@
       "sort_date": "2025-03-04",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4d464b4d464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1148,7 +1309,7 @@
       "sort_date": "2025-02-27",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4d464a4f464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1158,7 +1319,7 @@
       "sort_date": "2025-02-25",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4c464b4c464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1168,7 +1329,7 @@
       "sort_date": "2025-02-24",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4c464b49464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1178,7 +1339,7 @@
       "sort_date": "2025-02-17",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4c464a4f464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1188,7 +1349,7 @@
       "sort_date": "2025-02-17",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4c464a4f464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1198,7 +1359,7 @@
       "sort_date": "2025-02-11",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4b464b4c464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1208,7 +1369,7 @@
       "sort_date": "2025-02-10",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f4a464b4b464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1218,7 +1379,7 @@
       "sort_date": "2025-02-04",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f49464b49464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1228,7 +1389,7 @@
       "sort_date": "2025-02-04",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f49464b49464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1238,7 +1399,7 @@
       "sort_date": "2025-01-30",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f49464a4e464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1248,7 +1409,7 @@
       "sort_date": "2025-01-28",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f48464b4b464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1258,7 +1419,7 @@
       "sort_date": "2025-01-24",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f48464b48464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1268,7 +1429,7 @@
       "sort_date": "2025-01-16",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f47464b4c464a4f",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1278,7 +1439,7 @@
       "sort_date": "2025-01-08",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f46464b4d464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1288,7 +1449,7 @@
       "sort_date": "2025-01-08",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505f46464b4d464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1298,7 +1459,7 @@
       "sort_date": "2024-12-25",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505e4f464b47464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1308,7 +1469,7 @@
       "sort_date": "2024-12-24",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505e4f464a4f464b49",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1318,7 +1479,7 @@
       "sort_date": "2024-12-13",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324149505e4e464a4e464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1328,7 +1489,7 @@
       "sort_date": "2024-12-06",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4d464b47464b49",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1338,7 +1499,7 @@
       "sort_date": "2024-12-03",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4c464b48464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1348,7 +1509,7 @@
       "sort_date": "2024-12-03",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4c464b48464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1358,7 +1519,7 @@
       "sort_date": "2024-11-28",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4c464a4e464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1368,7 +1529,7 @@
       "sort_date": "2024-11-27",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4c464a4e464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1378,7 +1539,7 @@
       "sort_date": "2024-11-21",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4b464b48464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1388,7 +1549,7 @@
       "sort_date": "2024-11-20",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4b464b47464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1398,7 +1559,7 @@
       "sort_date": "2024-11-12",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4a464b4a464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1408,7 +1569,7 @@
       "sort_date": "2024-11-08",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4a464a4e464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1418,7 +1579,7 @@
       "sort_date": "2024-11-08",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f4a464b46464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1428,7 +1589,7 @@
       "sort_date": "2024-11-06",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f49464b4a464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1438,7 +1599,7 @@
       "sort_date": "2024-11-05",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f49464a4e464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1448,7 +1609,7 @@
       "sort_date": "2024-10-31",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f48464b48464b47",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1458,7 +1619,7 @@
       "sort_date": "2024-10-24",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f47464b49464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1468,7 +1629,7 @@
       "sort_date": "2024-10-24",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f47464b49464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1478,7 +1639,7 @@
       "sort_date": "2024-10-21",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505f46464b4d464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1488,7 +1649,7 @@
       "sort_date": "2024-10-15",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505e4f464b4d464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1498,7 +1659,7 @@
       "sort_date": "2024-10-09",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324148505e4f464b48464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1508,7 +1669,7 @@
       "sort_date": "2024-10-03",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4d464b4d464a4e",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1518,7 +1679,7 @@
       "sort_date": "2024-10-01",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4d464b48464b4b",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1528,7 +1689,7 @@
       "sort_date": "2024-09-18",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4b464b4c464b4a",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1538,7 +1699,7 @@
       "sort_date": "2024-09-18",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4b464b4a464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1548,7 +1709,7 @@
       "sort_date": "2024-09-13",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4b464b47464a4f",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1558,7 +1719,7 @@
       "sort_date": "2024-09-13",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4b464b48464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1568,7 +1729,7 @@
       "sort_date": "2024-09-12",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4b464a4f464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1578,7 +1739,7 @@
       "sort_date": "2024-09-06",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4a464b4b464b48",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1588,7 +1749,7 @@
       "sort_date": "2024-09-06",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f4a464b4c464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1598,7 +1759,7 @@
       "sort_date": "2024-08-30",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f49464b4a464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1608,7 +1769,7 @@
       "sort_date": "2024-08-30",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f49464b4b464b46",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1618,7 +1779,7 @@
       "sort_date": "2024-08-29",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f49464b48464b4d",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1628,7 +1789,7 @@
       "sort_date": "2024-08-28",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f49464b48464b49",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "กรมศุลกากร",
@@ -1638,7 +1799,7 @@
       "sort_date": "2024-08-21",
       "url": "https://www.customs.go.th/cont_strc_download_date.php?lang=th&top_menu=menu_homepage&current_id=14232a324147505f48464b4c464b4c",
       "source": "Customs Department (กรมศุลกากร)",
-      "scraped_at": "08/03/2026"
+      "scraped_at": "09/03/2026"
     },
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -1648,10 +1809,8 @@
       "sort_date": "2015-11-10",
       "url": "https://www.oncb.go.th/auction/2165",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "08/03/2026"
-    }
-  ],
-  "historical": [
+      "scraped_at": "09/03/2026"
+    },
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "มท.5310.18/18097/กฟจ.ฉช.",
@@ -1850,6 +2009,196 @@
       "sort_date": "2026-03-06",
       "url": "https://bidding.pea.co.th/procurement/c6713a9c-5d17-4231-9b0a-ead17ada9a91/auction",
       "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ปท 52402/ว.891",
+      "title": "ประกาศเทศบาลตำบลบางเตย เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ ที่ชำรุด เสื่อมสภาพ ไม่จำเป็นต้องใช้ในราชการต่อไป ประจำปีงบประมาณ 2568 ประกาศวันที่ 2 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/279d6ee7-d6a4-4def-8e6d-0e648fa0be4b/Announce_Municipality+of+Bangtoey_c891_02032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-279d6ee7-d6a4-4def-8e6d-0e648fa0be4b-pOUoVuU",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ภก 52902/0768",
+      "title": "ประกาศเทศบาลตำบลฉลอง เรื่อง ขายทอดตลาดครุภัณฑ์ชำรุด ประกาศวันที่ 2 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/d83b29ce-a8a8-4b96-be1b-8bad520f8811/Announce_Municipality+of+Chalong_0768_02032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-d83b29ce-a8a8-4b96-be1b-8bad520f8811-pOUo1Bw",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ รบ 51004/1214",
+      "title": "ประกาศองค์การบริหารส่วนจังหวัดราชบุรี เรื่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ ประจำปีงบประมาณ พ.ศ. 2568 จำนวน 176 รายการ ประกาศวันที่ 2 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/42a8e6f3-d595-4317-afd6-dcb31a05dc9d/Announce_Ratchaburi+Provincial+Administrative+Organization_1214_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-42a8e6f3-d595-4317-afd6-dcb31a05dc9d-pOTLHnz",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นฐ 51006.012/056",
+      "title": "ประกาศโรงพยาบาลส่งเสริมสุขภาพตำบลทุ่งขวาง เรื่อง ขายทอดตลาดพัสดุที่ชำรุด เสื่อมสภาพ ของโรงพยาบาลส่งเสริมสุขภาพตำบลทุ่งขวาง ประกาศวันที่ 27 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/4ca42ca2-11a1-445a-8f18-9159e5a6180b/Announce_Thungkwang+Tambon+Health+Promoting+Hospital_056_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-4ca42ca2-11a1-445a-8f18-9159e5a6180b-pOTHDvt",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อย 71202/ว 372",
+      "title": "ประกาศเทศบาลตำบลเชียงรากน้อย เรื่อง ขายทอดตลาดพัสดุ ประกาศวันที่ 27 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/1c41eaf1-24ec-4b23-bd35-85dd7beeaa0e/Announce_Municipality+of+Chiengraknoya_c372_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-1c41eaf1-24ec-4b23-bd35-85dd7beeaa0e-pOTGMDW",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชบ 73802/ว 0062",
+      "title": "ประกาศองค์การบริหารส่วนตำบลหนองอิรุณ เรื่อง การขายพัสดุประเภทครุภัณฑ์ที่ชำรุด และเสื่อมสภาพ โดยวิธีขายทอดตลาด (ครั้งที่ 2) ประกาศวันที่ 27 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3e7ba2ff-c693-41b5-9dbc-b067ae38752e/Announce_Nongerun+Subdistrict+Administrative+Organization_c0062_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3e7ba2ff-c693-41b5-9dbc-b067ae38752e-pOTLiPb",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อท 0033.301/ว 1809",
+      "title": "ประกาศจังหวัดอ่างทอง เรื่อง ขายทอดตลาดครุภัณฑ์ชำรุดเสื่อมสภาพไม่ใช้ในราชการ ประจำปีงบประมาณ 2568 ประกาศวันที่ 27 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/e3391ce0-7205-4451-a04e-cbdc2eed7535/Announce_Wiset+Chai+Chan+Hospital_c1809_27022569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-e3391ce0-7205-4451-a04e-cbdc2eed7535-pOTISOw",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ สท 0009.1/ว 815",
+      "title": "ประกาศจังหวัดสุโขทัย เรื่อง จำหน่ายบ้านพักข้าราชการสำนักงานเกษตรจังหวัดสุโขทัย ประกาศวันที่ 27 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8f610385-ce62-4657-8bbd-314e964cf90e/Announce_Sukhothai+Agricultural+Extension+Office_c815_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8f610385-ce62-4657-8bbd-314e964cf90e-pOUok3p",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กษ 2914.02.00.1/0108",
+      "title": "ประกาศการยางแห่งประเทศไทย เรื่อง การขายทอดตลาดรถยนต์ห้าประตู ทะเบียน ญก 3630 กทม. และรถตักล้อยาง Shantui รุ่น SL30W ประกาศวันที่ 27 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cb537c17-4458-458a-9b96-f05944d48a82/Announce_Rubber+Authority+of+Thailand_0108_02032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cb537c17-4458-458a-9b96-f05944d48a82-pOUnKRl",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ คค 06033/พ.4/446",
+      "title": "ประกาศกรมทางหลวง เรื่อง ขายทอดตลาดวัสดุกากยาง ประกาศวันที่ 26 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/4e57db28-d791-4522-94a1-01a28dc5bce7/Announce_Kwang+Highway+in+Uttaradit_446_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-4e57db28-d791-4522-94a1-01a28dc5bce7-pOTMog5",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ สค 52302/135",
+      "title": "ประกาศเทศบาลตำบลบางปลา เรื่อง การขายทอดตลาดพัสดุ - ครุภัณฑ์ ที่ชำรุด/เสื่อมสภาพจากการใช้งาน ประจำปีงบประมาณ 2568 ประกาศวันที่ 26 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/d04a34ef-af75-4849-9ae2-afedbc8a8b0b/Announce_Municipality+of+Bangpla_135_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-d04a34ef-af75-4849-9ae2-afedbc8a8b0b-pOTIr8I",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ สส 51021/465",
+      "title": "ประกาศองค์การบริหารส่วนจังหวัดสมุทรสงคราม เรื่อง การขายทอดตลาดบ้านพักข้าราชการและรั้วบ้านพักข้าราชการ ขององค์การบริหารส่วนจังหวัดสมุทรสงคราม ประกาศวันที่ 26 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/6c1c1699-2a93-4dc3-9ba5-b564a4fee73f/Announce_Samutsongkhram+Provincial+Administrative+Organization_465_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-6c1c1699-2a93-4dc3-9ba5-b564a4fee73f-pOTK62p",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อต 0011/1768",
+      "title": "ประกาศจังหวัดอุตรดิตถ์ เรื่อง การขายทอดตลาดครุภัณฑ์ชำรุดเสื่อมสภาพ จำนวน 1 รายการ ประกาศวันที่ 26 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/be12ae95-5f62-4d01-a6b4-953cc544d391/Announce_Uttaradit+Land+Reform+Office_1768_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-be12ae95-5f62-4d01-a6b4-953cc544d391-pOTKu2U",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ พณ 0303.03/910",
+      "title": "ประกาศกรมการค้าต่างประเทศ เรื่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และไม่จำเป็นต้องใช้ในกรมการค้าต่างประเทศ จำนวน 534 รายการ โดยวิธีประมูลราคาด้วยวาจา (ฉบับที่ 24) ประกาศวันที่  26 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3caf27a6-a76e-4894-b49d-9e33e97db569/Announce_+Department+of+Foreign+Trade_910_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3caf27a6-a76e-4894-b49d-9e33e97db569-pOTJmVk",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ บก 73902/21",
+      "title": "ประกาศองค์การบริหารส่วนตำบลบัวตูม เรื่อง ขายทอดตลาดทรัพย์สินขององค์การบริหารส่วนตำบลบัวตูม ตำบลบัวตูม อำเภอโซ่พิสัย จังหวัดบึงกาฬ ประกาศวันที่ 25 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8e5cb957-7a83-403b-a931-22519c275916/Announce_Buatoom+Subdistrict+Administrative+Organization_21_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8e5cb957-7a83-403b-a931-22519c275916-pOTM4DP",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ทส 1603.1/3343",
+      "title": "ประกาศกรมป่าไม้ เรื่อง การจำหน่ายพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นในการใช้งาน โดยวิธีขายทอดตลาด ประกาศวัน 25 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cf7fe087-0d61-4085-83a3-7ba80dd64b75/Announce_Department+of+Forestry_3343_25022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cf7fe087-0d61-4085-83a3-7ba80dd64b75-pOTH-B.",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.29/190",
+      "title": "ประกาศ มหาวิทยาลัยมหิดล (หอสมุดและคลังความรู้มหาวิทยาลัยมหิดล) ที่ LI 01/2569 เรื่อง ขายทอดตลาดครุภัณฑ์รายการครุภัณฑ์และวัสดุที่ชำรุดเสื่อมสภาพจากการใช้งานตามปกติ จำนวน 460 รายการ ประกาศวันที่ 25 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://drive.google.com/file/d/1DdfQQ7aJTnDH5lFOd0SG858rqE-PgRrj/view?usp=sharing",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นภ. 0033.301/158",
+      "title": "ประกาศ จังหวัดหนองบัวลำภู เรื่อง ขายทอดตลาดซากพัสดุครุภัณฑ์ชำรุด เสื่อมสภาพ ประกาศวันที่ 25 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/39378cd2-fa8a-47f0-9f96-d9f67e60ad31/Announce_Non+Sang+Hospital_158_25022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-39378cd2-fa8a-47f0-9f96-d9f67e60ad31-pOTH8hH",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
+      "scraped_at": "05/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นภ. 0033.301/119",
+      "title": "ประกาศโรงพยาบาลโนนสัง เรื่อง การขายทอดตลาดต้นไม้ในที่ราชพัสดุ (ครั้งที่ 3) ประกาศวันที่ 24 กุมภาพันธ์ 2569",
+      "date": "ไม่ระบุวันที่",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8af7cf2d-a88d-42f8-ae1e-46531d1510e3/Announce_Non+Sang+Hospital_119_24022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8af7cf2d-a88d-42f8-ae1e-46531d1510e3-pOo.pnh",
+      "source": "G-Procurement",
+      "sort_date": "2026-03-05",
       "scraped_at": "05/03/2026"
     },
     {
@@ -4271,197 +4620,7 @@
       "url": "https://pms.rid.go.th:4001/api/egp_announce/file/file_2026-01-09_fe2a0524-7d65-448d-b252-445993067adc.pdf",
       "source": "Royal Irrigation Department (RID)",
       "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ ปท 52402/ว.891",
-      "title": "ประกาศเทศบาลตำบลบางเตย เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ ที่ชำรุด เสื่อมสภาพ ไม่จำเป็นต้องใช้ในราชการต่อไป ประจำปีงบประมาณ 2568 ประกาศวันที่ 2 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/279d6ee7-d6a4-4def-8e6d-0e648fa0be4b/Announce_Municipality+of+Bangtoey_c891_02032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-279d6ee7-d6a4-4def-8e6d-0e648fa0be4b-pOUoVuU",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ ภก 52902/0768",
-      "title": "ประกาศเทศบาลตำบลฉลอง เรื่อง ขายทอดตลาดครุภัณฑ์ชำรุด ประกาศวันที่ 2 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/d83b29ce-a8a8-4b96-be1b-8bad520f8811/Announce_Municipality+of+Chalong_0768_02032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-d83b29ce-a8a8-4b96-be1b-8bad520f8811-pOUo1Bw",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ รบ 51004/1214",
-      "title": "ประกาศองค์การบริหารส่วนจังหวัดราชบุรี เรื่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ ประจำปีงบประมาณ พ.ศ. 2568 จำนวน 176 รายการ ประกาศวันที่ 2 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/42a8e6f3-d595-4317-afd6-dcb31a05dc9d/Announce_Ratchaburi+Provincial+Administrative+Organization_1214_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-42a8e6f3-d595-4317-afd6-dcb31a05dc9d-pOTLHnz",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ นฐ 51006.012/056",
-      "title": "ประกาศโรงพยาบาลส่งเสริมสุขภาพตำบลทุ่งขวาง เรื่อง ขายทอดตลาดพัสดุที่ชำรุด เสื่อมสภาพ ของโรงพยาบาลส่งเสริมสุขภาพตำบลทุ่งขวาง ประกาศวันที่ 27 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/4ca42ca2-11a1-445a-8f18-9159e5a6180b/Announce_Thungkwang+Tambon+Health+Promoting+Hospital_056_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-4ca42ca2-11a1-445a-8f18-9159e5a6180b-pOTHDvt",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ อย 71202/ว 372",
-      "title": "ประกาศเทศบาลตำบลเชียงรากน้อย เรื่อง ขายทอดตลาดพัสดุ ประกาศวันที่ 27 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/1c41eaf1-24ec-4b23-bd35-85dd7beeaa0e/Announce_Municipality+of+Chiengraknoya_c372_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-1c41eaf1-24ec-4b23-bd35-85dd7beeaa0e-pOTGMDW",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ ชบ 73802/ว 0062",
-      "title": "ประกาศองค์การบริหารส่วนตำบลหนองอิรุณ เรื่อง การขายพัสดุประเภทครุภัณฑ์ที่ชำรุด และเสื่อมสภาพ โดยวิธีขายทอดตลาด (ครั้งที่ 2) ประกาศวันที่ 27 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3e7ba2ff-c693-41b5-9dbc-b067ae38752e/Announce_Nongerun+Subdistrict+Administrative+Organization_c0062_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3e7ba2ff-c693-41b5-9dbc-b067ae38752e-pOTLiPb",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ อท 0033.301/ว 1809",
-      "title": "ประกาศจังหวัดอ่างทอง เรื่อง ขายทอดตลาดครุภัณฑ์ชำรุดเสื่อมสภาพไม่ใช้ในราชการ ประจำปีงบประมาณ 2568 ประกาศวันที่ 27 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/e3391ce0-7205-4451-a04e-cbdc2eed7535/Announce_Wiset+Chai+Chan+Hospital_c1809_27022569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-e3391ce0-7205-4451-a04e-cbdc2eed7535-pOTISOw",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ สท 0009.1/ว 815",
-      "title": "ประกาศจังหวัดสุโขทัย เรื่อง จำหน่ายบ้านพักข้าราชการสำนักงานเกษตรจังหวัดสุโขทัย ประกาศวันที่ 27 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8f610385-ce62-4657-8bbd-314e964cf90e/Announce_Sukhothai+Agricultural+Extension+Office_c815_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8f610385-ce62-4657-8bbd-314e964cf90e-pOUok3p",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ กษ 2914.02.00.1/0108",
-      "title": "ประกาศการยางแห่งประเทศไทย เรื่อง การขายทอดตลาดรถยนต์ห้าประตู ทะเบียน ญก 3630 กทม. และรถตักล้อยาง Shantui รุ่น SL30W ประกาศวันที่ 27 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cb537c17-4458-458a-9b96-f05944d48a82/Announce_Rubber+Authority+of+Thailand_0108_02032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cb537c17-4458-458a-9b96-f05944d48a82-pOUnKRl",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ คค 06033/พ.4/446",
-      "title": "ประกาศกรมทางหลวง เรื่อง ขายทอดตลาดวัสดุกากยาง ประกาศวันที่ 26 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/4e57db28-d791-4522-94a1-01a28dc5bce7/Announce_Kwang+Highway+in+Uttaradit_446_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-4e57db28-d791-4522-94a1-01a28dc5bce7-pOTMog5",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ สค 52302/135",
-      "title": "ประกาศเทศบาลตำบลบางปลา เรื่อง การขายทอดตลาดพัสดุ - ครุภัณฑ์ ที่ชำรุด/เสื่อมสภาพจากการใช้งาน ประจำปีงบประมาณ 2568 ประกาศวันที่ 26 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/d04a34ef-af75-4849-9ae2-afedbc8a8b0b/Announce_Municipality+of+Bangpla_135_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-d04a34ef-af75-4849-9ae2-afedbc8a8b0b-pOTIr8I",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ สส 51021/465",
-      "title": "ประกาศองค์การบริหารส่วนจังหวัดสมุทรสงคราม เรื่อง การขายทอดตลาดบ้านพักข้าราชการและรั้วบ้านพักข้าราชการ ขององค์การบริหารส่วนจังหวัดสมุทรสงคราม ประกาศวันที่ 26 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/6c1c1699-2a93-4dc3-9ba5-b564a4fee73f/Announce_Samutsongkhram+Provincial+Administrative+Organization_465_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-6c1c1699-2a93-4dc3-9ba5-b564a4fee73f-pOTK62p",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ อต 0011/1768",
-      "title": "ประกาศจังหวัดอุตรดิตถ์ เรื่อง การขายทอดตลาดครุภัณฑ์ชำรุดเสื่อมสภาพ จำนวน 1 รายการ ประกาศวันที่ 26 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/be12ae95-5f62-4d01-a6b4-953cc544d391/Announce_Uttaradit+Land+Reform+Office_1768_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-be12ae95-5f62-4d01-a6b4-953cc544d391-pOTKu2U",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ พณ 0303.03/910",
-      "title": "ประกาศกรมการค้าต่างประเทศ เรื่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และไม่จำเป็นต้องใช้ในกรมการค้าต่างประเทศ จำนวน 534 รายการ โดยวิธีประมูลราคาด้วยวาจา (ฉบับที่ 24) ประกาศวันที่  26 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3caf27a6-a76e-4894-b49d-9e33e97db569/Announce_+Department+of+Foreign+Trade_910_26022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3caf27a6-a76e-4894-b49d-9e33e97db569-pOTJmVk",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ บก 73902/21",
-      "title": "ประกาศองค์การบริหารส่วนตำบลบัวตูม เรื่อง ขายทอดตลาดทรัพย์สินขององค์การบริหารส่วนตำบลบัวตูม ตำบลบัวตูม อำเภอโซ่พิสัย จังหวัดบึงกาฬ ประกาศวันที่ 25 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8e5cb957-7a83-403b-a931-22519c275916/Announce_Buatoom+Subdistrict+Administrative+Organization_21_27022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8e5cb957-7a83-403b-a931-22519c275916-pOTM4DP",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ ทส 1603.1/3343",
-      "title": "ประกาศกรมป่าไม้ เรื่อง การจำหน่ายพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นในการใช้งาน โดยวิธีขายทอดตลาด ประกาศวัน 25 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cf7fe087-0d61-4085-83a3-7ba80dd64b75/Announce_Department+of+Forestry_3343_25022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cf7fe087-0d61-4085-83a3-7ba80dd64b75-pOTH-B.",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ อว 78.29/190",
-      "title": "ประกาศ มหาวิทยาลัยมหิดล (หอสมุดและคลังความรู้มหาวิทยาลัยมหิดล) ที่ LI 01/2569 เรื่อง ขายทอดตลาดครุภัณฑ์รายการครุภัณฑ์และวัสดุที่ชำรุดเสื่อมสภาพจากการใช้งานตามปกติ จำนวน 460 รายการ ประกาศวันที่ 25 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://drive.google.com/file/d/1DdfQQ7aJTnDH5lFOd0SG858rqE-PgRrj/view?usp=sharing",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ นภ. 0033.301/158",
-      "title": "ประกาศ จังหวัดหนองบัวลำภู เรื่อง ขายทอดตลาดซากพัสดุครุภัณฑ์ชำรุด เสื่อมสภาพ ประกาศวันที่ 25 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/39378cd2-fa8a-47f0-9f96-d9f67e60ad31/Announce_Non+Sang+Hospital_158_25022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-39378cd2-fa8a-47f0-9f96-d9f67e60ad31-pOTH8hH",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ นภ. 0033.301/119",
-      "title": "ประกาศโรงพยาบาลโนนสัง เรื่อง การขายทอดตลาดต้นไม้ในที่ราชพัสดุ (ครั้งที่ 3) ประกาศวันที่ 24 กุมภาพันธ์ 2569",
-      "date": "ไม่ระบุวันที่",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8af7cf2d-a88d-42f8-ae1e-46531d1510e3/Announce_Non+Sang+Hospital_119_24022569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8af7cf2d-a88d-42f8-ae1e-46531d1510e3-pOo.pnh",
-      "source": "G-Procurement",
-      "sort_date": "0000-00-00",
-      "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "08/03/2026 18:01"
+  "updated_at": "09/03/2026 18:38"
 }
