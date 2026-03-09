@@ -59,8 +59,9 @@ def purge_old_history(history, days=60):
 
 def generate_report(new_items, history):
     os.makedirs(REPORTS_DIR, exist_ok=True)
-    now = datetime.now()
-    date_str = now.strftime('%d/%m/%Y %H:%M')
+    # Calculate Thailand Time (UTC+7) for the report
+    th_time = datetime.utcnow() + timedelta(hours=7)
+    date_str = th_time.strftime('%d/%m/%Y %H:%M')
     
     # Sort items by scraped_at descending, then sort_date descending
     all_combined = new_items + history
@@ -464,8 +465,10 @@ def main():
     # 1. Filter for NEW items
     history = load_history()
     history_urls = {item['url'] for item in history if 'url' in item}
-    now_date_str = datetime.now().strftime('%d/%m/%Y') # วันที่ปัจจุบันแบบสั้น
-    now_full_str = datetime.now().strftime('%d/%m/%Y %H:%M') # วันที่และเวลาปัจจุบัน
+    # Use Thailand Time (UTC+7) manually
+    th_now = datetime.utcnow() + timedelta(hours=7)
+    now_date_str = th_now.strftime('%d/%m/%Y') # วันที่ปัจจุบันแบบสั้น
+    now_full_str = th_now.strftime('%d/%m/%Y %H:%M') # วันที่และเวลาปัจจุบัน
     
     # แก้ไขข้อมูลเก่าในประวัติ (Backfill/Correction)
     for item in history:
