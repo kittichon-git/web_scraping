@@ -2858,5 +2858,55 @@
     "url": "https://www.oncb.go.th/auction/2394",
     "source": "ONCB (ปปส.)",
     "scraped_at": "09/03/2026"
+  },
+  {
+    "agency": "กรมทางหลวง",
+    "unit": "ศูนย์เทคโนโลยีสารสนเทศ",
+    "title": "ขายทอดตลาด จำนวน 173 รายการ",
+    "date": "09/03/2569",
+    "sort_date": "2026-03-09",
+    "url": "https://www.doh.go.th/project_detail/detail/410553",
+    "source": "Department of Highways",
+    "scraped_at": "09/03/2026"
+  },
+  {
+    "agency": "กรมบัญชีกลาง (e-GP)",
+    "unit": "ที่ ตง 53102/ว 235",
+    "title": "ประกาศเทศบาลตำบลลำภูรา เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นต้องใช้ในหน่วยงานของรัฐ ประกาศวันที่ 6 มีนาคม 2569",
+    "date": "ไม่ระบุวันที่",
+    "sort_date": "0000-00-00",
+    "url": "https://www.gprocurement.go.th/wps/wcm/connect/dbf1f570-b269-493f-be0a-bda2c07b357a/Announce_Municipality+of+Lampura_c235_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-dbf1f570-b269-493f-be0a-bda2c07b357a-pPhK6DC",
+    "source": "G-Procurement",
+    "scraped_at": "09/03/2026"
+  },
+  {
+    "agency": "กรมบัญชีกลาง (e-GP)",
+    "unit": "ที่ กห 0448/495",
+    "title": "ประกาศ กองทัพบก โดย กรมการสัตว์ทหารบก เรื่อง การขายทอดตลาดโคเนื้อ (ปลด) จำนวน 41 ตัว ประกาศวันที่ 5 มีนาคม 2569",
+    "date": "ไม่ระบุวันที่",
+    "sort_date": "0000-00-00",
+    "url": "https://www.gprocurement.go.th/wps/wcm/connect/1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b/Announce_Department+of+Animal+Army_495_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b-pPhJN5d",
+    "source": "G-Procurement",
+    "scraped_at": "09/03/2026"
+  },
+  {
+    "agency": "กรมบัญชีกลาง (e-GP)",
+    "unit": "ที่ คค 06027/372",
+    "title": "ประกาศกรมทางหลวง เรื่อง ขายทอดตลาดพัสดุชำรุด จำนวน 28 รายการ ประกาศวันที่ 4 มีนาคม 2569",
+    "date": "ไม่ระบุวันที่",
+    "sort_date": "0000-00-00",
+    "url": "https://www.gprocurement.go.th/wps/wcm/connect/9c22d8bc-4ae9-4668-9281-04fa527eeaff/Announce_Kwang+Highway+in+Tak+2+%28Maesot%29_372_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-9c22d8bc-4ae9-4668-9281-04fa527eeaff-pPhKw8g",
+    "source": "G-Procurement",
+    "scraped_at": "09/03/2026"
+  },
+  {
+    "agency": "สำนักงาน ป.ป.ส.",
+    "unit": "ปปส.",
+    "title": "สำนักงาน ปปส.ภาค 6 ขายทอดตลาดทรัพย์สินคดียาเสพติด ครั้งที่ 3/2569 นัดที่ 1 ในวันศุกร์ที่ 13 มีนาคม 2569",
+    "date": "13 มีนาคม 2569",
+    "sort_date": "2026-03-13",
+    "url": "https://www.oncb.go.th/auction/2395",
+    "source": "ONCB (ปปส.)",
+    "scraped_at": "09/03/2026"
   }
 ]
