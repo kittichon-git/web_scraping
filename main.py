@@ -16,6 +16,12 @@ HISTORY_FILE = os.path.join(DATA_DIR, 'history.json')
 REPORTS_DIR = 'reports'
 DATA_JSON_FILE = os.path.join(REPORTS_DIR, 'data.json')
 
+def get_th_now():
+    """Get current time in Thailand (UTC+7)"""
+    from datetime import datetime, timedelta, timezone
+    # Fix DeprecationWarning by using timezone-aware objects
+    return datetime.now(timezone.utc) + timedelta(hours=7)
+
 def load_history():
     if os.path.exists(HISTORY_FILE):
         with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
@@ -33,13 +39,18 @@ def purge_old_history(history, days=60):
     if not history:
         return []
     
-    cutoff_date = datetime.now()
+    # ใช้เวลาประเทศไทยเป็นเกณฑ์
+    cutoff_date = get_th_now()
     unique_history = []
     removed_count = 0
     
     for item in history:
         sort_date_str = item.get('sort_date')
-        if not sort_date_str:
+        
+        # ถ้าไม่มี sort_date หรือเป็นค่าว่าง (ซึ่งไม่ควรเกิดขึ้นแล้วหลังแก้ไข main)
+        # ให้พยายามข้ามไปก่อน หรือถ้ามี scraped_at ก็อาจจะใช้แทน
+        if not sort_date_str or sort_date_str == "0000-00-00":
+            # หากยังหาค่าไม่ได้ ให้เก็บไว้ก่อน (Safe side)
             unique_history.append(item)
             continue
             
@@ -51,6 +62,7 @@ def purge_old_history(history, days=60):
             else:
                 removed_count += 1
         except:
+            # หาก Parse วันที่ไม่ได้ ให้เก็บไว้ก่อน
             unique_history.append(item)
             
     if removed_count > 0:
@@ -59,9 +71,9 @@ def purge_old_history(history, days=60):
 
 def generate_report(new_items, history):
     os.makedirs(REPORTS_DIR, exist_ok=True)
-    # Calculate Thailand Time (UTC+7) for the report
-    th_time = datetime.utcnow() + timedelta(hours=7)
-    date_str = th_time.strftime('%d/%m/%Y %H:%M')
+    # ใช้ตัวช่วยเก็ตเวลาไทย
+    th_now = get_th_now()
+    date_str = th_now.strftime('%d/%m/%Y %H:%M')
     
     # Sort items by scraped_at descending, then sort_date descending
     all_combined = new_items + history
@@ -101,8 +113,8 @@ def generate_report(new_items, history):
     data_json = json.dumps(all_data, ensure_ascii=False)
 
     # Calculate Thailand Time (UTC+7) for the report
-    th_time = datetime.utcnow() + timedelta(hours=7)
-    update_time = th_time.strftime('%d/%m/%Y %H:%M')
+    th_now = get_th_now()
+    update_time = th_now.strftime('%d/%m/%Y %H:%M')
     
     # 2. สร้างหน้า index.html (ฝังข้อมูลลงไปเลยเพื่อให้รันแบบ offline ได้)
     html_template = f"""
@@ -465,10 +477,12 @@ def main():
     # 1. Filter for NEW items
     history = load_history()
     history_urls = {item['url'] for item in history if 'url' in item}
-    # Use Thailand Time (UTC+7) manually
-    th_now = datetime.utcnow() + timedelta(hours=7)
-    now_date_str = th_now.strftime('%d/%m/%Y') # วันที่ปัจจุบันแบบสั้น
+    
+    # ใช้เวลาประเทศไทยเป็นเกณฑ์ (UTC+7) แจกแจงรูปแบบที่ต้องการใช้ในส่วนต่างๆ
+    th_now = get_th_now()
+    now_date_str = th_now.strftime('%d/%m/%Y') # วันที่ปัจจุบันแบบสั้นสำหรับ scraped_at
     now_full_str = th_now.strftime('%d/%m/%Y %H:%M') # วันที่และเวลาปัจจุบัน
+    today_sort_date = th_now.strftime('%Y-%m-%d') # รูปแบบ YYYY-MM-DD สำหรับ sort_date fallback
     
     # แก้ไขข้อมูลเก่าในประวัติ (Backfill/Correction)
     for item in history:
@@ -476,11 +490,24 @@ def main():
         if 'scraped_at' not in item or item.get('scraped_at') == item.get('date') or item.get('scraped_at', '').endswith('2569'):
             item['scraped_at'] = "05/03/2026"
             
-        # 2. ซ่อมแซมลิงก์สรรพากรที่ขาด /TPW/
+        # 2. แก้ไข sort_date ที่หายไป (Fallback to scraped_at or today)
+        if not item.get('sort_date') or item.get('sort_date') == "0000-00-00":
+            # พยายามแกะจาก scraped_at (รูปแบบ dd/mm/yyyy)
+            sc_at = item.get('scraped_at', '')
+            if sc_at and len(sc_at) == 10 and sc_at[2] == '/' and sc_at[5] == '/':
+                try:
+                    d, m, y = sc_at.split('/')
+                    item['sort_date'] = f"{y}-{m}-{d}"
+                except:
+                    item['sort_date'] = today_sort_date
+            else:
+                item['sort_date'] = today_sort_date
+
+        # 3. ซ่อมแซมลิงก์สรรพากรที่ขาด /TPW/
         if item.get('agency') == "กรมสรรพากร" and "interapp4.rd.go.th/upload/" in item.get('url', ''):
             item['url'] = item['url'].replace("interapp4.rd.go.th/upload/", "interapp4.rd.go.th/TPW/upload/")
 
-        # 3. ซ่อมแซมลิงก์กรมศุลกากรที่เพี้ยน (&current_id กลายเป็น ¤t_id)
+        # 4. ซ่อมแซมลิงก์กรมศุลกากรที่เพี้ยน (&current_id กลายเป็น ¤t_id)
         if item.get('agency') == "กรมศุลกากร" and "\u00a4t_id=" in item.get('url', ''):
             item['url'] = item['url'].replace("\u00a4t_id=", "&current_id=")
 
@@ -496,22 +523,28 @@ def main():
 
     retention_days = 60
     new_items = []
+    
     for item in all_results:
+        # 0. Fallback: ถ้าไม่พบวันประกาศ ให้ใช้วันที่พบข่าว (วันนี้) แทน เพื่อให้เรียงลำดับและล้างข้อมูลได้
+        if not item.get('sort_date') or item.get('sort_date') == "0000-00-00":
+            item['sort_date'] = today_sort_date
+            # หากชื่อวันที่ไม่มี ให้บันทึกว่าพบเมื่อไหร่ด้วย
+            if not item.get('date') or item.get('date') == "ไม่ระบุวันที่":
+                item['date'] = f"ตรวจพบเมื่อ {now_date_str}"
+
         if item['url'] not in history_urls:
             # เพิ่มการตรวจสอบความเก่า: ถ้าข่าวเก่าเกินกว่าเกณฑ์ประวัติ (60 วัน) ไม่ต้องถือว่าเป็นข่าวใหม่
-            # เพื่อป้องกันการวนลูปแจ้งเตือนซ้ำสำหรับข่าวเก่าที่ถูกลบออกจากประวัติไปแล้ว
             sort_date_str = item.get('sort_date')
             if sort_date_str:
                 try:
                     item_date = datetime.strptime(sort_date_str, '%Y-%m-%d')
                     delta = th_now - item_date
                     if delta.days > retention_days:
-                        # ข้ามรายการนี้ไปเลย ไม่ต้องแจ้งเตือน และไม่ต้องเก็บลงประวัติ (เพราะจะถูกลบอยู่ดี)
                         continue
                 except:
                     pass
 
-            # เพิ่มฟิลด์ระบุวันที่พบข่าว (คือวันที่เราทำการ Scraping จริงๆ)
+            # เพิ่มฟิลด์ระบุวันที่พบข่าว
             item['scraped_at'] = now_date_str
             new_items.append(item)
             history.append(item) 
