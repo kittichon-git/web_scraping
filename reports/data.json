@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "สำนักงาน ป.ป.ส.",
       "unit": "ปปส.",
@@ -8,6 +9,106 @@
       "sort_date": "2026-03-18",
       "url": "https://www.oncb.go.th/auction/2396",
       "source": "ONCB (ปปส.)",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "สำนักงาน ปปส.ภาค 6 ขายทอดตลาดทรัพย์สินคดียาเสพติด ครั้งที่ 3/2569 นัดที่ 1 ในวันศุกร์ที่ 13 มีนาคม 2569",
+      "date": "13 มีนาคม 2569",
+      "sort_date": "2026-03-13",
+      "url": "https://www.oncb.go.th/auction/2395",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กค 0724.03/1911",
+      "title": "ประกาศกรมสรรพากร เรื่อง ขายทอดตลาดบ้านพักสรรพากรอำเภอสำนักงาสรรพากรพื้นที่สาขาพนมทวน รั้วและห้องเก็บของ พร้อมรื้อถอน จำนวน 1 หลัง ประกาศวันที่ 6 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/403e9abd-d003-4be9-90e3-f253f6730e54/Announce_Kanchanaburi+Area+Revenue+Office_1911_06032569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-403e9abd-d003-4be9-90e3-f253f6730e54-pPgHZkz",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.0732/ศป.ผอ. 254",
+      "title": "ประกาศ โรงพยาบาลศิริราช ปิยมหาราชการุณย์ เรื่อง ขายทอดตลาดพัสดุชำรุดเสื่อมสภาพ และหมดความจำเป็นในการใช้งาน จำนวน 828 รายการ ประกาศวันที่ 6 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/5893f90c-eda1-46c9-99f8-a70362659735/Announce_Faculty+of+Medicine+%28Siriraj+Piyamaharajkarun+Hospital%29_254_06032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-5893f90c-eda1-46c9-99f8-a70362659735-pPgIqFv",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นฐ 51021/697",
+      "title": "ประกาศองค์การบริหารส่วนจังหวัดนครปฐม เรื่อง ขายทอดตลาดรถยนต์ ที่ชำรุด เสื่อมสภาพ ขององค์การบริหารส่วนจังหวัดนครปฐม ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cd308b43-a2c5-4548-8eb3-35547914829a/Announce_Nakhonpathom+Provincial+Administrative+Organization_697_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cd308b43-a2c5-4548-8eb3-35547914829a-pPgHA.2",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นฐ 51021/705",
+      "title": "ประกาศองค์การบริหารส่วนจังหวัดนครปฐม เรื่อง ขายทอดตลาดพัสดุที่ชำรุด เสื่อมสภาพ ขององค์การบริหารส่วนจังหวัดนครปฐม ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/c86ccfa7-b4aa-4e1a-b791-0a4e01545a6c/Announce_Nakhonpathom+Provincial+Administrative+Organization_705_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-c86ccfa7-b4aa-4e1a-b791-0a4e01545a6c-pPgHhXR",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "สำนักงานป้องกันและปราบปรามยาเสพติด ภาค 2 มีความประสงค์จะขายทอดตลาดทรัพย์สินที่ไม่เหมาะสมจะเก็บรักษาไว้ ประเภทยานพาหนะ เครื่องใช้ไฟฟ้า เครื่องมือสื่อสาร และอื่นๆ จำนวน 70 รายการ",
+      "date": "9 มี.ค. 2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.oncb.go.th/auction/2394",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "ศูนย์เทคโนโลยีสารสนเทศ",
+      "title": "ขายทอดตลาด จำนวน 173 รายการ",
+      "date": "09/03/2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.doh.go.th/project_detail/detail/410553",
+      "source": "Department of Highways",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ตง 53102/ว 235",
+      "title": "ประกาศเทศบาลตำบลลำภูรา เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นต้องใช้ในหน่วยงานของรัฐ ประกาศวันที่ 6 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/dbf1f570-b269-493f-be0a-bda2c07b357a/Announce_Municipality+of+Lampura_c235_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-dbf1f570-b269-493f-be0a-bda2c07b357a-pPhK6DC",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กห 0448/495",
+      "title": "ประกาศ กองทัพบก โดย กรมการสัตว์ทหารบก เรื่อง การขายทอดตลาดโคเนื้อ (ปลด) จำนวน 41 ตัว ประกาศวันที่ 5 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b/Announce_Department+of+Animal+Army_495_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b-pPhJN5d",
+      "source": "G-Procurement",
+      "scraped_at": "09/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ คค 06027/372",
+      "title": "ประกาศกรมทางหลวง เรื่อง ขายทอดตลาดพัสดุชำรุด จำนวน 28 รายการ ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ไม่ระบุวันที่",
+      "sort_date": "2026-03-09",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/9c22d8bc-4ae9-4668-9281-04fa527eeaff/Announce_Kwang+Highway+in+Tak+2+%28Maesot%29_372_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-9c22d8bc-4ae9-4668-9281-04fa527eeaff-pPhKw8g",
+      "source": "G-Procurement",
       "scraped_at": "09/03/2026"
     },
     {
@@ -1708,108 +1809,6 @@
       "sort_date": "2015-11-10",
       "url": "https://www.oncb.go.th/auction/2165",
       "source": "ONCB (ปปส.)",
-      "scraped_at": "09/03/2026"
-    }
-  ],
-  "historical": [
-    {
-      "agency": "สำนักงาน ป.ป.ส.",
-      "unit": "ปปส.",
-      "title": "สำนักงาน ปปส.ภาค 6 ขายทอดตลาดทรัพย์สินคดียาเสพติด ครั้งที่ 3/2569 นัดที่ 1 ในวันศุกร์ที่ 13 มีนาคม 2569",
-      "date": "13 มีนาคม 2569",
-      "sort_date": "2026-03-13",
-      "url": "https://www.oncb.go.th/auction/2395",
-      "source": "ONCB (ปปส.)",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ กค 0724.03/1911",
-      "title": "ประกาศกรมสรรพากร เรื่อง ขายทอดตลาดบ้านพักสรรพากรอำเภอสำนักงาสรรพากรพื้นที่สาขาพนมทวน รั้วและห้องเก็บของ พร้อมรื้อถอน จำนวน 1 หลัง ประกาศวันที่ 6 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/403e9abd-d003-4be9-90e3-f253f6730e54/Announce_Kanchanaburi+Area+Revenue+Office_1911_06032569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-403e9abd-d003-4be9-90e3-f253f6730e54-pPgHZkz",
-      "source": "G-Procurement",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ อว 78.0732/ศป.ผอ. 254",
-      "title": "ประกาศ โรงพยาบาลศิริราช ปิยมหาราชการุณย์ เรื่อง ขายทอดตลาดพัสดุชำรุดเสื่อมสภาพ และหมดความจำเป็นในการใช้งาน จำนวน 828 รายการ ประกาศวันที่ 6 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/5893f90c-eda1-46c9-99f8-a70362659735/Announce_Faculty+of+Medicine+%28Siriraj+Piyamaharajkarun+Hospital%29_254_06032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-5893f90c-eda1-46c9-99f8-a70362659735-pPgIqFv",
-      "source": "G-Procurement",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ นฐ 51021/697",
-      "title": "ประกาศองค์การบริหารส่วนจังหวัดนครปฐม เรื่อง ขายทอดตลาดรถยนต์ ที่ชำรุด เสื่อมสภาพ ขององค์การบริหารส่วนจังหวัดนครปฐม ประกาศวันที่ 4 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/cd308b43-a2c5-4548-8eb3-35547914829a/Announce_Nakhonpathom+Provincial+Administrative+Organization_697_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-cd308b43-a2c5-4548-8eb3-35547914829a-pPgHA.2",
-      "source": "G-Procurement",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ นฐ 51021/705",
-      "title": "ประกาศองค์การบริหารส่วนจังหวัดนครปฐม เรื่อง ขายทอดตลาดพัสดุที่ชำรุด เสื่อมสภาพ ขององค์การบริหารส่วนจังหวัดนครปฐม ประกาศวันที่ 4 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/c86ccfa7-b4aa-4e1a-b791-0a4e01545a6c/Announce_Nakhonpathom+Provincial+Administrative+Organization_705_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-c86ccfa7-b4aa-4e1a-b791-0a4e01545a6c-pPgHhXR",
-      "source": "G-Procurement",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "สำนักงาน ป.ป.ส.",
-      "unit": "ปปส.",
-      "title": "สำนักงานป้องกันและปราบปรามยาเสพติด ภาค 2 มีความประสงค์จะขายทอดตลาดทรัพย์สินที่ไม่เหมาะสมจะเก็บรักษาไว้ ประเภทยานพาหนะ เครื่องใช้ไฟฟ้า เครื่องมือสื่อสาร และอื่นๆ จำนวน 70 รายการ",
-      "date": "9 มี.ค. 2569",
-      "sort_date": "2026-03-09",
-      "url": "https://www.oncb.go.th/auction/2394",
-      "source": "ONCB (ปปส.)",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมทางหลวง",
-      "unit": "ศูนย์เทคโนโลยีสารสนเทศ",
-      "title": "ขายทอดตลาด จำนวน 173 รายการ",
-      "date": "09/03/2569",
-      "sort_date": "2026-03-09",
-      "url": "https://www.doh.go.th/project_detail/detail/410553",
-      "source": "Department of Highways",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ ตง 53102/ว 235",
-      "title": "ประกาศเทศบาลตำบลลำภูรา เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ และหมดความจำเป็นต้องใช้ในหน่วยงานของรัฐ ประกาศวันที่ 6 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/dbf1f570-b269-493f-be0a-bda2c07b357a/Announce_Municipality+of+Lampura_c235_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-dbf1f570-b269-493f-be0a-bda2c07b357a-pPhK6DC",
-      "source": "G-Procurement",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ กห 0448/495",
-      "title": "ประกาศ กองทัพบก โดย กรมการสัตว์ทหารบก เรื่อง การขายทอดตลาดโคเนื้อ (ปลด) จำนวน 41 ตัว ประกาศวันที่ 5 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b/Announce_Department+of+Animal+Army_495_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-1fd9871e-c4d1-4d49-a2d9-feabafcd4b9b-pPhJN5d",
-      "source": "G-Procurement",
-      "scraped_at": "09/03/2026"
-    },
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ คค 06027/372",
-      "title": "ประกาศกรมทางหลวง เรื่อง ขายทอดตลาดพัสดุชำรุด จำนวน 28 รายการ ประกาศวันที่ 4 มีนาคม 2569",
-      "date": "ไม่ระบุวันที่",
-      "sort_date": "2026-03-09",
-      "url": "https://www.gprocurement.go.th/wps/wcm/connect/9c22d8bc-4ae9-4668-9281-04fa527eeaff/Announce_Kwang+Highway+in+Tak+2+%28Maesot%29_372_04032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-9c22d8bc-4ae9-4668-9281-04fa527eeaff-pPhKw8g",
-      "source": "G-Procurement",
       "scraped_at": "09/03/2026"
     },
     {
@@ -4623,5 +4622,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "09/03/2026 18:09"
+  "updated_at": "09/03/2026 18:38"
 }
