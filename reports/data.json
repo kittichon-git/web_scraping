@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "กรมบัญชีกลาง (e-GP)",
       "unit": "ที่ อว 78.14/751",
@@ -9,9 +10,7 @@
       "url": "https://drive.google.com/file/d/1SX2IzH_7n6--GPK6IYOcVdjdpyK0HEmI/view?usp=sharing",
       "source": "G-Procurement",
       "scraped_at": "10/03/2026"
-    }
-  ],
-  "historical": [
+    },
     {
       "agency": "สำนักงาน ป.ป.ส.",
       "unit": "ปปส.",
@@ -5043,5 +5042,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "10/03/2026 01:13"
+  "updated_at": "10/03/2026 08:02"
 }
