@@ -1,5 +1,306 @@
 {
-  "new": [],
+  "new": [
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "น.1กฟส.จุน(บค.)385/2569",
+      "title": "ประกาศการไฟฟ้าส่วนภูมิภาคสาขาจุน จังหวัดพะเยา เรื่องขายสินทรัพย์ประเภทมิเตอร์ชำรุดที่ซ่อมไม่ได้ จำนวน 3 รายการ โดยวิธีเฉพาะเจาะจง",
+      "date": "วันที่ตรวจสอบพัสดุ: 12 มีนาคม 2569 ถึง 18 มีนาคม 2569วันที่ประมูล: 19 มีนาคม 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://bidding.pea.co.th/procurement/21130a6e-b430-4fe2-b694-e07627227026/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "น.1กฟส.จุน(บค.)386/2569",
+      "title": "ประกาศการไฟฟ้าส่วนภูมิภาคสาขาจุน จังหวัดพะเยา เรื่องขายสินทรัพย์ประเภทมิเตอร์ชำรุดที่ซ่อมไม่ได้ จำนวน 16 รายการ โดยวิธีเฉพาะเจาะจง",
+      "date": "วันที่ตรวจสอบพัสดุ: 12 มีนาคม 2569 ถึง 18 มีนาคม 2569วันที่ประมูล: 19 มีนาคม 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://bidding.pea.co.th/procurement/dea28564-64c6-4b91-8294-c0a05e428604/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "น.1กฟส.แม่จัน(บง.)864/2569",
+      "title": "ประกาศการไฟฟ้าส่วนภูมิภาคสาขาแม่จัน จังหวัดเชียงราย เรื่องขายสินทรัพย์ประเภทมิเตอร์ชำรุดที่ซ่อมไม่ได้ จำนวน 3 รายการ โดยวิธีเฉพาะเจาะจง",
+      "date": "วันที่ตรวจสอบพัสดุ: 12 มีนาคม 2569 ถึง 18 มีนาคม 2569วันที่ประมูล: 19 มีนาคม 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://bidding.pea.co.th/procurement/17815710-e30a-4cd1-87f9-09893b2840f4/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "แขวงทางหลวงกาญจนบุรี",
+      "title": "จำหน่ายวัสดุงานเงินทุนฯ (แบตเตอรี่) ชำรุด จำนวน 1 รายการ",
+      "date": "11/03/2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.doh.go.th/project_detail/detail/411299",
+      "source": "Department of Highways",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "แขวงทางหลวงกาญจนบุรี",
+      "title": "จำหน่ายวัสดุงานเงินทุนฯ ยางรถยนต์ ขนาดต่างๆ ชำรุด จำนวน 9 รายการ",
+      "date": "11/03/2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.doh.go.th/project_detail/detail/411297",
+      "source": "Department of Highways",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "แขวงทางหลวงสุโขทัย",
+      "title": "ขายทอดตลาดพัสดุชำรุด จำนวน 39 รายการ (ครุภัณฑ์ชำรุด 22 รายการและวัสดุ ชำรุด 17 รายการ)",
+      "date": "11/03/2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.doh.go.th/project_detail/detail/411149",
+      "source": "Department of Highways",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "สำนักงานเลขานุการกรม",
+      "title": "ขายทอดตลาด ที่ สลน.1/ข.1/2569",
+      "date": "11/03/2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.doh.go.th/project_detail/detail/411106",
+      "source": "Department of Highways",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อต 53902/130",
+      "title": "ประกาศเทศบาลตำบลน้ำริด เรื่อง การขายทอดตลาดอาคารและสิ่งปลูกสร้าง พร้อมรื้อถอนและขนย้าย จำนวน 5 รายการ ประกาศวันที่ 11 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/9f5ddc54-4cd3-48c5-9282-f4622251e87b/Announce_Namrit+Subdistrict+Municipality_130_09032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-9f5ddc54-4cd3-48c5-9282-f4622251e87b-pPr6j3u",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ รบ 76202/144",
+      "title": "ประกาศองค์การบริหารส่วนตำบลวัดแก้ว เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมคุณภาพ หรือไม่จำเป็นต้องใช้ในราชการต่อไป จำนวน 1 รายการ ประกาศวันที่ 11 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/d25087d4-0231-47e1-b50b-73196ea2a60c/Announce_Watkeaw+Subdistrict+Administrative+Organization_144_11032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-d25087d4-0231-47e1-b50b-73196ea2a60c-pPs9lE1",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กก 0201/706",
+      "title": "ประกาศสำนักงานปลัดกระทรวงการท่องเที่ยวและกีฬา เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ ประจำปีงบประมาณ พ.ศ. 2568 จำนวน 201 รายการ ประกาศวันที่ 10 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/5fee8c4c-2042-40bb-8575-f4ff64138ea7/Announce_Office+of+the+Permanent+Secretary_706_10032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-5fee8c4c-2042-40bb-8575-f4ff64138ea7-pPrATwF",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กบ 73102/ว 28",
+      "title": "ประกาศองค์การบริหารส่วนตำบลหน้าเขา เรื่อง ประมูลขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ หมดความจำเป็นต้องใช้ในราชการ โดยวิธีขายทอดตลาด ประกาศวันที่ 9 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/f9e5e94c-6bb7-49d4-9337-ab9dc8ba4dee/Announce_Nakhao+Subdistrict+Administrative+Organization_c28_09032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-f9e5e94c-6bb7-49d4-9337-ab9dc8ba4dee-pPr771O",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ปณท ปน.2 (ทพ.2)/0090",
+      "title": "ประกาศ บริษัท ไปรษณีย์ไทย จำกัด เรื่อง การขายทอดตลาดพัสดุที่หมดความจำเป็นใช้งาน ประเภทรถยนต์ ยี่ห้อ TOYOTA รุ่น FORTUNER ครั้งที่ 5 ประกาศวันที่ 5 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/349b4f3c-9c0c-44f3-863a-27d799dc2f0d/Announce_Metropolitan+Postal+Burea+2_0090_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-349b4f3c-9c0c-44f3-863a-27d799dc2f0d-pPr6Ont",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ตง 53304/76",
+      "title": "ประกาศเทศบาลตำบลสิเกา เรื่อง ขายทอดตลาดพัสดุ ชำรุด เสื่อมสภาพ โดยวิธีประมูลด้วยวาจา (ปากเปล่า) ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/bb420fc2-c145-4264-80c1-6d69475a2844/Announce_+sikao+Subdistrict+Municipality_76_11032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-bb420fc2-c145-4264-80c1-6d69475a2844-pPr7w65",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 0602.01/944",
+      "title": "ประกาศมหาวิทยาลัยสุโขทัยธรรมาธิราช เรื่อง ประกวดราคาขายเอกสารเกี่ยวกับการสอบ จำนวน 4 รายการ ประกาศวันที่ 4 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 11/03/2026",
+      "sort_date": "2026-03-11",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/2c8dcb2e-141f-43a7-9990-9366b3a65bfd/Announce_Sukhothai+Thammathirat+Open+University_944_05032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-2c8dcb2e-141f-43a7-9990-9366b3a65bfd-pPr4bl3",
+      "source": "G-Procurement",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "ฉ.3 กฟจ.นม.(สน.)009/2569",
+      "title": "ประกาศการไฟฟ้าส่วนภูมิภาคจังหวัดนครราชสีมา  เรื่อง  การขายทอดตลาดหม้อแปลงชำรุดขนาดต่างๆ \n\nติดต่อ  คุณพิพัฒน์   รมย์สูงเนิน  โทรศัพท์  044-273544",
+      "date": "วันที่ตรวจสอบพัสดุ: 11 มีนาคม 2569 ถึง 27 มีนาคม 2569วันที่ประมูล: 30 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://bidding.pea.co.th/procurement/570a5a34-d0d3-46c1-a177-5f86739308d9/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศองค์การอุตสาหกรรมป่าไม้เขตตาก ครั้งที่ 11/2569 เรื่อง ประมูลจำหน่ายไม้สัก - กระยาเลยท่อน ที่ทำออกจากเขตทางหลวงหมายเลข 1206 ตอนซอโอ - วะเล่ย์ ระหว่าง กม.16+251-กม.24+000 ท้องที่ตำบลพบพระ อำเภอพบพระ จังหวัดตาก",
+      "date": "11 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmI0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@MmA0AJxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศ ออป.เขตศรีราชา ครั้งที่ 5/69 ลว 11 มี.ค. 69 เรื่อง ประมูลจำหน่ายไม้ยางพารายืนต้น ที่ผ่านการรับรองการจัดการป่าไม้อย่างยั่งยืนตามมาตรฐานสากล สวนป่าท่ากุ่มโนโบรุ อุเมดะ จังหวัดตราด ครั้งที่ 2",
+      "date": "11 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmE0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@MmW0AJxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศ ออป.เขตลำปาง ครั้งที่ 33/2569 ลงวันที่ 10 มี.ค. พ.ศ. 2569 เรื่อง ประกาศประมูลจำหน่ายไม้สักท่อนตัดสางขยายระยะ โดยแบบตลาดกลางค้าไม้ งานสวนป่าแม่จาง ต.สบป้าด อ.แม่เมาะ จ.ลำปาง",
+      "date": "11 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmA0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@MmS0AJxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศ ออป.เขตลำปาง ครั้งที่ 32/2569 ลงวันที่ 10 มี.ค. พ.ศ. 2569 เรื่อง ขอยกเลิกประมูลจำหน่ายไม้สักท่อนตัดสางขยายระยะ โดยแบบตลาดกลางค้าไม้ งานสวนป่าแม่จาง ตามประกาศ ออป.เขตลำปาง ครั้งที่ 30/2569",
+      "date": "11 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmW0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@Mmu0ATxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศ ออป.เขตอุตรดิตถ์ ครั้งที่ 18/2569 ลว 10 มี.ค. 69 เรื่อง ประกาศจำหน่ายไม้สักสวนป่า ของงานสวนป่าแม่สาน ออป.เขตอุตรดิตถ์ แบบตลาดกลางค้าไม้ โดยวิธียื่นเสนอราคา",
+      "date": "11 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmS0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@Mmq0ATxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศ ออป.เขตอุตรดิตถ์ ครั้งที่ 17/2569 ลว 10 มี.ค. 69 เรื่อง ประกาศจำหน่ายไม้สักสวนป่า ของงานสวนป่าศรีสัชนาลัย ออป.เขตอุตรดิตถ์ แบบตลาดกลางค้าไม้ โดยวิธียื่นเสนอราคา",
+      "date": "11 มีนาคม 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@MmO0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@MmM0ATxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมสรรพากร",
+      "unit": "สรรพากร",
+      "title": "ประกาศกรมสรรพากร เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ชำรุด เสื่อมสภาพ ที่ทางราชการเลิกใช้งานของสำนักงานสรรพากรพื้นที่ศรีสะเกษ",
+      "date": "11 มี.ค. 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://interapp4.rd.go.th/TPW/upload/Post2_2007_main.pdf",
+      "source": "Revenue Department (สรรพากร)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมสรรพากร",
+      "unit": "สรรพากร",
+      "title": "ขายทอดตลาดพัสดุครุภัณฑ์ที่ชำรุดเสื่อมสภาพหรือไม่จำเป็นต้องในราชการต่อไป ประจำปีงบประมาณ พ.ศ. 2568",
+      "date": "11 มี.ค. 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://interapp4.rd.go.th/TPW/upload/Post2_2006_main.pdf",
+      "source": "Revenue Department (สรรพากร)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมสรรพากร",
+      "unit": "สรรพากร",
+      "title": "ประกาศขายทอดตลาดพัสดุครุภัณฑ์ที่ชำรุดเสื่อมสภาพ (ครั้งที่ 2) สท.อุบลราชธานี",
+      "date": "11 มี.ค. 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://interapp4.rd.go.th/TPW/upload/Post2_2005_main.pdf",
+      "source": "Revenue Department (สรรพากร)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมสรรพากร",
+      "unit": "สรรพากร",
+      "title": "ประกาศกรมสรรพากร เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ ชำรุดเสื่อมสภาพ หรือสูญไป หรือหมดความจำเป็นต้องใช้ในหน่วยงานของรัฐ ที่ได้รับการทดแทนแล้ว และวัสดุสิ้นเปลือง",
+      "date": "11 มี.ค. 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://interapp4.rd.go.th/TPW/upload/Post2_2003_main.pdf",
+      "source": "Revenue Department (สรรพากร)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "กรมสรรพากร",
+      "unit": "สรรพากร",
+      "title": "ขายทอดตลาดทรัพย์สินชำรุด ประเภทครุภัณฑ์ยานพาหนะและขนส่ง ครั้งที่ 2",
+      "date": "11 มี.ค. 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://interapp4.rd.go.th/TPW/upload/Post2_2002_main.pdf",
+      "source": "Revenue Department (สรรพากร)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "สำนักงานอัยการสูงสุด",
+      "unit": "",
+      "title": "สำนักงานอัยการจังหวัดตาก ประกาศ ขายทอดตลาดพัสดุ (ไม้) (ครั้งที่ 2) จำนวน 75 ท่อน และไม้ฟืน จำนวน 3 กอง",
+      "date": "11 มี.ค. 2569",
+      "sort_date": "2026-03-11",
+      "url": "https://drive.google.com/file/d/1qFcL4PtvNBXvujfVj7_kzEh94MP3yzmo/view?usp=drive_link",
+      "source": "Office of the Attorney General (AGO)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34640ปข.8",
+      "title": "เรื่อง ประกาศขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ (เครื่องนำจ่ายแบบพกพาฯ จำนวน 30 เครื่อง) ของไปรษณีย์จังหวัดชุมพร",
+      "date": "10 มี.ค. 2569",
+      "sort_date": "2026-03-10",
+      "url": "https://file.thailandpost.com/upload/content/HH ._69b0d3d464086.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "ก.1 กฟส.ปจค.021/2569",
+      "title": "ด้วยการไฟฟ้าส่วนภูมิภาคสาขาประจันตคาม มีความประสงค์จะขายมิเตอร์ชำรุด ขนาดต่างๆ โดยวิธีเฉพาะเจาะจงเปิดซองเสนอราคา จำนวน 4 รายการ รายละเอียดดังนี้\n1. มิเตอร์ชำรุด 1 เฟส 2 สาย ขนาดต่างๆ จำนวน 836 เครื่อง\n2. มิเตอร์ชำรุด 3 เฟส 4 สาย ขนาดต่างๆ จำนวน 8 เครื่อง\n3. มิเตอร์ดิจิตอล, TOU, พลาสติก 1 เฟส 2 สาย จำนวน 24 เครื่อง\n4. มิเตอร์ดิจิตอล, TOU, พลาสติก 3 เฟส 4 สาย จำนวน 1 เครื่อง",
+      "date": "วันที่ตรวจสอบพัสดุ: 9 มีนาคม 2569 ถึง 18 มีนาคม 2569วันที่ประมูล: 18 มีนาคม 2569",
+      "sort_date": "2026-03-09",
+      "url": "https://bidding.pea.co.th/procurement/deb70d34-32cb-47a2-bbe0-270ac2227cf6/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "11/03/2026"
+    },
+    {
+      "agency": "สำนักงานอัยการสูงสุด",
+      "unit": "",
+      "title": "สำนักงานอัยการคุ้มครองสิทธิและช่วยเหลือทางกฎหมายและการบังคับคดีจังหวัดอุบลราชธานี ประกาศการขายทอดตลาด กรณีพัสดุชำรุด เสื่อมสภาพ และไม่จำเป็นต้องใช้ในราชการ จำนวน 12 รายการ",
+      "date": "6 มี.ค. 2569",
+      "sort_date": "2026-03-06",
+      "url": "https://drive.google.com/file/d/1PvzdrNUOvS7lXB0VpjlMUojEVZv6bwet/view?usp=drive_link",
+      "source": "Office of the Attorney General (AGO)",
+      "scraped_at": "11/03/2026"
+    }
+  ],
   "historical": [
     {
       "agency": "สำนักงาน ป.ป.ส.",
@@ -5202,5 +5503,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "11/03/2026 08:02"
+  "updated_at": "11/03/2026 22:17"
 }
