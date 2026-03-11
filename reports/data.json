@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "สำนักงาน ป.ป.ส.",
       "unit": "ปปส.",
@@ -8,6 +9,16 @@
       "sort_date": "2026-03-27",
       "url": "https://www.oncb.go.th/auction/2397",
       "source": "ONCB (ปปส.)",
+      "scraped_at": "10/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.14/751",
+      "title": "ประกาศมหาวิทยาลัยมหดิล (คณะสาธารณสุขศาสตร์) เรื่อง ขายทอดตลาดอาคารพร้อมรื้อถอน จำนวน 14 หลัง ประกาศวันที่ 10 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 10/03/2026",
+      "sort_date": "2026-03-10",
+      "url": "https://drive.google.com/file/d/1SX2IzH_7n6--GPK6IYOcVdjdpyK0HEmI/view?usp=sharing",
+      "source": "G-Procurement",
       "scraped_at": "10/03/2026"
     },
     {
@@ -158,18 +169,6 @@
       "sort_date": "2026-02-13",
       "url": "https://file.thailandpost.com/upload/content/( 4)_69afd02f2acae.pdf",
       "source": "Thailand Post",
-      "scraped_at": "10/03/2026"
-    }
-  ],
-  "historical": [
-    {
-      "agency": "กรมบัญชีกลาง (e-GP)",
-      "unit": "ที่ อว 78.14/751",
-      "title": "ประกาศมหาวิทยาลัยมหดิล (คณะสาธารณสุขศาสตร์) เรื่อง ขายทอดตลาดอาคารพร้อมรื้อถอน จำนวน 14 หลัง ประกาศวันที่ 10 มีนาคม 2569",
-      "date": "ตรวจพบเมื่อ 10/03/2026",
-      "sort_date": "2026-03-10",
-      "url": "https://drive.google.com/file/d/1SX2IzH_7n6--GPK6IYOcVdjdpyK0HEmI/view?usp=sharing",
-      "source": "G-Procurement",
       "scraped_at": "10/03/2026"
     },
     {
@@ -5203,5 +5202,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "10/03/2026 17:47"
+  "updated_at": "11/03/2026 08:02"
 }
