@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "ก.3กฟจ.นฐ.(มต) 008/2569",
@@ -179,9 +180,7 @@
       "url": "https://www.doh.go.th/project_detail/detail/411364",
       "source": "Department of Highways",
       "scraped_at": "12/03/2026"
-    }
-  ],
-  "historical": [
+    },
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "น.1กฟส.จุน(บค.)385/2569",
@@ -5683,5 +5682,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "12/03/2026 19:05"
+  "updated_at": "12/03/2026 21:57"
 }
