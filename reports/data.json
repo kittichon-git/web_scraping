@@ -1,5 +1,186 @@
 {
-  "new": [],
+  "new": [
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "ก.3กฟจ.นฐ.(มต) 008/2569",
+      "title": "ประกาศขายมิเตอร์ ซีที วีที ชำรุด (เสียซ่อมไม่ได้) โดยวิธีขายทอดตลาด ของ กฟจ.นครปฐม",
+      "date": "วันที่ตรวจสอบพัสดุ: 13 มีนาคม 2569 ถึง 30 มีนาคม 2569วันที่ประมูล: 31 มีนาคม 2569",
+      "sort_date": "2026-03-13",
+      "url": "https://bidding.pea.co.th/procurement/bf49ddbd-1798-4320-a256-5d8024a3c4fd/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "ฉ.1 กฟส.ซก.(ปร.)787/2569",
+      "title": "ตกลงราคาจ้างบุคคลภายนอกบำรุงรักษาหม้อแปลงระบบจำหน่าย ของ กฟภ. จำนวน 181 เครื่อง",
+      "date": "วันที่ตรวจสอบพัสดุ: 13 มีนาคม 2569 ถึง 13 มีนาคม 2569วันที่ประมูล: 12 มีนาคม 2569",
+      "sort_date": "2026-03-13",
+      "url": "https://bidding.pea.co.th/procurement/8b330345-7b2d-4835-8a6a-fa926fee7ff7/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
+      "unit": "น.2 ตก.(มต)1462/2569",
+      "title": "ประกาศ การไฟฟ้าส่วนภูมิภาคจังหวัดตาก เรื่อง ขายมิเตอร์ชำรุดซ่อมไม่ได้ ขนาดต่างๆ โดยวิธีเฉพาะเจาะจง",
+      "date": "วันที่ตรวจสอบพัสดุ: 13 มีนาคม 2569 ถึง 23 มีนาคม 2569วันที่ประมูล: 23 มีนาคม 2569",
+      "sort_date": "2026-03-13",
+      "url": "https://bidding.pea.co.th/procurement/935a9de4-89f5-499b-8dd7-09cf476011df/auction",
+      "source": "Provincial Electricity Authority (PEA)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "สำนักงานทางหลวงที่ 8",
+      "title": "ประกาศผลการขายทอดตลาดครุภัณฑ์ชำรุด จำนวน 72 รายการ",
+      "date": "12/03/2569",
+      "sort_date": "2026-03-12",
+      "url": "https://www.doh.go.th/project_detail/detail/411532",
+      "source": "Department of Highways",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ พช 52304/ว 201",
+      "title": "ประกาศเทศบาลตำบลซับสมอทอด เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ชำรุด เสื่อมสภาพ ประจำปีงบประมาณ พ.ศ. 2568 จำนวน 98 รายการ ประกาศวันที่ 10 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 12/03/2026",
+      "sort_date": "2026-03-12",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3384254e-a6b9-4422-b204-e7ca9fdaa268/Announce_+Subsamortod+Subdistrict+Municipality_c201_09032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3384254e-a6b9-4422-b204-e7ca9fdaa268-pPwKAwz",
+      "source": "G-Procurement",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.0732/ศป.ผอ.265",
+      "title": "ประกาศ โรงพยาบาลศิริราช ปิยมหาราชการุณย์ เรื่อง ขายทอดตลาดพัสดุหมดความจำเป็นในการใช้งาน ยูนิตทำฟัน จำนวน 2 ชุด ประกาศวันที่ 10 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 12/03/2026",
+      "sort_date": "2026-03-12",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/0c0fc06a-da33-4179-8b98-6764a29dcca8/Announce_Faculty+of+Medicine+%28Siriraj+Piyamaharajkarun+Hospital%29_265_10032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-0c0fc06a-da33-4179-8b98-6764a29dcca8-pPwZAiR",
+      "source": "G-Procurement",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่  คค 06103/463",
+      "title": "ประกาศกรมทางหลวง แขวงทางหลวงพังงา เรื่อง ขายทอดตลาด รถวิทยุตรวจการณ์ หมายเลข 7110 จำนวน 1 คัน (ครั้งที่ 2) ประกาศวันที่ 9 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 12/03/2026",
+      "sort_date": "2026-03-12",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/aecec434-09e3-43c2-ae84-9803587b3ca2/Announce_Kwang+Highway+in+Phangnga_463_09032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-aecec434-09e3-43c2-ae84-9803587b3ca2-pPwLwe.",
+      "source": "G-Procurement",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ปณท จห.(ธก)/98",
+      "title": "ประกาศ บริษัท ไปรษณีย์ไทย จำกัด เรื่อง ขายทอดตลาดพัสดุชำรุด จำนวน 813 หน่วย ประกาศวันที่ 9 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 12/03/2026",
+      "sort_date": "2026-03-12",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/0064c268-432f-4544-ad7e-07913fec9952/Announce_Thailand+Post+Company+Limited_98_09032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-0064c268-432f-4544-ad7e-07913fec9952-pPwLaGL",
+      "source": "G-Procurement",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "อัพเดทใหม่!! สำนักงาน ปปส.ภาค 6 อัพเดททรัพย์สินที่ยกเลิกการขาย จำนวน 32 รายการ ในบัญชีแนบท้ายประกาศขายทอดตลาดทรัพย์สินที่ไม่เหมาะสมจะเก็บรักษาไว้ ครั้งที่ 3/2569 นัดที่ 1",
+      "date": "12 มี.ค. 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://www.oncb.go.th/auction/2399",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "สำนักงาน ป.ป.ส.",
+      "unit": "ปปส.",
+      "title": "สำนักงาน ปปส.ภาค 6 ขายทอดตลาดทรัพย์สินของกองทุน ปราบปราม และแก้ไขปัญหายาเสพติด ครั้งที่ 1/2569",
+      "date": "12 มี.ค. 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://www.oncb.go.th/auction/2398",
+      "source": "ONCB (ปปส.)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมชลประทาน (RID)",
+      "unit": "สำนักงานเลขานุการกรม (SU00-00-001)",
+      "title": "ขายทอดตลาดครุภัณฑ์ชำรุด จำนวน 4 รายการ เลขที่จำหน่าย สลก.4/69",
+      "date": "12 มีนาคม 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://pms.rid.go.th:4001/api/egp_announce/file/file_2026-03-12_baaf9aa6-32f8-4465-b6d0-9bc5eee6eec8.pdf",
+      "source": "Royal Irrigation Department (RID)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศองค์การอุตสาหกรรมป่าไม้เขตตาก ครั้งที่ 11/2569 เรื่อง ประมูลจำหน่ายไม้สัก - กระยาเลยท่อน ที่ทำออกจากเขตทางหลวงหมายเลข 1206 ตอนซอโอ - วะเล่ย์ ระหว่าง กม.16+251-กม.24+000 ท้องที่ตำบลพบพระ อำเภอพบพระ จังหวัดตาก",
+      "date": "12 มีนาคม 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@Mmu0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@MmM0AJxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "องค์การอุตสาหกรรมป่าไม้ (ออป.)",
+      "unit": "ออป.",
+      "title": "ประกาศ ออป.เขตอุตรดิตถ์ ครั้งที่ 19/2569 ลว 11 มี.ค. 69 เรื่อง ประกาศจำหน่ายไม้สักสวนป่าของงานสวนป่าปากปาด ออป.เขตอุตรดิตถ์ แบบตลาดกลางค้าไม้ โดยวิธียื่นเสนอราคา",
+      "date": "12 มีนาคม 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://www.fio.co.th/th/pageredirect/GUAgoJqwqS9cMUug@qT1cL3uj@Mmq0AzxjrQZWewEb3Q@M2y0LJybrSDWewEb3Q@MmI0AJxmrQVWewEb3Q",
+      "source": "Forest Industry Organization (ออป.)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมสรรพากร",
+      "unit": "สรรพากร",
+      "title": "ประกาศกรมสรรพากร เรื่อง ขายทอดตลาดและรื้อถอนบ้านพักข้าราชการสำนักงานสรรพากรพื้นที่สาขาขุขันธ์ พร้อมห้องครัว",
+      "date": "12 มี.ค. 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://interapp4.rd.go.th/TPW/upload/Post2_2008_main.pdf",
+      "source": "Revenue Department (สรรพากร)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "ไปรษณีย์ไทย",
+      "unit": "34642ประกาศขายทอดตลาด",
+      "title": "เริ่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ รถยนต์ จำนวน 1 คัน (ครั้งที่ 4)",
+      "date": "12 มี.ค. 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://file.thailandpost.com/upload/content/1  ( 4)_69b27dd37b7e3.pdf",
+      "source": "Thailand Post",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "สำนักงานอัยการสูงสุด",
+      "unit": "",
+      "title": "สำนักงานคดีแรงงานภาค 2 ประกาศขายทอดตลาดครุภัณฑ์สำนักงาน กรณีพัสดุชำรุด เสื่อมสภาพ และไม่จำเป็นต้องใช้ในราชการ ครั้งที่ 2 จำนวน 30 รายการ",
+      "date": "12 มี.ค. 2569",
+      "sort_date": "2026-03-12",
+      "url": "https://drive.google.com/file/d/1e2alhZ8ieWHvDAszR3CRUKZccLe1WcDu/view?usp=sharing",
+      "source": "Office of the Attorney General (AGO)",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "แขวงทางหลวงเชียงใหม่ที่ 1",
+      "title": "ยกเลิกประกาศขายทอดตลาดบ้านพักอาศัย ประเภท 6 ครอบครัว พร้อมรื้อถอน จำนวน 1 หลัง (ครั้งที่ 3)",
+      "date": "09/03/2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.doh.go.th/project_detail/detail/411373",
+      "source": "Department of Highways",
+      "scraped_at": "12/03/2026"
+    },
+    {
+      "agency": "กรมทางหลวง",
+      "unit": "แขวงทางหลวงเชียงใหม่ที่ 1",
+      "title": "ขายทอดตลาดบ้านพักอาศัย ประเภท 6 ครอบครัว พร้อมรื้อถอน จำนวน 1 หลัง (ครั้งที่ 3)",
+      "date": "09/03/2569",
+      "sort_date": "2026-03-09",
+      "url": "https://www.doh.go.th/project_detail/detail/411364",
+      "source": "Department of Highways",
+      "scraped_at": "12/03/2026"
+    }
+  ],
   "historical": [
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
@@ -5502,5 +5683,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "12/03/2026 08:02"
+  "updated_at": "12/03/2026 19:05"
 }
