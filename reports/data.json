@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "น.1กฟส.จุน(บค.)385/2569",
@@ -299,9 +300,7 @@
       "url": "https://drive.google.com/file/d/1PvzdrNUOvS7lXB0VpjlMUojEVZv6bwet/view?usp=drive_link",
       "source": "Office of the Attorney General (AGO)",
       "scraped_at": "11/03/2026"
-    }
-  ],
-  "historical": [
+    },
     {
       "agency": "สำนักงาน ป.ป.ส.",
       "unit": "ปปส.",
@@ -5503,5 +5502,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "11/03/2026 22:17"
+  "updated_at": "12/03/2026 08:02"
 }
