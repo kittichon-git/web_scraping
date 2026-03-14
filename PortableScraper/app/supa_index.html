@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supa Auction Monitor</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Supabase JS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        :root {
+            --bg: #f0f2f5;
+            --surface: #ffffff;
+            --surface2: #f7f8fa;
+            --border: #e4e7ec;
+            --blue: #1558d6;
+            --blue-bg: #eef2fd;
+            --teal: #0d9488;
+            --teal-bg: #f0fdfa;
+            --orange: #d97706;
+            --orange-bg: #fffbeb;
+            --gray: #6b7280;
+            --gray2: #9ca3af;
+            --dark: #111827;
+            --mono: 'IBM Plex Mono', monospace;
+            --sans: 'Sarabun', sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: var(--sans);
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            color: var(--dark);
+        }
+
+        /* --- Sidebar --- */
+        #sidebar {
+            width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            overflow-y: auto;
+        }
+        .sb-header {
+            padding: 1.5rem 1.2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .sb-logo-icon {
+            width: 32px; height: 32px; background: var(--blue);
+            color: white; border-radius: 8px; display: flex;
+            align-items: center; justify-content: center; font-weight: bold;
+        }
+        .sb-logo-text {
+            font-family: var(--mono); font-size: 0.65rem; color: var(--blue);
+            font-weight: 700; letter-spacing: 0.1em; line-height: 1.2;
+        }
+        .sb-section-label {
+            font-family: var(--mono); font-size: 0.55rem; color: var(--gray2);
+            text-transform: uppercase; padding: 1.2rem 1.2rem 0.5rem;
+            letter-spacing: 0.1em;
+        }
+        .agency-btn {
+            padding: 0.5rem 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--gray);
+            transition: all 0.2s;
+        }
+        .agency-btn:hover { background: var(--surface2); color: var(--blue); }
+        .agency-btn.active { background: var(--blue-bg); color: var(--blue); font-weight: 600; border-right: 3px solid var(--blue); }
+        .unread-count {
+            font-family: var(--mono); font-size: 0.75rem; background: #e2e8f0;
+            padding: 1px 6px; border-radius: 4px; color: var(--gray);
+        }
+        .active .unread-count { background: var(--blue); color: white; }
+
+        /* --- Main Content --- */
+        #main {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-wrap {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        /* --- Header Card --- */
+        .hdr-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hdr-title { font-size: 1.4rem; font-weight: 700; margin: 0; }
+        .hdr-title em { color: var(--blue); font-style: normal; }
+        .unread-banner {
+            display: flex; align-items: center; gap: 0.6rem;
+            background: var(--blue-bg); padding: 0.4rem 1rem;
+            border-radius: 20px; font-size: 0.9rem; color: var(--blue);
+            border: 1px solid #a8c1f3;
+        }
+        .pulse { width: 8px; height: 8px; background: var(--blue); border-radius: 50%; animation: pls 2s infinite; }
+        @keyframes pls { 0%,100%{opacity:1;transform:scale(1.2)} 50%{opacity:0.3;transform:scale(0.6)} }
+
+        /* --- Stats row --- */
+        .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+        .stat-box {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 10px; padding: 1rem; text-align: center;
+            border-top: 3px solid var(--border);
+        }
+        .stat-box.blue { border-top-color: var(--blue); }
+        .stat-box.teal { border-top-color: var(--teal); }
+        .stat-box.orange { border-top-color: var(--orange); }
+        .stat-val { font-family: var(--mono); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.2rem; }
+        .stat-lbl { font-size: 0.7rem; color: var(--gray); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+
+        /* --- Tabs --- */
+        .tabs { display: flex; gap: 0.5rem; margin-bottom: 0; }
+        .tab {
+            padding: 0.6rem 1.5rem; background: var(--surface); border: 1px solid var(--border);
+            border-bottom: none; border-radius: 8px 8px 0 0; cursor: pointer;
+            font-size: 0.9rem; font-weight: 500; color: var(--gray);
+        }
+        .tab.active { background: var(--surface); border-bottom: 2px solid var(--blue); color: var(--blue); font-weight: 700; }
+        .tab-panel {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 0 0 10px 10px; padding: 1.5rem; min-height: 400px;
+        }
+
+        /* --- List & Cards --- */
+        .news-list { display: flex; flex-direction: column; gap: 0.6rem; }
+        .news-card {
+            display: flex; border: 1px solid var(--border); border-radius: 8px;
+            overflow: hidden; transition: all 0.2s; background: var(--surface);
+        }
+        .news-card:hover { border-color: #93b4f5; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .accent { width: 4px; background: var(--blue); flex-shrink: 0; }
+        .news-card.read { opacity: 0.6; background: var(--surface2); }
+        .news-card.read .accent { background: var(--gray2); }
+        .news-card.read .news-title { text-decoration: line-through; color: var(--gray2); }
+
+        .news-body { flex-grow: 1; padding: 0.8rem 1.2rem; }
+        .news-title {
+            font-size: 0.95rem; font-weight: 600; color: var(--dark);
+            text-decoration: none; display: block; margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        .news-card:hover .news-title { color: var(--blue); text-decoration: underline; }
+        .news-meta { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+        .badge {
+            font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.5rem;
+            border-radius: 4px; border: 1px solid transparent;
+        }
+        .bg-agency { background: var(--blue-bg); color: var(--blue); border-color: #c5d5f7; }
+        .bg-date { background: var(--orange-bg); color: var(--orange); border-color: #fde68a; font-family: var(--mono); }
+        .bg-unit { background: var(--teal-bg); color: var(--teal); border-color: #99f6e4; }
+        .bg-read { background: var(--surface2); color: var(--gray2); border-color: var(--border); font-family: var(--mono); }
+
+        /* --- Pagination --- */
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1.5rem; }
+        .pg-btn {
+            background: white; border: 1px solid var(--border); padding: 0.4rem 0.8rem;
+            border-radius: 6px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;
+        }
+        .pg-btn:hover:not(:disabled) { border-color: var(--blue); color: var(--blue); background: var(--blue-bg); }
+        .pg-btn:disabled { opacity: 0.4; cursor: default; }
+
+        /* --- Loading --- */
+        #loading-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.7); display: none;
+            justify-content: center; align-items: center; z-index: 999;
+        }
+        .spinner {
+            width: 40px; height: 40px; border: 4px solid var(--blue-bg);
+            border-top: 4px solid var(--blue); border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            #sidebar { width: 100%; height: auto; border-right: none; border-bottom: 1px solid var(--border); }
+            .stats-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-overlay"><div class="spinner"></div></div>
+
+    <div id="sidebar">
+        <div class="sb-header">
+            <div class="sb-logo-icon">📬</div>
+            <div class="sb-logo-text">SUPA AUCTION<br>MONITOR</div>
+        </div>
+        <div class="sb-section-label">หน่วยงาน</div>
+        <div id="agency-list">
+            <!-- Loaded via JS -->
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="content-wrap">
+            <div class="hdr-card">
+                <h1 class="hdr-title">Web Scraping <em>หน่วยงานใหญ่</em></h1>
+                <div class="unread-banner">
+                    <span class="pulse"></span>
+                    <span>มาใหม่: </span>
+                    <strong id="unread-total-top">0</strong>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-box blue">
+                    <div class="stat-val" id="stat-unread">0</div>
+                    <div class="stat-lbl">ยังไม่อ่าน</div>
+                </div>
+                <div class="stat-box teal">
+                    <div class="stat-val" id="stat-read">0</div>
+                    <div class="stat-lbl">อ่านแล้ว</div>
+                </div>
+                <div class="stat-box orange">
+                    <div class="stat-val" id="stat-total">0</div>
+                    <div class="stat-lbl">รวมทั้งหมด</div>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" id="tab-new" onclick="switchTab('new')">🆕 ข่าวมาใหม่</div>
+                <div class="tab" id="tab-history" onclick="switchTab('history')">✅ อ่านแล้ว</div>
+            </div>
+            <div class="tab-panel">
+                <div id="list-container" class="news-list">
+                    <!-- Loaded via JS -->
+                </div>
+                <div class="pagination">
+                    <button class="pg-btn" id="btn-prev" onclick="changePage(-1)">‹ ก่อนหน้า</button>
+                    <span class="stat-lbl" id="page-info">หน้า 1 / 1</span>
+                    <button class="pg-btn" id="btn-next" onclick="changePage(1)">ต่อไป ›</button>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem; color: var(--gray2); font-size: 0.7rem; font-family: var(--mono);">
+                © 2026 AUCTION INTEL SYSTEM · <span id="current-view-label">ทั้งหมด</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Config ---
+        const SUPABASE_URL = 'https://ckxbcvqgenttfecfkpjy.supabase.co';
+        const SUPABASE_KEY = 'sb_publishable_P1yJuVEJx_Qw-kSL9DOK0w_P2G38GoZ';
+        const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+        let currentAgency = 'ทั้งหมด';
+        let currentTab = 'new';
+        let currentPage = 1;
+        const ITEMS_PER_PAGE = 50;
+
+        const AGENCIES = [
+            'ทั้งหมด', 'กรมทางหลวง', 'กรมศุลกากร', 'กรมสรรพากร', 'กรมธนารักษ์',
+            'สำนักงาน ป.ป.ส.', 'การไฟฟ้าส่วนภูมิภาค (PEA)', 'การประปาส่วนภูมิภาค (PWA)',
+            'กรมชลประทาน (RID)', 'องค์การอุตสาหกรรมป่าไม้ (ออป.)', 'สำนักงานอัยการสูงสุด',
+            'ไปรษณีย์ไทย', 'กรมบัญชีกลาง (e-GP)'
+        ];
+
+        // --- Init ---
+        async function init() {
+            renderAgencyList();
+            fetchCounts();
+            fetchData();
+        }
+
+        function renderAgencyList() {
+            const container = document.getElementById('agency-list');
+            container.innerHTML = AGENCIES.map(ag => `
+                <div class="agency-btn ${ag === currentAgency ? 'active' : ''}" onclick="filterAgency('${ag}')">
+                    <span>${ag}</span>
+                    <span class="unread-count" id="count-${ag.replace(/\s+/g, '-')}">0</span>
+                </div>
+            `).join('');
+        }
+
+        async function fetchCounts() {
+            try {
+                const { data, error } = await sb.from('auctions').select('agency').eq('is_read', false);
+                if (error) throw error;
+                
+                const counts = {};
+                AGENCIES.forEach(a => counts[a] = 0);
+                data.forEach(row => {
+                    counts[row.agency] = (counts[row.agency] || 0) + 1;
+                    counts['ทั้งหมด']++;
+                });
+
+                AGENCIES.forEach(ag => {
+                    const el = document.getElementById(`count-${ag.replace(/\s+/g, '-')}`);
+                    if (el) el.textContent = counts[ag];
+                });
+
+                document.getElementById('unread-total-top').textContent = counts['ทั้งหมด'];
+                document.getElementById('stat-unread').textContent = counts['ทั้งหมด'];
+                
+                // Fetch total and read
+                const { count: totalCount } = await sb.from('auctions').select('*', { count: 'exact', head: true });
+                document.getElementById('stat-total').textContent = totalCount || 0;
+                document.getElementById('stat-read').textContent = (totalCount || 0) - counts['ทั้งหมด'];
+
+            } catch (err) { console.error('Count err:', err); }
+        }
+
+        async function fetchData() {
+            showLoading(true);
+            const listContainer = document.getElementById('list-container');
+            try {
+                // Determine filter and sort
+                let filterCol = 'is_read';
+                let filterVal = (currentTab === 'new' ? false : true);
+                let sortCol = (currentTab === 'new' ? 'sort_date' : 'read_at');
+
+                const from = (currentPage - 1) * ITEMS_PER_PAGE;
+                const to = from + ITEMS_PER_PAGE - 1;
+
+                console.log(`[Fetch] Tab: ${currentTab}, Agency: ${currentAgency}, Range: ${from}-${to}`);
+
+                // Build query
+                let query = sb.from('auctions').select('*', { count: 'exact' });
+                
+                query = query.eq(filterCol, filterVal);
+                if (currentAgency !== 'ทั้งหมด') {
+                    query = query.eq('agency', currentAgency);
+                }
+                
+                query = query.order(sortCol, { ascending: false });
+                
+                const { data, count, error } = await query.range(from, to);
+
+                if (error) {
+                    console.error('Supabase Error:', error);
+                    listContainer.innerHTML = `<div class="empty">Error from Database: ${error.message} (Code: ${error.code})</div>`;
+                    return;
+                }
+
+                console.log(`[Result] Count: ${count}, Data Length: ${data ? data.length : 0}`);
+                
+                if (!data || data.length === 0) {
+                    listContainer.innerHTML = '<div class="empty"><div class="empty-ico">✨</div>ไม่พบรายการที่ต้องการ</div>';
+                } else {
+                    renderList(data);
+                }
+                
+                updatePagination(count);
+            } catch (err) {
+                console.error('Unexpected JS Error:', err);
+                listContainer.innerHTML = `<div class="empty">Unexpected Error: ${err.message}</div>`;
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function renderList(items) {
+            const container = document.getElementById('list-container');
+            if (!items || items.length === 0) {
+                container.innerHTML = '<div class="empty"><div class="empty-ico">✨</div>ไม่พบรายการที่ต้องการ</div>';
+                return;
+            }
+
+            container.innerHTML = items.map(item => `
+                <div class="news-card ${item.is_read ? 'read' : ''}" id="card-${item.id}">
+                    <div class="accent"></div>
+                    <div class="news-body">
+                        <a href="${item.url}" target="_blank" class="news-title" onclick="handleCardClick('${item.id}', '${item.url}')">
+                            ${item.title}
+                        </a>
+                        <div class="news-meta">
+                            <span class="badge bg-agency">🏛 ${item.agency}</span>
+                            <span class="badge bg-date">📅 ${item.date_str || '-'}</span>
+                            ${item.unit ? `<span class="badge bg-unit">🏢 ${item.unit}</span>` : ''}
+                            ${item.is_read ? `<span class="badge bg-read">✓ อ่านเมื่อ ${formatReadAt(item.read_at)}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function formatReadAt(ts) {
+            if (!ts) return '-';
+            return ts.substring(0, 16).replace('T', ' ');
+        }
+
+        async function handleCardClick(id, url) {
+            // Optimistic Update UI
+            if (currentTab === 'new') {
+                const card = document.getElementById(`card-${id}`);
+                if (card) {
+                    card.classList.add('read');
+                    // Add "Read At" badge optimistically
+                    const meta = card.querySelector('.news-meta');
+                    const now = new Date().toISOString();
+                    meta.innerHTML += `<span class="badge bg-read">✓ อ่านเมื่อ ${formatReadAt(now)}</span>`;
+                }
+
+                // Update Supabase
+                try {
+                    await sb.from('auctions').update({ 
+                        is_read: true, 
+                        read_at: new Date().toISOString() 
+                    }).eq('id', id);
+                    
+                    // Update counts locally
+                    fetchCounts();
+                } catch (err) { console.error('Update err:', err); }
+            }
+        }
+
+        function updatePagination(total) {
+            const totalPages = Math.ceil(total / ITEMS_PER_PAGE) || 1;
+            document.getElementById('page-info').textContent = `หน้า ${currentPage} / ${totalPages}`;
+            document.getElementById('btn-prev').disabled = (currentPage === 1);
+            document.getElementById('btn-next').disabled = (currentPage >= totalPages);
+        }
+
+        // --- Actions ---
+        function filterAgency(ag) {
+            currentAgency = ag;
+            currentPage = 1;
+            document.getElementById('current-view-label').textContent = ag;
+            renderAgencyList();
+            fetchData();
+        }
+
+        function switchTab(tab) {
+            currentTab = tab;
+            currentPage = 1;
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(`tab-${tab === 'new' ? 'new' : 'history'}`).classList.add('active');
+            fetchData();
+        }
+
+        function changePage(delta) {
+            currentPage += delta;
+            fetchData();
+            document.getElementById('main').scrollTo(0, 0);
+        }
+
+        function showLoading(show) {
+            document.getElementById('loading-overlay').style.display = show ? 'flex' : 'none';
+        }
+
+        // Run
+        init();
+    </script>
+</body>
+</html>
