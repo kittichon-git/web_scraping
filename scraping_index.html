@@ -195,6 +195,27 @@ body { font-family: var(--font); font-size: 14px; line-height: 1.5; color: var(-
 /* ── Last update ── */
 .ts-lbl { font-size: 12px; color: var(--c-muted); }
 
+/* ── Pagination ── */
+.pg-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 16px; border-top: 1px solid var(--c-border2);
+  background: var(--c-bg); flex-wrap: wrap; gap: 8px;
+}
+.pg-info { font-size: 12px; color: var(--c-muted); }
+.pg-btns { display: flex; align-items: center; gap: 4px; }
+.pg-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 28px; height: 28px; padding: 0 6px;
+  font-size: 12px; font-family: var(--font); font-weight: 500;
+  border: 1px solid var(--c-border); border-radius: var(--r);
+  background: var(--c-canvas); color: var(--c-text);
+  cursor: pointer; transition: background .1s;
+}
+.pg-btn:hover:not([disabled]) { background: var(--c-bg); }
+.pg-btn.cur { background: var(--c-link); border-color: var(--c-link); color: #fff; }
+.pg-btn[disabled] { opacity: .4; cursor: default; }
+.pg-dots { font-size: 12px; color: var(--c-muted); padding: 0 2px; }
+
 @media (max-width: 768px) {
   .layout { flex-direction: column; }
   .sidebar { width: 100%; }
@@ -330,6 +351,7 @@ async function loadAll() {
     allNew    = nr;
     allRead   = rr;
     allNewAll = allNr ?? nr;
+    curPage   = 1;
     updateStats();
     updateSbCounts();
     renderRuns();
@@ -359,8 +381,12 @@ function updateSbCounts() {
   });
 }
 
+const PER_PAGE = 20;
+let curPage = 1;
+
 function switchTab(tab, btn) {
   curTab = tab;
+  curPage = 1;
   document.querySelectorAll('.snav-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
   renderRuns();
@@ -368,6 +394,7 @@ function switchTab(tab, btn) {
 
 function setAg(ag, btn) {
   curAg = ag;
+  curPage = 1;
   if (activeSb) activeSb.classList.remove('active');
   btn.classList.add('active');
   activeSb = btn;
@@ -375,17 +402,80 @@ function setAg(ag, btn) {
 }
 
 function renderRuns() {
-  const items = curTab === 'new' ? allNew : allRead;
-  document.getElementById('rbox-title').textContent = curTab === 'new' ? 'New auction runs' : 'Completed runs';
-  document.getElementById('rbox-cnt').textContent   = `${items.length} runs`;
-
-  if (!items.length) {
-    document.getElementById('rlist').innerHTML = curTab === 'new'
-      ? '<div class="state"><div class="state-ico">✓</div>All caught up — no unread items</div>'
-      : '<div class="state"><div class="state-ico">📭</div>No completed runs yet</div>';
+  // tab "อ่านแล้ว" แสดงแค่ 20 รายการล่าสุด ไม่ต้อง pagination
+  if (curTab === 'read') {
+    const items = allRead.slice(0, 20);
+    document.getElementById('rbox-title').textContent = 'Completed runs';
+    document.getElementById('rbox-cnt').textContent   = `${allRead.length} runs (แสดง 20 ล่าสุด)`;
+    if (!items.length) {
+      document.getElementById('rlist').innerHTML =
+        '<div class="state"><div class="state-ico">📭</div>No completed runs yet</div>';
+    } else {
+      document.getElementById('rlist').innerHTML = items.map(rowRead).join('');
+    }
     return;
   }
-  document.getElementById('rlist').innerHTML = items.map(curTab === 'new' ? rowNew : rowRead).join('');
+
+  // tab "ใหม่" — pagination 20 ต่อหน้า
+  const items = allNew;
+  const total = items.length;
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  if (curPage > totalPages) curPage = totalPages;
+
+  const start = (curPage - 1) * PER_PAGE;
+  const pageItems = items.slice(start, start + PER_PAGE);
+
+  document.getElementById('rbox-title').textContent = 'New auction runs';
+  document.getElementById('rbox-cnt').textContent   = `${total} runs`;
+
+  if (!pageItems.length) {
+    document.getElementById('rlist').innerHTML =
+      '<div class="state"><div class="state-ico">✓</div>All caught up — no unread items</div>';
+    return;
+  }
+
+  const rows = pageItems.map(rowNew).join('');
+  const pgBar = totalPages > 1 ? buildPagination(curPage, totalPages, total) : '';
+  document.getElementById('rlist').innerHTML = rows + pgBar;
+}
+
+function buildPagination(page, totalPages, total) {
+  const start = (page - 1) * PER_PAGE + 1;
+  const end   = Math.min(page * PER_PAGE, total);
+
+  let btns = '';
+  // ก่อนหน้า
+  btns += `<button class="pg-btn" onclick="goPage(${page-1})" ${page===1?'disabled':''}>‹</button>`;
+
+  // หน้า 1
+  btns += `<button class="pg-btn ${page===1?'cur':''}" onclick="goPage(1)">1</button>`;
+
+  if (page > 3) btns += `<span class="pg-dots">…</span>`;
+
+  for (let i = Math.max(2, page-1); i <= Math.min(totalPages-1, page+1); i++) {
+    btns += `<button class="pg-btn ${i===page?'cur':''}" onclick="goPage(${i})">${i}</button>`;
+  }
+
+  if (page < totalPages - 2) btns += `<span class="pg-dots">…</span>`;
+
+  if (totalPages > 1) {
+    btns += `<button class="pg-btn ${page===totalPages?'cur':''}" onclick="goPage(${totalPages})">${totalPages}</button>`;
+  }
+
+  // ถัดไป
+  btns += `<button class="pg-btn" onclick="goPage(${page+1})" ${page===totalPages?'disabled':''}>›</button>`;
+
+  return `
+<div class="pg-bar">
+  <span class="pg-info">แสดง ${start}–${end} จาก ${total} รายการ</span>
+  <div class="pg-btns">${btns}</div>
+</div>`;
+}
+
+function goPage(p) {
+  curPage = p;
+  renderRuns();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function rowNew(item) {
