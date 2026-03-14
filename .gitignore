@@ -8,3 +8,4 @@ __pycache__/
 debug_*.html
 debug_*.py
 test_*.py
+.env
