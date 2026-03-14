@@ -570,12 +570,46 @@ def main():
     report_path = generate_report(new_items, history)
     print(f"Report generated: {report_path}")
     print(f"Stats: {len(new_items)} New, {len(history)} Total")
+
+    # --- Agency Results Summary ---
+    print("\n" + "="*55)
+    print(f" {'Agency':<40} | {'New':<5} | {'Total':<5}")
+    print("-" * 55)
+
+    new_counts = {}
+    for item in new_items:
+        agency = item.get('agency', 'Unknown')
+        new_counts[agency] = new_counts.get(agency, 0) + 1
+
+    all_agencies = set([item.get('agency', 'Unknown') for item in history])
+    all_agencies.update([item.get('agency', 'Unknown') for item in all_results])
+
+    total_counts = {}
+    for item in history:
+        agency = item.get('agency', 'Unknown')
+        total_counts[agency] = total_counts.get(agency, 0) + 1
+
+    summary = []
+    for agency in sorted(list(all_agencies)):
+        n_new = new_counts.get(agency, 0)
+        n_total = total_counts.get(agency, 0)
+        summary.append((agency, n_new, n_total))
+
+    for agency, new_val, total_val in summary:
+        agency_display = agency[:39]
+        padding = " " * max(0, 40 - len(agency_display))
+        print(f" {agency_display}{padding} | {new_val:<5} | {total_val:<5}")
+
+    print("-" * 55)
+    print(f" {'TOTAL':<40} | {len(new_items):<5} | {len(history):<5}")
+    print("=" * 55 + "\n")
     
     # Sync with Supabase (New for Global Sync)
-    print("Syncing with Supabase...")
-    upsert_auctions(all_results)
     
-    print("--- Finished ---")
+    
+    
+    
 
 if __name__ == "__main__":
     main()
+
