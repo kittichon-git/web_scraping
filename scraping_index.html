@@ -301,7 +301,7 @@ const AGENCIES = [
 
 const H = { 'apikey': SUPA_ANON, 'Authorization': `Bearer ${SUPA_ANON}`, 'Content-Type': 'application/json' };
 
-let allNew = [], allRead = [], curTab = 'new', curAg = '';
+let allNew = [], allRead = [], allNewAll = [], curTab = 'new', curAg = '';
 let activeSb = document.getElementById('sb-all');
 
 async function sbGet(filter) {
@@ -321,10 +321,15 @@ async function loadAll() {
   btn.classList.add('spinning');
   try {
     const ag = curAg ? `&agency=eq.${encodeURIComponent(curAg)}` : '';
-    [allNew, allRead] = await Promise.all([
+    const fetches = [
       sbGet(`&is_read=eq.false${ag}&order=sort_date.desc,discovered_at.desc`),
       sbGet(`&is_read=eq.true${ag}&order=read_at.desc`),
-    ]);
+      curAg ? sbGet(`&is_read=eq.false&order=sort_date.desc`) : Promise.resolve(null),
+    ];
+    const [nr, rr, allNr] = await Promise.all(fetches);
+    allNew    = nr;
+    allRead   = rr;
+    allNewAll = allNr ?? nr;
     updateStats();
     updateSbCounts();
     renderRuns();
@@ -347,10 +352,10 @@ function updateStats() {
 }
 
 function updateSbCounts() {
-  document.getElementById('sbn-all').textContent = allNew.length;
+  document.getElementById('sbn-all').textContent = allNewAll.length;
   AGENCIES.forEach((ag, i) => {
     const el = document.getElementById('sbn-' + i);
-    if (el) el.textContent = allNew.filter(x => x.agency === ag).length || '0';
+    if (el) el.textContent = allNewAll.filter(x => x.agency === ag).length || '0';
   });
 }
 
@@ -429,6 +434,8 @@ async function handleClick(id, url) {
     const [item] = allNew.splice(idx, 1);
     item.is_read = true; item.read_at = new Date().toISOString();
     allRead.unshift(item);
+    const idx2 = allNewAll.findIndex(x => x.id == id);
+    if (idx2 !== -1) allNewAll.splice(idx2, 1);
     updateStats(); updateSbCounts();
   }
   sbPatch(id).catch(console.error);
