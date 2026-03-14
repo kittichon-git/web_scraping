@@ -11,6 +11,9 @@ from scrapers.fio_scraper import FIOScraper
 from scrapers.revenue_scraper import RevenueScraper
 from scrapers.thailandpost_scraper import ThailandPostScraper
 from scrapers.ago_scraper import AGOScraper
+from scrapers.pwa_scraper import PWAScraper
+from scrapers.treasury_scraper import TreasuryScraper
+from utils.db import upsert_auctions
 
 # --- Settings ---
 DATA_DIR = 'data'
@@ -256,6 +259,8 @@ def generate_report(new_items, history):
                         <option value="กรมสรรพากร">กรมสรรพากร</option>
                         <option value="ไปรษณีย์ไทย">บริษัท ไปรษณีย์ไทย จำกัด</option>
                         <option value="สำนักงานอัยการสูงสุด">สำนักงานอัยการสูงสุด</option>
+                        <option value="การประปาส่วนภูมิภาค (PWA)">การประปาส่วนภูมิภาค (PWA)</option>
+                        <option value="กรมธนารักษ์">กรมธนารักษ์</option>
                     </select>
                 </div>
             </div>
@@ -468,7 +473,9 @@ def main():
         FIOScraper(),
         RevenueScraper(),
         ThailandPostScraper(),
-        AGOScraper()
+        AGOScraper(),
+        PWAScraper(),
+        TreasuryScraper()
     ]
     
     all_results = []
@@ -563,7 +570,11 @@ def main():
     report_path = generate_report(new_items, history)
     print(f"Report generated: {report_path}")
     print(f"Stats: {len(new_items)} New, {len(history)} Total")
-
+    
+    # Sync with Supabase (New for Global Sync)
+    print("Syncing with Supabase...")
+    upsert_auctions(all_results)
+    
     print("--- Finished ---")
 
 if __name__ == "__main__":
