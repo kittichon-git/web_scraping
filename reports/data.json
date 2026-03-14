@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "น.1กฟส.สกพ.(มต.)904/2568",
@@ -869,9 +870,7 @@
       "url": "https://ubonratchathani.treasury.go.th/th/download.php?ref=GTEgLJqiqTkcoau3pT9gMUqsGTIgoTqcqTMcpKuSpTIgoUqvGTSgqTqsqPMcBUt1pQEgA3pjGQSgpJqSqTEcnKuspPMgp3q3GTIgnJq2qUScEKuu",
       "source": "Treasury Department (กรมธนารักษ์)",
       "scraped_at": "15/03/2026"
-    }
-  ],
-  "historical": [
+    },
     {
       "agency": "สำนักงาน ป.ป.ส.",
       "unit": "ปปส.",
@@ -6713,5 +6712,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "15/03/2026 01:05"
+  "updated_at": "15/03/2026 01:13"
 }
