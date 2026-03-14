@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Auction Monitor — deep-search-v2</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --c-canvas:    #ffffff;
+  --c-bg:        #f6f8fa;
+  --c-border:    #d0d7de;
+  --c-border2:   #eaeef2;
+  --c-text:      #1f2328;
+  --c-muted:     #636e7b;
+  --c-subtle:    #9198a1;
+  --c-link:      #0969da;
+  --c-green:     #1a7f37;
+  --c-green-bg:  #dafbe1;
+  --c-blue-bg:   #ddf4ff;
+  --c-blue-tx:   #0550ae;
+  --c-orange:    #9a6700;
+  --c-orange-bg: #fff8c5;
+  --c-tag-bg:    #eaeef2;
+  --c-tag-tx:    #57606a;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --r: 6px;
+}
+
+body { font-family: var(--font); font-size: 14px; line-height: 1.5; color: var(--c-text); background: var(--c-bg); }
+
+/* ── Top nav ── */
+.topnav {
+  background: #24292f;
+  border-bottom: 1px solid #444c56;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-logo { color: #fff; display: flex; align-items: center; }
+.nav-logo svg { width: 28px; height: 28px; fill: currentColor; }
+.nav-bc { font-size: 14px; color: #e6edf3; display: flex; align-items: center; gap: 5px; }
+.nav-bc a { color: #e6edf3; text-decoration: none; font-weight: 600; }
+.nav-bc a:hover { text-decoration: underline; }
+.nav-bc .sep { color: #848d97; font-weight: 300; font-size: 18px; line-height: 1; }
+.nav-bc .repo { font-weight: 600; }
+
+/* ── Sub-nav (repo tabs) ── */
+.subnav {
+  background: var(--c-canvas);
+  border-bottom: 1px solid var(--c-border);
+  display: flex;
+  padding: 0 16px;
+  overflow-x: auto;
+  gap: 0;
+}
+.snav-tab {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 12px 16px 11px;
+  font-size: 14px; color: var(--c-muted);
+  border: none; border-bottom: 2px solid transparent;
+  background: none; font-family: var(--font);
+  cursor: pointer; white-space: nowrap;
+  transition: color .12s, border-color .12s;
+}
+.snav-tab:hover { color: var(--c-text); }
+.snav-tab.active { color: var(--c-text); font-weight: 600; border-bottom-color: #fd8c73; }
+.snav-tab .tcnt {
+  background: var(--c-tag-bg); color: var(--c-tag-tx);
+  font-size: 11px; font-weight: 600; border-radius: 20px;
+  padding: 0 6px; min-width: 20px; text-align: center; line-height: 18px;
+}
+
+/* ── Layout ── */
+.layout { max-width: 1280px; margin: 0 auto; padding: 24px 16px; display: flex; gap: 24px; align-items: flex-start; }
+
+/* ── Sidebar ── */
+.sidebar { width: 218px; flex-shrink: 0; }
+.sb-hd { font-size: 12px; font-weight: 600; color: var(--c-muted); text-transform: uppercase; letter-spacing: .04em; padding: 0 8px; margin-bottom: 6px; }
+.sb-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 5px 8px; border-radius: var(--r);
+  border: none; background: none; font-family: var(--font); font-size: 13px;
+  color: var(--c-text); text-align: left; cursor: pointer;
+  transition: background .1s;
+}
+.sb-btn:hover { background: var(--c-bg); }
+.sb-btn.active { background: var(--c-link); color: #fff; font-weight: 600; }
+.sb-btn.active .sb-n { background: rgba(255,255,255,.25); color: #fff; }
+.sb-n {
+  font-size: 11px; font-weight: 600; background: var(--c-tag-bg); color: var(--c-tag-tx);
+  border-radius: 20px; padding: 0 5px; min-width: 18px; text-align: center; line-height: 18px;
+}
+.sb-div { height: 1px; background: var(--c-border2); margin: 8px 0; }
+
+/* ── Main ── */
+.main { flex: 1; min-width: 0; }
+.pg-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
+.pg-hdr h2 { font-size: 20px; font-weight: 400; display: flex; align-items: center; gap: 7px; }
+
+/* live dot */
+@keyframes pls { 0%,100%{opacity:1} 50%{opacity:.25} }
+.ldot { width: 8px; height: 8px; border-radius: 50%; background: #2da44e; display: inline-block; animation: pls 2s infinite; }
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; font-size: 13px; font-family: var(--font); font-weight: 500;
+  border-radius: var(--r); cursor: pointer; border: 1px solid; line-height: 20px;
+  text-decoration: none; transition: background .12s;
+}
+.btn-def { background: var(--c-canvas); border-color: var(--c-border); color: var(--c-text); }
+.btn-def:hover { background: var(--c-bg); }
+.btn.spinning { opacity: .55; pointer-events: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.btn.spinning svg { animation: spin .7s linear infinite; }
+
+/* ── Stats row ── */
+.stats { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.spill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px; border-radius: 20px;
+  border: 1px solid var(--c-border); background: var(--c-canvas);
+  font-size: 12px; color: var(--c-muted);
+}
+.spill strong { color: var(--c-text); font-weight: 600; }
+.sdot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.sd-blue { background: var(--c-link); }
+.sd-green { background: var(--c-green); }
+.sd-gray { background: #8c959f; }
+
+/* ── Runs box ── */
+.rbox { background: var(--c-canvas); border: 1px solid var(--c-border); border-radius: var(--r); overflow: hidden; }
+.rbox-hdr {
+  padding: 8px 16px; border-bottom: 1px solid var(--c-border);
+  background: var(--c-bg); display: flex; align-items: center; justify-content: space-between;
+}
+.rbox-hdr span { font-size: 13px; font-weight: 600; }
+.rbox-cnt { font-size: 12px; color: var(--c-muted); font-weight: 400; }
+
+/* ── Run row ── */
+.rrow {
+  display: flex; align-items: center; padding: 12px 16px;
+  border-bottom: 1px solid var(--c-border2); gap: 10px;
+  transition: background .1s; cursor: pointer;
+}
+.rrow:last-child { border-bottom: none; }
+.rrow:hover { background: var(--c-bg); }
+.rrow.read { opacity: .48; background: var(--c-bg); }
+.rrow.read .rtitle { text-decoration: line-through; color: var(--c-subtle); }
+
+.ricon { width: 16px; height: 16px; flex-shrink: 0; display: flex; align-items: center; }
+.ricon svg { width: 16px; height: 16px; }
+.ic-new  { color: #0969da; }
+.ic-done { color: #8c959f; }
+
+.rbody { flex: 1; min-width: 0; }
+.rtitle {
+  font-size: 14px; font-weight: 600; color: var(--c-text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  display: block; cursor: pointer; background: none; border: none;
+  width: 100%; text-align: left; font-family: var(--font); padding: 0;
+  line-height: 1.4; transition: color .1s; text-decoration: none;
+}
+.rtitle:hover { color: var(--c-link); }
+.rmeta { display: flex; align-items: center; gap: 6px; margin-top: 3px; flex-wrap: wrap; }
+
+/* ── Badges ── */
+.bdg {
+  display: inline-flex; align-items: center;
+  font-size: 11px; font-weight: 500;
+  padding: 1px 7px; border-radius: 20px; white-space: nowrap; line-height: 18px;
+}
+.bd-blue   { background: var(--c-blue-bg);   color: var(--c-blue-tx); }
+.bd-green  { background: var(--c-green-bg);  color: var(--c-green); }
+.bd-orange { background: var(--c-orange-bg); color: var(--c-orange); font-family: var(--mono); font-size: 10px; }
+.bd-gray   { background: var(--c-tag-bg);    color: var(--c-tag-tx); font-family: var(--mono); font-size: 10px; }
+
+.rright { flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
+.read-ts { font-size: 11px; color: var(--c-subtle); font-family: var(--mono); white-space: nowrap; }
+
+/* ── State messages ── */
+.state { padding: 48px 16px; text-align: center; color: var(--c-muted); font-size: 14px; }
+.state-ico { font-size: 26px; margin-bottom: 8px; opacity: .45; }
+.spinner { width: 18px; height: 18px; border: 2px solid var(--c-border); border-top-color: var(--c-link); border-radius: 50%; animation: spin .7s linear infinite; margin: 0 auto 8px; }
+
+/* ── Last update ── */
+.ts-lbl { font-size: 12px; color: var(--c-muted); }
+
+@media (max-width: 768px) {
+  .layout { flex-direction: column; }
+  .sidebar { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- Top nav -->
+<nav class="topnav">
+  <div class="nav-logo">
+    <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+  </div>
+  <div class="nav-bc">
+    <a href="#">kittichon-git</a>
+    <span class="sep">/</span>
+    <span class="repo">deep-search-v2</span>
+  </div>
+</nav>
+
+<!-- Sub-nav -->
+<div class="subnav">
+  <button class="snav-tab active" id="snav-new" onclick="switchTab('new',this)">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h7A2.5 2.5 0 0114 2.5v10.042a.75.75 0 01-1.199.601l-2.268-1.701a.25.25 0 00-.3 0l-2.268 1.701a.75.75 0 01-.93 0L4.767 11.44a.25.25 0 00-.3 0l-1.268.953A.75.75 0 012 11.75V2.5zm2.5-1A1 1 0 003.5 2.5v8.055l.518-.39a1.75 1.75 0 012.1 0l2.268 1.702a.25.25 0 00.31 0l2.268-1.702a1.75 1.75 0 012.1 0l.518.39V2.5a1 1 0 00-1-1h-7z"/></svg>
+    ข่าวมาใหม่ <span class="tcnt" id="tcnt-new">–</span>
+  </button>
+  <button class="snav-tab" id="snav-read" onclick="switchTab('read',this)">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg>
+    อ่านแล้ว <span class="tcnt" id="tcnt-read">–</span>
+  </button>
+</div>
+
+<!-- Layout -->
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sb-hd">Filter by agency</div>
+    <button class="sb-btn active" id="sb-all" onclick="setAg('',this)">
+      <span>ทุกหน่วยงาน</span><span class="sb-n" id="sbn-all">–</span>
+    </button>
+    <div class="sb-div"></div>
+    <button class="sb-btn" onclick="setAg('กรมทางหลวง',this)"><span>กรมทางหลวง</span><span class="sb-n" id="sbn-0">–</span></button>
+    <button class="sb-btn" onclick="setAg('กรมศุลกากร',this)"><span>กรมศุลกากร</span><span class="sb-n" id="sbn-1">–</span></button>
+    <button class="sb-btn" onclick="setAg('กรมสรรพากร',this)"><span>กรมสรรพากร</span><span class="sb-n" id="sbn-2">–</span></button>
+    <button class="sb-btn" onclick="setAg('กรมธนารักษ์',this)"><span>กรมธนารักษ์</span><span class="sb-n" id="sbn-3">–</span></button>
+    <button class="sb-btn" onclick="setAg('สำนักงาน ป.ป.ส.',this)"><span>สำนักงาน ป.ป.ส.</span><span class="sb-n" id="sbn-4">–</span></button>
+    <button class="sb-btn" onclick="setAg('การไฟฟ้าส่วนภูมิภาค (PEA)',this)"><span>PEA</span><span class="sb-n" id="sbn-5">–</span></button>
+    <button class="sb-btn" onclick="setAg('การประปาส่วนภูมิภาค (PWA)',this)"><span>PWA</span><span class="sb-n" id="sbn-6">–</span></button>
+    <button class="sb-btn" onclick="setAg('กรมชลประทาน (RID)',this)"><span>กรมชลประทาน (RID)</span><span class="sb-n" id="sbn-7">–</span></button>
+    <button class="sb-btn" onclick="setAg('องค์การอุตสาหกรรมป่าไม้ (ออป.)',this)"><span>ออป.</span><span class="sb-n" id="sbn-8">–</span></button>
+    <button class="sb-btn" onclick="setAg('สำนักงานอัยการสูงสุด',this)"><span>อัยการสูงสุด</span><span class="sb-n" id="sbn-9">–</span></button>
+    <button class="sb-btn" onclick="setAg('ไปรษณีย์ไทย',this)"><span>ไปรษณีย์ไทย</span><span class="sb-n" id="sbn-10">–</span></button>
+    <button class="sb-btn" onclick="setAg('กรมบัญชีกลาง (e-GP)',this)"><span>e-GP</span><span class="sb-n" id="sbn-11">–</span></button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <div class="pg-hdr">
+      <h2><span class="ldot"></span> Auction runs</h2>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="ts-lbl" id="last-update"></span>
+        <button class="btn btn-def" id="btn-rf" onclick="loadAll()">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 15.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z"/></svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="spill"><span class="sdot sd-blue"></span><strong id="st-u">–</strong>&nbsp;unread</div>
+      <div class="spill"><span class="sdot sd-green"></span><strong id="st-r">–</strong>&nbsp;completed</div>
+      <div class="spill"><span class="sdot sd-gray"></span><strong id="st-t">–</strong>&nbsp;total</div>
+    </div>
+
+    <div class="rbox">
+      <div class="rbox-hdr">
+        <span id="rbox-title">All auction runs</span>
+        <span class="rbox-cnt" id="rbox-cnt"></span>
+      </div>
+      <div id="rlist">
+        <div class="state"><div class="spinner"></div>Loading auction data...</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════
+   SUPABASE CONFIG  ← แก้ 2 บรรทัดนี้
+═══════════════════════════════════════════════ */
+const SUPA_URL  = 'https://ckxbcvqgenttfecfkpjy.supabase.co';
+const SUPA_ANON = 'sb_publishable_P1yJuVEJx_Qw-kSL9DOK0w_P2G38GoZ';
+/* ═══════════════════════════════════════════════ */
+
+const AGENCIES = [
+  'กรมทางหลวง','กรมศุลกากร','กรมสรรพากร','กรมธนารักษ์',
+  'สำนักงาน ป.ป.ส.','การไฟฟ้าส่วนภูมิภาค (PEA)','การประปาส่วนภูมิภาค (PWA)',
+  'กรมชลประทาน (RID)','องค์การอุตสาหกรรมป่าไม้ (ออป.)','สำนักงานอัยการสูงสุด',
+  'ไปรษณีย์ไทย','กรมบัญชีกลาง (e-GP)',
+];
+
+const H = { 'apikey': SUPA_ANON, 'Authorization': `Bearer ${SUPA_ANON}`, 'Content-Type': 'application/json' };
+
+let allNew = [], allRead = [], curTab = 'new', curAg = '';
+let activeSb = document.getElementById('sb-all');
+
+async function sbGet(filter) {
+  const r = await fetch(`${SUPA_URL}/rest/v1/auctions?select=*${filter}`, { headers: H });
+  if (!r.ok) throw new Error(await r.text());
+  return r.json();
+}
+async function sbPatch(id) {
+  return fetch(`${SUPA_URL}/rest/v1/auctions?id=eq.${id}`, {
+    method: 'PATCH', headers: H,
+    body: JSON.stringify({ is_read: true, read_at: new Date().toISOString() }),
+  });
+}
+
+async function loadAll() {
+  const btn = document.getElementById('btn-rf');
+  btn.classList.add('spinning');
+  try {
+    const ag = curAg ? `&agency=eq.${encodeURIComponent(curAg)}` : '';
+    [allNew, allRead] = await Promise.all([
+      sbGet(`&is_read=eq.false${ag}&order=sort_date.desc,discovered_at.desc`),
+      sbGet(`&is_read=eq.true${ag}&order=read_at.desc`),
+    ]);
+    updateStats();
+    updateSbCounts();
+    renderRuns();
+    const n = new Date();
+    document.getElementById('last-update').textContent =
+      `Updated ${n.toLocaleDateString('th-TH')} ${n.toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'})}`;
+  } catch(e) {
+    document.getElementById('rlist').innerHTML =
+      `<div class="state"><div class="state-ico">⚠️</div>Error: ${esc(e.message)}</div>`;
+  } finally { btn.classList.remove('spinning'); }
+}
+
+function updateStats() {
+  const u = allNew.length, r = allRead.length;
+  document.getElementById('st-u').textContent = u;
+  document.getElementById('st-r').textContent = r;
+  document.getElementById('st-t').textContent = u + r;
+  document.getElementById('tcnt-new').textContent  = u;
+  document.getElementById('tcnt-read').textContent = r;
+}
+
+function updateSbCounts() {
+  document.getElementById('sbn-all').textContent = allNew.length;
+  AGENCIES.forEach((ag, i) => {
+    const el = document.getElementById('sbn-' + i);
+    if (el) el.textContent = allNew.filter(x => x.agency === ag).length || '0';
+  });
+}
+
+function switchTab(tab, btn) {
+  curTab = tab;
+  document.querySelectorAll('.snav-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderRuns();
+}
+
+function setAg(ag, btn) {
+  curAg = ag;
+  if (activeSb) activeSb.classList.remove('active');
+  btn.classList.add('active');
+  activeSb = btn;
+  loadAll();
+}
+
+function renderRuns() {
+  const items = curTab === 'new' ? allNew : allRead;
+  document.getElementById('rbox-title').textContent = curTab === 'new' ? 'New auction runs' : 'Completed runs';
+  document.getElementById('rbox-cnt').textContent   = `${items.length} runs`;
+
+  if (!items.length) {
+    document.getElementById('rlist').innerHTML = curTab === 'new'
+      ? '<div class="state"><div class="state-ico">✓</div>All caught up — no unread items</div>'
+      : '<div class="state"><div class="state-ico">📭</div>No completed runs yet</div>';
+    return;
+  }
+  document.getElementById('rlist').innerHTML = items.map(curTab === 'new' ? rowNew : rowRead).join('');
+}
+
+function rowNew(item) {
+  const unit = item.unit ? `<span class="bdg bd-green">🏢 ${esc(item.unit)}</span>` : '';
+  return `
+<div class="rrow" id="row-${item.id}">
+  <div class="ricon ic-new">
+    <svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="4"/></svg>
+  </div>
+  <div class="rbody">
+    <button class="rtitle" onclick="handleClick('${item.id}','${esc(item.url)}')">${esc(item.title)}</button>
+    <div class="rmeta">
+      <span class="bdg bd-blue">${esc(item.agency||'')}</span>
+      <span class="bdg bd-orange">📅 ${esc(item.date_str||'—')}</span>
+      ${unit}
+    </div>
+  </div>
+</div>`;
+}
+
+function rowRead(item) {
+  const unit = item.unit ? `<span class="bdg bd-green">🏢 ${esc(item.unit)}</span>` : '';
+  const ra = item.read_at ? item.read_at.substring(0,16).replace('T',' ') : '—';
+  return `
+<div class="rrow read">
+  <div class="ricon ic-done">
+    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg>
+  </div>
+  <div class="rbody">
+    <a class="rtitle" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a>
+    <div class="rmeta">
+      <span class="bdg bd-blue">${esc(item.agency||'')}</span>
+      <span class="bdg bd-orange">📅 ${esc(item.date_str||'—')}</span>
+      ${unit}
+    </div>
+  </div>
+  <div class="rright"><span class="read-ts">✓ ${ra}</span></div>
+</div>`;
+}
+
+async function handleClick(id, url) {
+  const row = document.getElementById('row-' + id);
+  if (row) row.classList.add('read');
+  const idx = allNew.findIndex(x => x.id == id);
+  if (idx !== -1) {
+    const [item] = allNew.splice(idx, 1);
+    item.is_read = true; item.read_at = new Date().toISOString();
+    allRead.unshift(item);
+    updateStats(); updateSbCounts();
+  }
+  sbPatch(id).catch(console.error);
+  window.open(url, '_blank', 'noopener');
+}
+
+function esc(s) {
+  return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+loadAll();
+</script>
+</body>
+</html>
