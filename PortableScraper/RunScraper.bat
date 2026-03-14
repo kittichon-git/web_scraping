@@ -8,7 +8,7 @@ set PATH=%~dp0python;%~dp0python\Scripts;%~dp0git\cmd;%PATH%
 
 cd app
 echo Pulling latest updates from GitHub...
-git pull origin main
+git pull --rebase origin main
 
 echo.
 echo Checking dependencies...

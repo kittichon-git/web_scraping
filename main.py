@@ -605,11 +605,12 @@ def main():
     print("=" * 55 + "\n")
     
     # Sync with Supabase (New for Global Sync)
-    
-    
-    
-    
+    print("Syncing with Supabase...")
+    upsert_auctions(all_results)
+    print("Supabase synced successfully.")
+    print("--- Finished ---")
 
 if __name__ == "__main__":
     main()
+
 
