@@ -1,5 +1,406 @@
 {
-  "new": [],
+  "new": [
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชร 0009.1/8784",
+      "title": "ประกาศจังหวัดเชียงราย เรื่อง จำหน่ายสิ่งปลูกสร้างบ้านพักเกษตรตำบลโป่งแพร่ ประกาศวันที่ 27 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/0a6c9929-af3f-4c79-aea5-20757a66a22f/Announce_Chiangrai+Provincial+Agricultural+Extension+Office_8784_31032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-0a6c9929-af3f-4c79-aea5-20757a66a22f-pRdmwUH",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ขก 71001.2/ ว 395",
+      "title": "ประกาศเทศบาลตำบลสาวะถี เรื่อง การขายทอดตลาดพัสดุ ครุภัณฑ์ที่ชำรุด เสื่อมสภาพ หมดความจำเป็นต้องใช้ในราชการ ประจำปีงบประมาณ พ.ศ. 2568 ประกาศวันที่ 26 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/6826ce42-4717-47a2-b4a8-ccb2d1b8ce2f/Announce_Municipality+of+Sawathee_c395_26032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-6826ce42-4717-47a2-b4a8-ccb2d1b8ce2f-pQ-cZB0",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ศย 307.022(E)/172",
+      "title": "ประกาศศาลเยาวชนและครอบครัวจังหวัดประจวบคีรีขันธ์ เรื่อง การขายทอดตลาดพัสดุ ประกาศวันที่ 26 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/c8696db9-8ab0-4218-980f-37eeda71e9f4/Announce_The+Prachuapkhirikhan+Juvenile+and+Family+Court_172_26032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-c8696db9-8ab0-4218-980f-37eeda71e9f4-pQ-esta",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ตช 0026.65/295",
+      "title": "ประกาศ สำนักงานตำรวจแห่งชาติ โดย กองกำกับการ 5 กองบังคับการตำรวจน้ำ เรื่อง ขายทอดตลาด ประกาศวันที่ 26 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/351a4b1d-c2ee-4be1-b172-b076529c2263/nnounce_Sub+Division+5+Marine+Police+Division_295_26032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-351a4b1d-c2ee-4be1-b172-b076529c2263-pRd25Tx",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ศธ 04183/1469",
+      "title": "ประกาศสำนักงานเขตพื้นที่การศึกษาประถมศึกษาอุบลราชธานี เขต 1 เรื่อง การขายทอดตลาดอาคารเรียน/สิ่งปลูกสร้าง ของโรงเรียนในสังกัดสำนักงานเขตพื้นที่การศึกษาประถมศึกษาอุบลราชธานี เขต 1 ประกาศวันที่ 25 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/265ad310-6097-4df6-845e-5e8d48a7ab39/Announce_Ubon+Ratchathani+Primary+Educational+Service+Area+Office_1469_25032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-265ad310-6097-4df6-845e-5e8d48a7ab39-pQEgE.M",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ สวพส./0305",
+      "title": "ประกาศสถาบันวิจัยและพัฒนาพื้นที่สูง (องค์การมหาชน) เลขที่ 1/2569 เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ หรือไม่จำเป็นต้องใช้ในหน่วยงาน จำนวน 471 รายการ ประกาศวันที่ 25 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://drive.google.com/file/d/1Um7g2OTvOrSTG19HfXbefCEPT-Erlcep/view?usp=sharing",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 0602.01/1325",
+      "title": "ประกาศมหาวิทยาลัยสุโขทัยธรรมาธิราช เรื่อง ประกวดราคาขายแบตเตอรี่ชำรุด จำนวน 88 ลูก ประกาศวันที่ 25 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/a6e259ed-e9cf-4d79-bc22-46efc7cfb930/Announce_Sukhothai+Thammathirat+Open+University_1325_25032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-a6e259ed-e9cf-4d79-bc22-46efc7cfb930-pQ-9TFF",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.0735/2039",
+      "title": "ประกาศ คณะแพทยศาสตร์ศิริราชพยาบาล ศูนย์การแพทย์กาญจนาภิเษก เรื่อง ขายทอดตลาดพัสดุที่จะจำหน่าย จำนวน 118 รายการ ประกาศวันที่ 25 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8a42ef29-b346-4f9e-a394-1be0fb1a2ffe/Announce_Faculty+of+Medicine+Siriraj+Hospital+Golden+Jubilee+Medical+Center_2039_19032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8a42ef29-b346-4f9e-a394-1be0fb1a2ffe-pRdhm2U",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.12/925",
+      "title": "ประกาศ คณะสังคมศาสตร์และมนุษยศาสตร์ มหาวิทยาลัยมหิดล เรื่อง ขายทอดตลาดจำหน่ายพัสดุรายการครุภัณฑ์ เสื่อมสภาพ รถยนต์นั่งส่วนบุคคลเกิน 7 คน เลขทะเบียน นค 3505 จังหวัดนครปฐม จำนวน 1 คัน ของสำนักงานคณบดี ประกาศวันที่ 25 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/b8207637-4bb6-4bd4-8a89-f7c9308313dd/Announce_Faculty+of+Social+Sciences+and+Humanities+Mahidol+University_925_25032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-b8207637-4bb6-4bd4-8a89-f7c9308313dd-pQZvM4v",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชม 52202/466",
+      "title": "ประกาศเทศบาลตำบลช้างเผือก อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่ เรื่อง ประมูลขายทอดตลาดพัสดุชำรุด ประจำปีงบประมาณ พ.ศ. 2569 ประกาศวันที่ 24 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://drive.google.com/file/d/1u3pUdlo2CgElovzQ8hX6Buukz76nHFzw/view?usp=sharing",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ทส 0961.1/1243",
+      "title": "ประกาศสำนักบริหารพื้นที่อนุรักษ์ที่ 13 สาขาลำปาง เรื่อง การจำหน่ายท่อนไม้ที่ได้จากการตัดต้นไม้ที่โค่นล้มจากเหตุวาตภัยและต้นไม่ที่มีความเสี่ยงสูง โดยวิธีขายทอดตลาด ครั้งที่ 3 ประกาศวันที่ 24 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/a1681fbe-6847-4d64-b847-b18c6646c9eb/Announce_Protected+Area+Regional+Office+13+Lampang_1243_25032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-a1681fbe-6847-4d64-b847-b18c6646c9eb-pQ-8al0",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว.6630301.16/652",
+      "title": "ประกาศมหาวิทยาลัยขอนแก่น เลขที่ 1/2569 เรื่อง ขายทอดตลาดพัสดุชำรุดเสื่อมสภาพ จำนวน 67 รายการ ประกาศวันที่ 24 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3d115cc5-edcc-4fb6-a455-24f65cfe6c2b/Announce_Faculty+of+Fine+and+Applied+Arts+Khon+Kaen+University_652_24032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3d115cc5-edcc-4fb6-a455-24f65cfe6c2b-pQE3tpT",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ สป 0033.302/2538",
+      "title": "ประกาศจังหวัดสมุทรปราการ เรื่อง ขายทอดตลาดพัสดุ ประจำปีงบประมาณ พ.ศ. 2568 ประกาศวันที่ 24 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/523ca9ff-b65b-4f15-899b-b2f6b3778686/Announce_Bangplee+Hospital_2538_24032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-523ca9ff-b65b-4f15-899b-b2f6b3778686-pQzaiYp",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชม 54402/065",
+      "title": "ประกาศ โรงเรียนเทศบาลหางดง (ประชาคมสร้างสรรค์) เรื่อง ขายทอดครุภัณฑ์เก่าชำรุด ประกาศวันที่ 24 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/dfc2be57-24b6-42a8-ba5d-c5803e264969/Announce_Hang+Dong+Municipal+School+%28Creative+Community%29_065_24032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-dfc2be57-24b6-42a8-ba5d-c5803e264969-pQKCd7g",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.0732/ศป.ผอ. 339",
+      "title": "ประกาศ โรงพยาบาลศิริราช ปิยมหาราชการุณย์  เรื่อง ขายทอดตลาดพัสดุคอมพิวเตอร์ และอุปกรณ์คอมพิวเตอร์ (หมดความจำเป็น/ชำรุด/เสื่อมสภาพ) จำนวน 633 รายการ ประกาศวันที่ 24 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://drive.google.com/file/d/1TvleLJ7umQ3sgbsUplTdp5xGZ6wlLqwV/view?usp=sharing",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ปท 54602/629",
+      "title": "ประกาศเทศบาลเมืองบึงยี่โถ เรื่อง ขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ หมดความจำเป็น ประจำปีงบประมาณ พ.ศ. 2568 ประกาศวันที่ 23 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/b0a97efe-6fd6-4f9a-a5f0-73a4d80bf1d9/Announce_+Bueng+Yitho+Town+Municipality_629_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-b0a97efe-6fd6-4f9a-a5f0-73a4d80bf1d9-pQz9ZSp",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชบ 73802/ว0090",
+      "title": "ประกาศองค์การบริหารส่วนตำบลหนองอิรุณ เรื่อง การขายพัสดุประเภทครุภัณฑ์ที่ชำรุด และเสื่อมสภาพ โดยวิธีขายทอดตลาด (ครั้งที่ 3) ประกาศวันที่ 23 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/3609d76e-7ad3-4bcb-b9d3-a61c259ae2dd/Announce_Nongerun+Subdistrict+Administrative+Organization_c0090_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-3609d76e-7ad3-4bcb-b9d3-a61c259ae2dd-pQviC-B",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ พช 74402/121",
+      "title": "ประกาศองค์การบริหารส่วนตำบลน้ำก้อ เรื่อง ขายทอดตลาดทรัพย์สินชำรุด เสื่อมสภาพ หรือไม่จำเป็นต้องใช้ในราชการต่อไป (ครั้งที่ 2) ประกาศวันที่ 23 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/dc6104cc-9969-4805-9e25-b18f7e20e4b2/Announce_Nam+Koa+Subdistrict+Administrative+Organization_121_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-dc6104cc-9969-4805-9e25-b18f7e20e4b2-pQzd1OD",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ลต (ชม) 0001/670",
+      "title": "ประกาศสำนักงานคณะกรรมการการเลือกตั้งประจำจังหวัดเชียงใหม่ เรื่อง การขายทอดตลาดพัสดุชำรุด เสื่อมสภาพ หรือหมดความจำเป็นในการใช้งาน ประจำปีงบประมาณ พ.ศ. 2569 จำนวน 11 รายการ ประกาศวันที่ 23 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/bd406b94-562b-45f0-840a-339ab3e96bf8/Announce_Office+of+Province+Election+Commission+of+Chiang+Mai_670_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-bd406b94-562b-45f0-840a-339ab3e96bf8-pQE379b",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 5600/0624",
+      "title": "ประกาศสถาบันวิจัยดาราศาสตร์แห่งชาติ (องค์การมหาชน) เรื่อง จำหน่ายพัสดุเสื่อมสภาพ และไม่จำเป็นต้องใช้งานในหน่วยงานของรัฐ ประจำปีงบประมาณ พ.ศ. 2568 โดยวิธีขายทอดตลาด ประกาศวันที่ 23 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://drive.google.com/file/d/1jLX_Bx4iWThhwi2HPJzNUSUR3UnbIOtX/view?usp=sharing",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ยธ 0509(อ)/598",
+      "title": "ประกาศกรมบังคับคดี เรื่อง การขายทอดตลาดพัสดุที่ชำรุดเสื่อมสภาพ ประกาศวันที่ 23 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/38cfadf0-de65-401e-9998-72e599d951f6/Announce_Legal+Execution+Department_598_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-38cfadf0-de65-401e-9998-72e599d951f6-pQvfIon",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชพ 72702/255",
+      "title": "ประกาศเทศบาลเมืองท่ายาง เรื่อง ขายทอดตลาดครุภัณฑ์ชำรุดเสื่อมสภาพหมดความจำเป็นต้องใช้ในราชการ โดยวิธีประมูลด้วยวาจา ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/15b8eec7-00a5-4eca-9e28-50abf2e0570f/Announce_Thayang+Town+Municipality_255_20032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-15b8eec7-00a5-4eca-9e28-50abf2e0570f-pQvhUOk",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ พล 52002/2067",
+      "title": "ประกาศเทศบาลนครพิษณุโลก เรื่อง ขายทอดตลาดซากครุภัณฑ์ที่ชำรุดของสำนักสาธารณสุขและสิ่งแวดล้อม จำนวน 246 รายการ (รถยนต์ปิคอัพ 1 รายการ จำนวน 1 คัน และซากครุภัณฑ์ต่างๆ 1 รายการ จำนวน 244 ชิ้น) ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://drive.google.com/file/d/1mnOPsz4QY3ATEB8VLOG-Z4zPLp8sYras/view?usp=sharing",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชม 54402/280",
+      "title": "ประกาศเทศบาลตำบลหางดง เรื่อง ขายทอดครุภัณฑ์ยานพาหนะและขนส่งเก่าชำรุด จำนวน 1 คัน ครั้งที่ 2 ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/942fae96-40f2-43be-ba23-8e3e69c17c7b/Announce_Hangdong+Municipality_280_20032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-942fae96-40f2-43be-ba23-8e3e69c17c7b-pQveYVJ",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ กจ 54502/169",
+      "title": "ประกาศเทศบาลตำบลหวายเหนียว เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ที่ชำรุดและเสื่อมสภาพ จำนวน 11 รายการ โดยวิธีประมูลด้วยวาจา (ปากเปล่า) ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/e0473fc9-d1d3-4279-88f2-2f611866a974/Announce_Municipality+of+Whaynieo_169_20032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-e0473fc9-d1d3-4279-88f2-2f611866a974-pQvfouY",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ฉช 73802/62",
+      "title": "ประกาศองค์การบริหารส่วนตำบลคลองหลวงแพ่ง เรื่อง การจำหน่ายพัสดุโดยวิธีการขายทอดตลาด(พร้อมรื้อถอน) ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://drive.google.com/file/d/1qITU37VKRgGLGWx3xFGAbF11lzqsCgAg/view?usp=sharing",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ รง 0430/0830",
+      "title": "ประกาศสถาบันพัฒนาฝีมือแรงงาน 19 เชียงใหม่ เรื่อง ขายทอดตลาดพัสดุชำรุด และเสื่อมสภาพหรือหมดความจำเป็นที่ต้องใช้ในหน่วยงาน ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/04237028-fa34-4ee9-a568-71a643a5154c/Announce_Chiang+Mai+institute+for+Skill+Development+19_0830_20032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-04237028-fa34-4ee9-a568-71a643a5154c-pQve58K",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 78.04/974",
+      "title": "ประกาศมหาวิทยาลัยมหิดล (คณะเทคนิคการแพทย์) เรื่อง ขายทอดตลาดรายการครุภัณฑ์ที่ชำรุด เสื่อมสภาพจากการใช้งานตามปกติ รายการ เครื่องทำน้ำเย็นระบบปรับอากาศเครื่องที่ 1 จำนวน 1 เครื่อง ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/4c8de480-08eb-40ea-9964-c87696bdb3d9/Announce_Faculty+of+Medical+Technology+Mahidol+University_974_20032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-4c8de480-08eb-40ea-9964-c87696bdb3d9-pRcRxiz",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ทส 0612/516",
+      "title": "ประกาศกรมทรัพยากรน้ำ เรื่อง การขายทอดตลาดพัสดุชำรุด ประจำปี พ.ศ. 2568 ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/53d7035e-801b-4e0e-a086-f6ddfc4fad5a/Announce_Water+Resources+Office+2_516_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-53d7035e-801b-4e0e-a086-f6ddfc4fad5a-pQKDApn",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ สค 71804/296",
+      "title": "ประกาศ องค์การบริหารส่วนตำบลท่าเสา เรื่อง การจำหน่ายพัสดุ ครุภัณฑ์ที่ชำรุด เสื่อมสภาพหมดความจำเป็นต้องใช้ในราชการ ประจำปีงบประมาณ พ.ศ. 2568 โดยวิธีขายทอดตลาด ประกาศวันที่ 20 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/a19625fb-57b9-4fd5-856c-6f19f53cedb1/Announce_Thasao+Subdistrict+Administrative+Organization_296_20032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-a19625fb-57b9-4fd5-856c-6f19f53cedb1-pQZ6BBl",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ภก 52105/1176",
+      "title": "ประกาศเทศบาลเมืองป่าตอง เรื่อง ประมูลขายโดยวิธีทอดตลาดพัสดุครุภัณฑ์ที่ชำรุด เสื่อมสภาพ ไม่จำเป็นต้องใช้ในราชการ ประกาศวันที่ 19 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/4fa79b9d-2bf8-4f3c-b82f-595adbacfdb1/Announce_Patong+Town+Municipality_1176_19032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-4fa79b9d-2bf8-4f3c-b82f-595adbacfdb1-pQp1-6x",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ นย 61302/ว 110",
+      "title": "ประกาศเทศบาลตำบลท่าช้าง เรื่อง การขายทอดตลาด กรณีพัสดุชำรุด เสื่อมสภาพ และไม่จำเป็นต้องใช้ในราชการ ประกาศวันที่ 19 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/5032cde9-4707-40da-a88d-ffa497d28f12/Announce_Tha+Chang+Subdistrict+Municipality_c110_18032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-5032cde9-4707-40da-a88d-ffa497d28f12-pQvigUm",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว 0602.01/1275",
+      "title": "ประกาศมหาวิทยาลัยสุโขทัยธรรมาธิราช เรื่อง การขายทอดตลาดครุภัณฑ์ชำรุด จำนวน 10 รายการ ประกาศวันที่ 19 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/ba53e197-2335-4b1e-ba98-a25ded255e2b/Announce_Sukhothai+Thammathirat+Open+University_1275_23032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-ba53e197-2335-4b1e-ba98-a25ded255e2b-pQE3Otl",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ อว.660201.1.3/5558",
+      "title": "ประกาศมหาวิทยาลัยขอนแก่น เลขที่ สธ.ท.4/2569 เรื่อง ขายทอดตลาด พัสดุและครุภัณฑ์เสื่อมสภาพ จำนวน 28 รายการ ประกาศวันที่ 19 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/26103f0a-fe56-4ee2-87bd-26fe9154d8be/Announce_Khon+Kaen+University_5558_19032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-26103f0a-fe56-4ee2-87bd-26fe9154d8be-pQvdF.0",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ มท 55520/1237",
+      "title": "ประกาศการประปาส่วนภูมิภาคเขต 5 ที่ กปภ.ข.5/35/2569 เรื่อง ขายทอดตลาดสินทรัพย์ถาวรชำรุด เสื่อมสภาพ และไม่จำเป็นต้องใช้งาน จำนวน 168 รายการ ประกาศวันที่ 19 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/f1f72a03-ff8a-41d3-b6d4-84c30cfac780/Announce_Provincial+Waterworks+Authority+Regional+Office+5_1237_19032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-f1f72a03-ff8a-41d3-b6d4-84c30cfac780-pQvhrzm",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชร 0209/281",
+      "title": "ประกาศอำเภอเชียงของ เรื่อง ขายทอดตลาดพัสดุครุภัณฑ์ชำรุด เสื่อมสภาพ ประจำปีงบประมาณ พ.ศ. 2569 ประกาศวันที่ 18 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/363ad7ee-36ba-407d-8e43-ef22477f6c87/Announce_Chiang+Khong++District+Agricultural+Extension+Office_281_30032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-363ad7ee-36ba-407d-8e43-ef22477f6c87-pRiPA4x",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชม 80902/196",
+      "title": "ประกาศองค์การบริหารส่วนตำบลม่อนปิ่น เรื่อง การขายทอดตลาด ประกาศวันที่ 18 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/6be5290a-5d46-4775-a7df-8b60f2a50dcd/Announce_Monpin+Subdistrict+Administrative+Organization_196_18032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-6be5290a-5d46-4775-a7df-8b60f2a50dcd-pQp0TK-",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ บก 73902/31",
+      "title": "ประกาศองค์การบริหารส่วนตำบลบัวตูม เรื่อง ยกเลิกประกาศขายทอดตลาดทรัพย์สินขององค์การบริหารส่วนตำบลบัวตูม ประกาศวันที่ 18 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/0cc00adf-f631-4b45-95b5-7f0a955532b8/Announce_Buatoom+Subdistrict+Administrative+Organization_31_18032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-0cc00adf-f631-4b45-95b5-7f0a955532b8-pQ03QIg",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ด่วนที่สุด ที่ พน 0601/ว 470",
+      "title": "ประกาศสำนักงานนโยบายและแผนพลังงาน เรื่อง การขายโดยวิธีทอดตลาด พัสดุชำรุด เสื่อมสภาพ ประจำปีงบประมาณ พ.ศ. 2568 ประกาศวันที่ 18 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/f389a12f-19f2-42a2-9a85-3560db8643af/Announce_Energy+Policy+and+Planning+Office_c470_18032569.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-f389a12f-19f2-42a2-9a85-3560db8643af-pQ4MYI-",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    },
+    {
+      "agency": "กรมบัญชีกลาง (e-GP)",
+      "unit": "ที่ ชย 0033/ว 793",
+      "title": "ประกาศจังหวัดชัยภูมิ เรื่อง ประกาศขายทอดตลาดพัสดุ ประกาศวันที่ 18 มีนาคม 2569",
+      "date": "ตรวจพบเมื่อ 05/04/2026",
+      "sort_date": "2026-04-05",
+      "url": "https://www.gprocurement.go.th/wps/wcm/connect/8962bacb-5fca-4797-a4f1-e25500abad1d/Announce_Chatturat+Hospital_c793_18032569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8962bacb-5fca-4797-a4f1-e25500abad1d-pQvg0WR",
+      "source": "G-Procurement",
+      "scraped_at": "05/04/2026"
+    }
+  ],
   "historical": [
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
@@ -8131,5 +8532,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "05/04/2026 00:38"
+  "updated_at": "05/04/2026 00:44"
 }
