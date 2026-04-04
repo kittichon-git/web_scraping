@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "ก.1(ข)43/2569",
@@ -1418,9 +1419,7 @@
       "url": "https://pms.rid.go.th:4001/api/egp_announce/file/file_2026-03-13_071f27e9-d8de-4ad4-9184-b06b40ac5fad.pdf",
       "source": "Royal Irrigation Department (RID)",
       "scraped_at": "04/04/2026"
-    }
-  ],
-  "historical": [
+    },
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "น.1กฟส.สกพ.(มต.)904/2568",
@@ -8132,5 +8131,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "04/04/2026 20:47"
+  "updated_at": "05/04/2026 00:28"
 }
