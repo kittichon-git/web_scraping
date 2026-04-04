@@ -1,5 +1,6 @@
 {
-  "new": [
+  "new": [],
+  "historical": [
     {
       "agency": "กรมบัญชีกลาง (e-GP)",
       "unit": "ที่ ชร 0009.1/8784",
@@ -399,9 +400,7 @@
       "url": "https://www.gprocurement.go.th/wps/wcm/connect/8962bacb-5fca-4797-a4f1-e25500abad1d/Announce_Chatturat+Hospital_c793_18032569+.pdf?MOD=AJPERES&ContentCache=NONE&CACHE=NONE&CACHEID=ROOTWORKSPACE-8962bacb-5fca-4797-a4f1-e25500abad1d-pQvg0WR",
       "source": "G-Procurement",
       "scraped_at": "05/04/2026"
-    }
-  ],
-  "historical": [
+    },
     {
       "agency": "การไฟฟ้าส่วนภูมิภาค (PEA)",
       "unit": "ก.1(ข)43/2569",
@@ -8532,5 +8531,5 @@
       "scraped_at": "05/03/2026"
     }
   ],
-  "updated_at": "05/04/2026 00:44"
+  "updated_at": "05/04/2026 00:51"
 }
