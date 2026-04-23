@@ -1,6 +1,0 @@
-requests
-beautifulsoup4
-urllib3
-supabase
-streamlit
-python-dotenv
