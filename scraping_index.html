@@ -273,6 +273,8 @@ body { font-family: var(--font); font-size: 14px; line-height: 1.5; color: var(-
     <button class="sb-btn" onclick="setAg('กรมบังคับคดี',this)"><span>กรมบังคับคดี</span><span class="sb-n" id="sbn-12">–</span></button>
     <button class="sb-btn" onclick="setAg('การประปานครหลวง (MWA)',this)"><span>MWA (กปน.)</span><span class="sb-n" id="sbn-13">–</span></button>
     <button class="sb-btn" onclick="setAg('กรมปศุสัตว์',this)"><span>กรมปศุสัตว์</span><span class="sb-n" id="sbn-14">–</span></button>
+    <button class="sb-btn" onclick="setAg('การไฟฟ้านครหลวง (MEA)',this)"><span>MEA (กฟน.)</span><span class="sb-n" id="sbn-15">–</span></button>
+    <button class="sb-btn" onclick="setAg('บริษัท โทรคมนาคมแห่งชาติ (NT)',this)"><span>NT (โทรคมนาคม)</span><span class="sb-n" id="sbn-16">–</span></button>
   </aside>
 
   <!-- Main -->
@@ -323,6 +325,8 @@ const AGENCIES = [
   'ไปรษณีย์ไทย','กรมบัญชีกลาง (e-GP)','กรมบังคับคดี',
   'การประปานครหลวง (MWA)',
   'กรมปศุสัตว์',
+  'การไฟฟ้านครหลวง (MEA)',
+  'บริษัท โทรคมนาคมแห่งชาติ (NT)',
 ];
 
 const H = { 'apikey': SUPA_ANON, 'Authorization': `Bearer ${SUPA_ANON}`, 'Content-Type': 'application/json' };
