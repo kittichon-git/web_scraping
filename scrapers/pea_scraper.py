@@ -75,9 +75,19 @@ class PEAScraper(BaseScraper):
             print(f"Curl failed: {e}")
             return None
 
-    def scrape(self, max_pages=1):
+    def scrape(self, max_pages=5):
         print(f"Scraping {self.name}...")
-        html = self.fetch_with_curl(self.search_url)
-        if not html:
-            return []
-        return self.parse(html)
+        all_results = []
+        for page in range(max_pages):
+            url = self.search_url if page == 0 else f"{self.search_url}?page={page}"
+            print(f"  PEA page {page + 1}/{max_pages}: {url}")
+            html = self.fetch_with_curl(url)
+            if not html:
+                print(f"  PEA page {page + 1}: fetch failed, stopping")
+                break
+            results = self.parse(html)
+            if not results:
+                print(f"  PEA page {page + 1}: no results, stopping")
+                break
+            all_results.extend(results)
+        return all_results

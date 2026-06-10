@@ -13,7 +13,10 @@ def get_supabase() -> Client:
     if not SUPABASE_URL or not SUPABASE_KEY:
         return None
     try:
-        return create_client(SUPABASE_URL, SUPABASE_KEY)
+        client = create_client(SUPABASE_URL, SUPABASE_KEY)
+        # Explicitly set auth header for PostgREST to bypass RLS with service_role key
+        client.postgrest.auth(SUPABASE_KEY)
+        return client
     except Exception as e:
         print(f"Error connecting to Supabase: {e}")
         return None
@@ -27,9 +30,13 @@ def upsert_auctions(auctions_data):
     if not auctions_data:
         return
 
-    # Prepare data for upsert
+    # Prepare data for upsert — skip items with null/empty URL (would violate NOT NULL constraint)
     to_upsert = []
+    skipped = 0
     for item in auctions_data:
+        if not item.get("url"):
+            skipped += 1
+            continue
         to_upsert.append({
             "url": item.get("url"),
             "agency": item.get("agency"),
@@ -42,6 +49,12 @@ def upsert_auctions(auctions_data):
             # Note: is_read and read_at are managed by the dashboard
         })
 
+    if skipped:
+        print(f"  ⚠️ Skipped {skipped} item(s) with null URL before upsert.")
+    if not to_upsert:
+        print("No valid items to upsert.")
+        return
+
     try:
         # Use upsert with 'url' as the conflict target (unique constraint)
         response = supabase.table("auctions").upsert(
@@ -51,6 +64,30 @@ def upsert_auctions(auctions_data):
         print(f"Successfully upserted {len(to_upsert)} items to Supabase.")
     except Exception as e:
         print(f"Error upserting to Supabase: {e}")
+
+def get_existing_urls() -> set:
+    """ดึง URL ทั้งหมดที่มีใน Supabase แล้ว"""
+    supabase = get_supabase()
+    if not supabase:
+        return set()
+    try:
+        all_urls = set()
+        offset = 0
+        limit = 1000
+        while True:
+            response = supabase.table("auctions").select("url").range(offset, offset + limit - 1).execute()
+            if not response.data:
+                break
+            for row in response.data:
+                if row.get("url"):
+                    all_urls.add(row["url"])
+            if len(response.data) < limit:
+                break
+            offset += limit
+        return all_urls
+    except Exception as e:
+        print(f"⚠️ ดึง existing URLs ไม่ได้: {e}")
+        return set()
 
 def mark_as_read(auction_id):
     supabase = get_supabase()

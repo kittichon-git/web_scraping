@@ -9,4 +9,5 @@ debug_*.html
 debug_*.py
 test_*.py
 .env
+led_cookies.json
 PortableScraper/

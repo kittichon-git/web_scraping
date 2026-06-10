@@ -8,7 +8,11 @@ class GProcurementScraper(BaseScraper):
         # The URL is quite long and session-based, but we can try to use the base portal URL or the specific one provided.
         # However, many times these portal URLs expire. For the initial implementation, we use the provided URL.
         super().__init__(name="G-Procurement", base_url="https://www.gprocurement.go.th")
-        self.search_url = "https://www.gprocurement.go.th/wps/portal/egp/auction/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zifQ3djQydnQ18_T3dzA0czU0NfANMLQ1cLc30w8EKDHAARwP9KGL041EQhd_4cP0oNCvCjM2AJgT4OvsHehgYOBtCFeAxoyA3NMIg01ERAP8P-8A!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL3Ro/"
+        self.page_urls = [
+            "https://www.gprocurement.go.th/wps/portal/egp/auction/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zifQ3djQydnQ18_T3dzA0czU0NfANMLQ1cLc30w8EKDHAARwP9KGL041EQhd_4cP0oNCvCjM2AJgT4OvsHehgYOBtCFeAxoyA3NMIg01ERAP8P-8A!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL3Ro/",
+            "https://www.gprocurement.go.th/wps/portal/egp/auction/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zifQ3djQydnQ18_T3dzA0czU0NfANMLQ1cLc30w8EKDHAARwP9KGL041EQhd_4cP0oNCvCjM2AJgT4OvsHehgYOBtCFeAxoyA3NMIg01ERAP8P-8A!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL3Ro/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!2=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!3=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!4=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!3=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!2=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!1=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!2=WCM_PI!1==/#Z7_M1G21CC0MOIF70A750MP590UQ2",
+            "https://www.gprocurement.go.th/wps/portal/egp/auction/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zifQ3djQydnQ18_T3dzA0czU0NfANMLQ1cLc30w8EKDHAARwP9KGL041EQhd_4cP0oNCvCjM2AJgT4OvsHehgYOBtCFeAxoyA3NMIg01ERAP8P-8A!/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL3Ro/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!2=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!3=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!4=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!3=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!2=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!1=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!2=WCM_PI!1==/p0/IZ7_M1G21CC0MOIF70A750MP590UQ2=CZ6_M1G21CC0MOIF70A750MP590E96=MECTX!QCPegp_site_thQCPegpQCPauctionQCPContentQCAAuctionQCPPrakard_Rayong=ns_Z7_M1G21CC0MOIF70A750MP590UQFB2_WCM_Page.10092fbb-da0f-4c15-8539-a60440abdc7d!3=WCM_PI!1==/#Z7_M1G21CC0MOIF70A750MP590UQ2",
+        ]
 
     def parse(self, html):
         soup = BeautifulSoup(html, 'html.parser')
@@ -51,16 +55,17 @@ class GProcurementScraper(BaseScraper):
                 })
         return results
 
-    def scrape(self, max_pages=1):
+    def scrape(self, max_pages=None):
         all_results = []
         print(f"Scraping {self.name}...")
-        html = self.fetch(self.search_url)
-        if not html:
-            return []
-            
-        page_results = self.parse(html)
-        all_results.extend(page_results)
-        
-        # Pagination for e-GP is complex due to JS/Portal state. 
-        # For daily updates, the first page is usually sufficient.
+        for i, url in enumerate(self.page_urls, 1):
+            print(f"  หน้า {i}/{len(self.page_urls)}...")
+            html = self.fetch(url)
+            if not html:
+                print(f"  ⚠️ ดึงหน้า {i} ไม่ได้ ข้ามไป")
+                continue
+            page_results = self.parse(html)
+            all_results.extend(page_results)
+            if i < len(self.page_urls):
+                time.sleep(1)
         return all_results
