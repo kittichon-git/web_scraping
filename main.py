@@ -19,6 +19,7 @@ from scrapers.mea_scraper import MEAScraper
 from scrapers.nt_scraper import NTScraper
 from scrapers.egat_scraper import EgatScraper
 from scrapers.npnt_scraper import NPNTScraper
+from scrapers.bkk_scraper import BKKScraper
 from utils.db import upsert_auctions, get_existing_urls
 from utils.run_logger import RunLogger, _read_runs_json
 from scrapers.gprocurement_scraper import GProcurementScraper as _GPScraper
@@ -78,6 +79,7 @@ def main():
         NTScraper(),
         EgatScraper(),
         NPNTScraper(),
+        BKKScraper(),
     ]
 
     failed_scrapers = []
