@@ -42,6 +42,7 @@ class BKKScraper(BaseScraper):
     """กรุงเทพมหานคร (กทม.) — eGP BMA2 Auction Announcements JSON API."""
 
     API_URL    = "https://egp2.bangkok.go.th/appapi/api/AuctionAnnouncements/GetAuctionAnnouncementFromFilter"
+    FILE_URL   = "https://egp2.bangkok.go.th/api/file/{uuid}/{filename}"
     DETAIL_URL = "https://egp2.bangkok.go.th/auction/{uuid}"
 
     def __init__(self):
@@ -90,13 +91,19 @@ class BKKScraper(BaseScraper):
                 break
 
             for item in items:
-                uuid  = item.get("auctionAnnouncementId", "")
-                title = item.get("auctionAnnouncementAuctionName", "").strip()
-                org   = item.get("masterOrgGroupName") or ""
-                dept  = item.get("masterOrgDepartmentName") or ""
-                unit  = f"{org} {dept}".strip() if dept else org.strip()
-                dt    = _parse_iso_to_bkk(item.get("auctionAnnouncementAnnounceDate", ""))
-                url   = self.DETAIL_URL.format(uuid=uuid)
+                uuid     = item.get("auctionAnnouncementId", "")
+                title    = item.get("auctionAnnouncementAuctionName", "").strip()
+                org      = item.get("masterOrgGroupName") or ""
+                dept     = item.get("masterOrgDepartmentName") or ""
+                unit     = f"{org} {dept}".strip() if dept else org.strip()
+                dt       = _parse_iso_to_bkk(item.get("auctionAnnouncementAnnounceDate", ""))
+                pdf_file = item.get("auctionAnnouncementPdfFile") or ""
+                if uuid and pdf_file:
+                    url = self.FILE_URL.format(uuid=uuid, filename=pdf_file)
+                elif uuid:
+                    url = self.DETAIL_URL.format(uuid=uuid)
+                else:
+                    continue
 
                 results.append({
                     "agency":    "กรุงเทพมหานคร (กทม.)",
