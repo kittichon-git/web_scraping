@@ -20,6 +20,7 @@ from scrapers.nt_scraper import NTScraper
 from scrapers.egat_scraper import EgatScraper
 from scrapers.npnt_scraper import NPNTScraper
 from scrapers.bkk_scraper import BKKScraper
+from scrapers.pat_scraper import PATScraper
 from utils.db import upsert_auctions, get_existing_urls
 
 
@@ -50,6 +51,7 @@ def main():
         EgatScraper(),
         NPNTScraper(),
         BKKScraper(),
+        PATScraper(),
     ]
 
     failed_scrapers = []
