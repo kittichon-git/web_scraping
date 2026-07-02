@@ -1,11 +1,16 @@
 from scrapers.base import BaseScraper
 from bs4 import BeautifulSoup
+from curl_cffi import requests as cffi_requests
 import urllib.parse
+import urllib3
+
+urllib3.disable_warnings()
 
 
 class MEAScraper(BaseScraper):
     """การไฟฟ้านครหลวง (MEA) — card listing หน้าประกาศขายพัสดุเก่า.
     1 card = 1 รายการ, URL = หน้าประกาศ (ให้พนักงานเปิดดูเอง).
+    ใช้ curl_cffi เพราะ mea.or.th บล็อก requests ด้วย connection reset.
     """
 
     LIST_URL = "https://www.mea.or.th/public-relations/dispose-assets"
@@ -15,9 +20,17 @@ class MEAScraper(BaseScraper):
 
     def scrape(self, max_pages=1):
         print(f"Scraping {self.name}...")
-        html = self.fetch(self.LIST_URL)
-        if not html:
-            print("  MEA: fetch failed")
+        try:
+            r = cffi_requests.get(
+                self.LIST_URL,
+                impersonate="chrome124",
+                timeout=20,
+                verify=False,
+            )
+            r.raise_for_status()
+            html = r.text
+        except Exception as e:
+            print(f"  MEA: fetch failed: {e}")
             return []
 
         soup = BeautifulSoup(html, 'html.parser')
