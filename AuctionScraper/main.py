@@ -23,6 +23,7 @@ from scrapers.bkk_scraper import BKKScraper
 from scrapers.pat_scraper import PATScraper
 from scrapers.chula_scraper import ChulaScraper
 from scrapers.nu_scraper import NUScraper
+from scrapers.kku_scraper import KKUScraper
 from utils.db import upsert_auctions, get_existing_urls
 
 
@@ -56,6 +57,7 @@ def main():
         PATScraper(),
         ChulaScraper(),
         NUScraper(),
+        KKUScraper(),
     ]
 
     failed_scrapers = []
