@@ -170,6 +170,10 @@ body { font-family: var(--font); font-size: 14px; line-height: 1.5; color: var(-
   width: 100%; text-align: left; font-family: var(--font); padding: 0;
   line-height: 1.4; transition: color .1s; text-decoration: none;
 }
+.rtitle.rtitle-ml {
+  white-space: pre-wrap; overflow: visible; text-overflow: clip;
+  word-break: break-word;
+}
 .rtitle:hover { color: var(--c-link); }
 .rmeta { display: flex; align-items: center; gap: 6px; margin-top: 3px; flex-wrap: wrap; }
 
@@ -505,13 +509,14 @@ function goPage(p) {
 
 function rowNew(item) {
   const unit = item.unit ? `<span class="bdg bd-green">🏢 ${esc(item.unit)}</span>` : '';
+  const titleCls = (item.title||'').includes('\n') ? 'rtitle rtitle-ml' : 'rtitle';
   return `
 <div class="rrow" id="row-${item.id}">
   <div class="ricon ic-new">
     <svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="4"/></svg>
   </div>
   <div class="rbody">
-    <button class="rtitle" onclick="handleClick('${item.id}','${esc(item.url)}')">${esc(item.title)}</button>
+    <button class="${titleCls}" onclick="handleClick('${item.id}','${esc(item.url)}')">${esc(item.title)}</button>
     <div class="rmeta">
       <span class="bdg bd-blue">${esc(item.agency||'')}</span>
       <span class="bdg bd-orange">📅 ${esc(item.date_str||'—')}</span>
@@ -524,13 +529,14 @@ function rowNew(item) {
 function rowRead(item) {
   const unit = item.unit ? `<span class="bdg bd-green">🏢 ${esc(item.unit)}</span>` : '';
   const ra = item.read_at ? item.read_at.substring(0,16).replace('T',' ') : '—';
+  const titleCls = (item.title||'').includes('\n') ? 'rtitle rtitle-ml' : 'rtitle';
   return `
 <div class="rrow read">
   <div class="ricon ic-done">
     <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg>
   </div>
   <div class="rbody">
-    <a class="rtitle" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a>
+    <a class="${titleCls}" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a>
     <div class="rmeta">
       <span class="bdg bd-blue">${esc(item.agency||'')}</span>
       <span class="bdg bd-orange">📅 ${esc(item.date_str||'—')}</span>
