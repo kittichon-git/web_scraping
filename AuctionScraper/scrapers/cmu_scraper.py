@@ -1,6 +1,6 @@
 from scrapers.base import BaseScraper
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import requests
 import urllib3
 
@@ -11,8 +11,6 @@ _THAI_MONTHS_SHORT = [
     "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.",
 ]
 _TODAY_CE = datetime.today().year
-_RETENTION_DAYS = 60
-
 
 def _parse_cmu_date(raw: str) -> "datetime | None":
     """Parse 'D/M/YYYY HH:MM:SS' (Thai BE) → CE datetime. e.g. '1/7/2569 13:48:19'."""
@@ -78,7 +76,6 @@ class CMUScraper(BaseScraper):
         """
         new_items = []
         total_auction = 0
-        cutoff = datetime.today() - timedelta(days=_RETENTION_DAYS)
 
         for row in soup.select("table.table tr"):
             tds = row.find_all("td")
@@ -108,10 +105,6 @@ class CMUScraper(BaseScraper):
             date_span = tds[3].find("span")
             date_raw  = date_span.get_text(strip=True) if date_span else tds[3].get_text(strip=True)
             dt = _parse_cmu_date(date_raw)
-
-            # Skip items beyond retention window
-            if dt and dt < cutoff:
-                continue
 
             seen_urls.add(url)
             new_items.append({
