@@ -25,6 +25,7 @@ from scrapers.chula_scraper import ChulaScraper
 from scrapers.nu_scraper import NUScraper
 from scrapers.kku_scraper import KKUScraper
 from scrapers.cmu_scraper import CMUScraper
+from scrapers.md_scraper import MDScraper
 from utils.db import upsert_auctions, get_existing_urls
 from utils.run_logger import RunLogger, _read_runs_json
 from scrapers.gprocurement_scraper import GProcurementScraper as _GPScraper
@@ -90,6 +91,7 @@ def main():
         NUScraper(),
         KKUScraper(),
         CMUScraper(),
+        MDScraper(),
     ]
 
     failed_scrapers = []
