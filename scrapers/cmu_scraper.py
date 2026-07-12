@@ -127,7 +127,7 @@ class CMUScraper(BaseScraper):
 
         return new_items, total_auction
 
-    def scrape(self, max_pages: int = 50):
+    def scrape(self, max_pages: int = 10):
         print(f"Scraping {self.name}...")
         results = []
         seen_urls: set = set()
@@ -135,7 +135,7 @@ class CMUScraper(BaseScraper):
         session = requests.Session()
         session.headers.update(self.headers)
 
-        # --- Page 1: GET ---
+        # --- Step 1: GET page 1 to grab form fields ---
         try:
             r = session.get(self.LIST_URL, timeout=20, verify=False)
             r.raise_for_status()
@@ -144,21 +144,35 @@ class CMUScraper(BaseScraper):
             return results
 
         soup = BeautifulSoup(r.text, "html.parser")
-        page_items, _ = self._parse_auction_rows(soup, seen_urls)
-        results.extend(page_items)
 
-        # Check if pagination exists
-        next_btn = soup.find("a", id=lambda x: x and "lbtnNext" in (x or ""))
-        if not next_btn:
-            print(f"  {self.name}: {len(results)} items (single page)")
+        # --- Step 2: POST with ddlType=PUBLISH_AUCTION to filter ขายทอดตลาด ---
+        fields = _get_form_fields(soup)
+        fields["__EVENTTARGET"]   = "ctl00$cphPageContent$wucProcurement$ddlType"
+        fields["__EVENTARGUMENT"] = ""
+        fields["ctl00$cphPageContent$wucProcurement$ddlType"] = "PUBLISH_AUCTION"
+
+        try:
+            r = session.post(self.LIST_URL, data=fields, timeout=20, verify=False)
+            r.raise_for_status()
+        except Exception as e:
+            print(f"  CMU filter post error: {e}")
             return results
 
-        # --- Pages 2+: POST with __doPostBack lbtnNext ---
-        consecutive_empty = 0
+        soup = BeautifulSoup(r.text, "html.parser")
+        page_items, _ = self._parse_auction_rows(soup, seen_urls)
+        results.extend(page_items)
+        print(f"  CMU page 1: {len(page_items)} auction items")
+
+        # --- Step 3: paginate with lbtnNext ---
         for page_num in range(2, max_pages + 1):
+            next_btn = soup.find("a", id=lambda x: x and "lbtnNext" in (x or ""))
+            if not next_btn:
+                break
+
             fields = _get_form_fields(soup)
             fields["__EVENTTARGET"]   = "ctl00$cphPageContent$wucProcurement$lbtnNext"
             fields["__EVENTARGUMENT"] = ""
+            fields["ctl00$cphPageContent$wucProcurement$ddlType"] = "PUBLISH_AUCTION"
 
             try:
                 r = session.post(self.LIST_URL, data=fields, timeout=20, verify=False)
@@ -168,23 +182,10 @@ class CMUScraper(BaseScraper):
                 break
 
             soup = BeautifulSoup(r.text, "html.parser")
-            page_items, auction_count = self._parse_auction_rows(soup, seen_urls)
+            page_items, _ = self._parse_auction_rows(soup, seen_urls)
             results.extend(page_items)
-
+            print(f"  CMU page {page_num}: {len(page_items)} auction items")
             if not page_items:
-                # No new auction items on this page
-                consecutive_empty += 1
-                if consecutive_empty >= 3:
-                    # 3 consecutive pages with no new auction items → stop
-                    print(f"  CMU: no new items for 3 pages, stopping at page {page_num}")
-                    break
-            else:
-                consecutive_empty = 0
-
-            # Stop if no more pages
-            next_btn = soup.find("a", id=lambda x: x and "lbtnNext" in (x or ""))
-            if not next_btn:
-                print(f"  CMU: last page at {page_num}")
                 break
 
         print(f"  {self.name}: {len(results)} items")
