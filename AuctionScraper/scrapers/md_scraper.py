@@ -21,10 +21,18 @@ class MDScraper(BaseScraper):
         print(f"Scraping {self.name}...")
         results = []
 
+        # ต้องเข้าหน้าแรกก่อนเพื่อรับ cookie vc_clicked
+        # มิฉะนั้นเว็บ redirect ทุก URL ไปที่ /intro/
+        session = requests.Session()
+        try:
+            session.get(self.base_url, headers=self.headers, timeout=15, verify=False)
+        except Exception:
+            pass
+
         for page in range(1, max_pages + 1):
             url = _LISTING_URL if page == 1 else f"{_LISTING_URL}page/{page}/"
             try:
-                r = requests.get(url, headers=self.headers, timeout=30, verify=False)
+                r = session.get(url, headers=self.headers, timeout=30, verify=False)
                 if r.status_code == 404:
                     break
                 r.raise_for_status()
